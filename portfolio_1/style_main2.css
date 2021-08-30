@@ -1,0 +1,209 @@
+main {
+    display: grid;
+  
+    grid-template-columns: 300px 500px 400px 300px;
+    grid-template-rows: 500px 100px 400px;
+    background-color: lightgoldenrodyellow;
+   
+    
+  }
+  
+  /* #section_about {
+    display:flex;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    margin: 0;
+   
+  } */
+  
+  #section_about h1 {
+
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    
+   
+    font-size: 6em;
+    position: relative;
+    top: 250px;
+    
+   
+    font-family: 'Poppins', sans-serif;
+    transform: rotate(270deg);
+    color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(122, 116, 116, 0.9);
+    /* z-index: 1; */
+    
+  }
+  
+  #section_about figure {
+
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+
+    /* background-color: blueviolet; */
+    display: flex;
+    position:relative;
+    
+    height: 100%;
+    background-color: red;
+    
+  
+  }
+  
+  #t_view {
+    position: relative;
+    height: 100%;
+    
+  }
+  
+  #section_about p {
+
+    grid-column-start: 3;
+    grid-column-end: 1;
+    grid-row: 1 / span 1;
+
+    position: relative;
+    right: 5%;
+    /* background-color: pink; */
+    width: 45%;
+    margin: auto auto;
+    justify-content: center;
+    text-align: justify;
+
+    background-color: yellow;
+    
+    color: white;
+   
+  }
+  
+  
+  /* ####################################### PROGRAMMING ################################# */
+  
+  /* #programming_section {
+    display: flex;
+   
+    width: 100%;
+    height: 400px;
+    
+  } */
+  
+  /* #programming_lhs {
+    width: 42.3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  #programming_lhs p {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    color: black;
+    margin: 20px;
+  
+  }
+  
+  
+  
+  /* #programming_rhs {
+    display: flex;
+    flex-wrap: wrap;
+    
+    position: relative;
+    
+    
+    min-width: 57.7%;
+    max-width: 57.7%;
+    height:100%; 
+  } */
+  
+  /* #programming_rhs div {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+  } */
+  
+  #programming_rhs h1 {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 1;
+
+    position: relative;
+    width: 100%;
+    height: 20%;
+    top: -10px;
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-fill-color: rgb(255, 255, 255); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.9);
+    letter-spacing: 0.1em;
+    font-size: 5.8em;
+    
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* #card_house {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 75%;
+    
+    align-items: center;
+    justify-content: space-around;
+  } */
+  
+    #card1 {
+
+      grid-column: 3 / span 1;
+      grid-row: 3 / span 1;
+
+      display: flex;
+      flex: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      position: relative;
+      background-color: black;
+      width: 45%;
+      height: 90%;
+      color: white;
+      padding: 20px;
+      
+    }
+  
+    #card2 {
+
+      grid-column: 3 / span 1;
+      grid-row: 4 / span 1; 
+
+      display: flex;
+      flex: wrap;
+      justify-content: center;
+      text-align: justify;
+      align-items: center;
+      position: relative;
+      background-color: black;
+      width: 45%;
+      height: 90%;
+      color: white;
+      padding: 20px;
+      
+    }
+  
+  
+   
+/*       
+    
+   
+    
+  #spacer_para {
+    height: 5%;
+  } */
