@@ -170,6 +170,7 @@ cards {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      background-color: lightskyblue;
     }
     
     #programming_lhs p {
