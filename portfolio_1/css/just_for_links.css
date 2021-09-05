@@ -1,0 +1,7 @@
+a,
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: white;
+}

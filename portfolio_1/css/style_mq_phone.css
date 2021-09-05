@@ -1,0 +1,262 @@
+/* PHONE RESPONSIVENESS */
+
+@media screen and (max-width: 700px) {
+
+  article {
+    /* margin: 0px 0px; */
+    overflow: hidden;
+  }
+
+  #top_of_site_section {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 80px 450px 80px 120px 400px 10px;
+    background-color: black;
+  }
+
+  #topbar {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    
+    display: grid;
+    grid-template-columns: 3% 15% 64% 15% 3%;
+    grid-template-rows: 20px;
+
+    background-color: black;
+    font-size: 0.5rem;
+  }
+
+  #topbar_contact{
+    grid-column: 1 / span 1;
+    grid-row: 1 /span 1;
+    right: 20px;
+    bottom: 5px;
+  
+  }
+
+  #topbar_my_contact a {
+    color: rgb(180, 180, 180);
+    font-size: 3em; 
+  }
+
+  #topbar_menu {
+    top: 5px;
+    left: 30px;
+  }
+  
+  
+  #topbar_menu a {
+    color: rgb(180, 180, 180);
+    font-size: 2em; 
+  }
+
+  #top_of_site_section figure {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }
+
+  #main_image {
+    position: relative;
+    align-self: center;
+    margin: auto auto;
+  }
+    
+  #top_of_site_section h1 {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+      font-size: 2.5em; 
+      color: black;
+      background-color: white;
+      line-height: 2em;   
+  }
+
+  #mission_statement_1 {
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+    color: black;
+    background-color: white;
+    font-size: 1rem;
+    }
+
+  #identity_subheading {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+    font-size: 2.5em;;
+    color: white;
+    background-color: black;
+    padding: 45px 0 0 0;  
+  }
+
+  .parent_span,
+  .programmer_span {
+    color: rgba(255, 255, 255,0.5);  
+  }
+
+  #my_nav {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+    padding: 80px 0 0 0;
+    background-color: black;
+  }
+
+  .nav_item,
+  .nav_dot { 
+    font-size: 0.8em;  
+    padding: 12px;
+  }
+
+  .nav_item:hover {
+    font-size: 0.8em;
+  }
+     
+
+  main {
+
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 350px 70px 450px 425px 400px 150px 300px 1fr 15px;
+    overflow: hidden;
+  }
+  
+  #heading_about{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    line-height: 0.8em;
+  }
+  
+  main figure {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  #mission_statement_2 {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+    font-size: 0.9em;
+  }
+  
+  #container_about_paragraphs {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+    padding: 0 50px; 
+  }
+  
+  #container_programming_paragraphs {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+    padding: 20px 20px 10px 20px;
+  }
+ 
+  #heading_full_stack_dev {
+    grid-column: 3 / span 1;
+    grid-row: 5 / span 4;
+    font-size: 4.5em;  
+    line-height: 3em;
+    letter-spacing: 0.2em;
+  }
+
+  #container_qualifications {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+    margin: 25px;
+  }
+
+
+  #container_posts {
+    grid-column: 1 / span 2;
+    grid-row: 7 / span 2;
+  }
+
+
+  #photo_smile {    
+    justify-content: flex-start;
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+    background-color: green;
+  }
+
+  #portfolio_statement {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;        
+    padding: 5% 25px 0 25px; 
+    height: 100%;
+  }
+
+  footer {
+    font-size: 0.5em;
+    grid-template-columns: 1fr 25% 46% 25% 1fr;
+    grid-template-rows: 25px;
+   
+  }
+
+  footer section {
+    border: none;
+    padding: 0px 0px;
+    margin: 0 0
+  }
+      
+}
+
+
+  
+@media screen and (max-width: 500px) {
+
+  main {
+    grid-template-columns: 15% 60% 25%;
+    grid-template-rows: 350px 70px 500px 600px 400px 100px 300px 1fr 15px;
+    overflow: hidden;
+  }
+
+  #heading_full_stack_dev {
+    display: none;
+  }
+
+  #container_qualifications {
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 1;
+    margin: 25px;
+  }
+
+  #portfolio_statement {
+    grid-column: 1 / span 3;
+    grid-row: 6 / span 1;        
+    padding: 10% 25px; 
+  }
+
+  #container_posts {
+    grid-column: 1 / span 3;
+    grid-row: 7 / span 2;
+  }
+
+  footer {
+    font-size: 0.5em;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25px;
+  }
+
+  footer section {
+    border: none;
+    padding: 0px 0px;
+    margin: 0 0
+  }
+
+  #footer_address {
+    display: none;
+  }
+
+  #socials_section {
+    grid-column: 1 / span 1;
+    grid-row: 1 /span 1;
+    width: 50%;
+  }
+
+  #footer_heading {
+    grid-column: 2/ span 1;
+    grid-row: 1 /span 1;
+  }
+
+}

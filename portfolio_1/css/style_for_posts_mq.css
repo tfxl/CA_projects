@@ -1,0 +1,124 @@
+@media screen and (max-width: 1000px) {
+
+  header  {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .parent_span,
+  .programmer_span {
+    display: none;
+  }
+
+  article {
+      display: grid;
+      grid-template-columns: 5% 90% 5%;
+      grid-template-rows: 100px 65px 55px 800px 1fr; 
+  }
+  
+  img {
+    display: none;
+  }
+
+  #transparent_top {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 3;        
+  }
+  
+  #main_heading {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1; 
+  }
+  
+  #main_heading h1 {
+    letter-spacing: 0.1em;
+    font-size: 2.8em;
+    line-height: 1.5;     
+  }
+  
+  
+  #sub_heading {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1; 
+    letter-spacing: 0.2em;
+    font-size: 0.9em;        
+  }
+    
+  #post_of_the_week {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+    padding: 10px 50px 0px 50px;
+    text-align: justify;     
+  }
+}
+
+
+
+@media screen and (max-width: 730px) {
+
+  #main_heading h1 {
+    letter-spacing: 0.1em;
+    font-size: 2.2em;
+    line-height: 1.5;
+  }
+
+  #sub_heading h2 {
+    font-size: 1.18em; 
+  }
+
+  #post_of_the_week {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+    padding: 10px 20px 0px 20px;  
+  }
+
+   #transparent_top {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 3;
+    background-color: white;
+    position: sticky;
+    top: 0; 
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+
+  #main_heading h1 {
+    letter-spacing: 0.1em;
+    font-size: 1.8em;
+    line-height: 3.5;
+  }
+
+  #post_of_the_week {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+    padding: 10px 10px 0px 10px;  
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  #main_heading h1 {
+    letter-spacing: 0.1em;
+    font-size: 1.4em;
+    line-height: 3.5;
+  }
+
+  #sub_heading h2 {
+    font-size: 1.2em; 
+  }
+
+  #post_of_the_week {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+    padding: 10px 10px 0px 10px;  
+  }
+
+  #date {
+    margin-top: 30px;  
+  }
+
+}
