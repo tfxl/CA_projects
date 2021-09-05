@@ -4,9 +4,7 @@
 
   
 
-URL :  
-
-GitHub repo :  
+URL (GitHub repo) : https://github.com/tfxl/tfxl.github.io
   
 The purpose of this website is to communicate graphical and coding ability to a prospective employer. It will demonstrate a visual awareness, a recognition of appropriate design, and learnt coding skills.  
   
@@ -16,9 +14,7 @@ The features of this webpage currently convey a visual aesthetic, with the use o
   
 This features sections that can be navigated via the navigation, presented as part of the intial page view. As the size of the webpage conforms to tablet and phone viewports, a new slimline header appears that allows future features to be integrated, namely a drop down "hamburger" menu and also a link to a contact page, which can be developed beyond this project.  
 
-Please find the sitemap here : please view powerpoint
-
-Please find the screenshots here : please view powerpoint
+Please view sitemap and design images in powerpoint file or GitHub (tfxl)
 
 Our target audience is a prospective employer, but it should also capture the interest of a particular type of employer. In this case, a group that appreciates the connection of family, and the interest in a newly trained person in their 30's. The responsibility of raising a family might be considered an applicable characteristic of the role that is being sought.  
 

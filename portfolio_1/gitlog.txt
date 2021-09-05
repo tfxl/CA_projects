@@ -1,0 +1,47 @@
+commit 248aaa5f3adc28390af0196b115fa38d7050214a
+Author: tfxl <CAB022105@coderacademy.edu.au>
+Date:   Sun Sep 5 23:01:02 2021 +1000
+
+    getting towards final initial, which allows for submission of file
+
+commit 2759894f3f373b4735ecacae377e2b3fe2d6458d
+Author: tfxl <CAB022105@coderacademy.edu.au>
+Date:   Thu Sep 2 11:47:57 2021 +1000
+
+    updated powerpoint presentation. Written work still to be updated in powerpoint.
+
+commit 0cabe8674f3b2c6d8640469354ceca73c66ac687
+Author: tfxl <CAB022105@coderacademy.edu.au>
+Date:   Wed Sep 1 01:35:06 2021 +1000
+
+    big update on slide deck and portfolio webpage. Slide deck ready for presentation. Portfolio website for further work
+
+commit 4da9f5ab2b8b46266d492656cdb43e578dade5ff
+Author: tfxl <CAB022105@coderacademy.edu.au>
+Date:   Tue Aug 31 11:19:25 2021 +1000
+
+    wireframes initial done
+
+commit a693b6a80ababed1352676679b711f676bea4937
+Author: tfxl <CAB022105@coderacademy.edu.au>
+Date:   Tue Aug 31 02:24:18 2021 +1000
+
+    added a posts page and simplified the homepage. Some old code retained separately at the moment.
+
+commit 2d159c398f297e128f5f1eb9fe060189f41bdbc6
+Author: tfxl <CAB022105@coderacademy.edu.au>
+Date:   Mon Aug 30 19:24:35 2021 +1000
+
+    bulk of desktop ininitial done but needs to be cleaned
+
+commit e5a0253c088090006bfa3ea72046317287ce05fc
+Author: tfxl <89055534+tfxl@users.noreply.github.com>
+Date:   Sun Aug 22 23:26:47 2021 +1000
+
+    Update README.md
+
+commit 314fe8ac097c81dc1477ce063f53e85d6e1cfc57
+Author: tfxl <89055534+tfxl@users.noreply.github.com>
+Date:   Sun Aug 22 23:25:58 2021 +1000
+
+    Initial commit
