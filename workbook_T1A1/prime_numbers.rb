@@ -1,8 +1,8 @@
 start_time = Time.new
 
 prime_numbers = [2]
-# as this problem requests values 0-100, we can start our array of prime numbers with 2, the first prime number
-# if the range was more diverse, a conditional statement would be appropriate
+# as this problem requests values 0-100, we can start our array of prime numbers with 2, the first prime number. This avoids an early conditional statement.
+# if the range was more diverse, further conditions would be required, or potentially the ability to input, or the creation of a method with parameters to set the range.
 
 investigated_number = 3
 # as per above, given the range parameters, our investigation starts at number 3, as 2 already recorded in array

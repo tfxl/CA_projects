@@ -25,7 +25,7 @@ while adequate_answer == false
   input_temperature_dance = input_temperature.to_i.to_s
   # this sets up variables to compare with each other to see if they are numbers or not
   # gets brings in a string, .to_i method convers to integer, but also converts words to 0.0
-  # which will be recognised as an integer. "Word" => 0.0    BUT   "15" => 15
+  # which will be recognised as an integer. "Word" => 0.0 => "0.0"   BUT   "15" => 15 => "15"
 
   if !(input_temperature == input_temperature_dance)
     puts "*** This is not a number, or not a number in the correct format (digit) ***\n* Please enter a number in digit form only. Please retart input.*\n\n"
