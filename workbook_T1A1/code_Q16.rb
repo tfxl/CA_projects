@@ -10,6 +10,7 @@ score_template = [
 ]
 
 def display_score_template(score_template)
+  puts "\n"
   score_template.each_with_index do |language, index|
     puts "#{language[:selected]} #{index + 1}. #{language[:name]}"
   end
@@ -24,11 +25,12 @@ def calc_existing_skill_score(existing_skillset)
 end
 
 def nope_msg
-  system 'clear'
+  system("clear") || system("cls")
+  
   puts "\n"
-  puts '|.  |  |^^^|  |^^^|  |^^^'
-  puts '| . |  |   |  |___|  |---'
-  puts '|  .|  |___|  |      |___'
+  puts '|\  |  |^^^|  |^^^|  |^^^'
+  puts '| \ |  |   |  |___|  |---'
+  puts '|  \|  |___|  |      |___'
   puts "\n\n"
 end
 
@@ -65,7 +67,7 @@ puts "\nHere is a list of relevant programming languages that ACME Corporation a
 display_score_template(score_template)
 
 adequate_answer = false
-until adequate_answer
+while !adequate_answer
 
   puts "\nAre you competent in any of these languages? Please enter Y or N"
   initial_answer = gets.chomp.downcase # the downcase is to cater for either upper or lowercase entries
@@ -74,9 +76,8 @@ until adequate_answer
     adequate_answer = true
     all_done = false
     puts "\nGreat! Which of the languages are you competent in ?\n\n"
-    # display_score_template(score_template)
-
-    while all_done == false
+    
+    while !all_done
 
       display_score_template(score_template)
       puts "\nPlease select a number of the language you are competent in, and press enter. Enter X to exit."
@@ -88,18 +89,17 @@ until adequate_answer
         existing_skillset.each do |iteration|
           available_upskills.delete(iteration) if available_upskills.include?(iteration)
         end
-        puts "\nThank you for your input. Under ACME Corporation guidelines your languages skill score is #{calc_existing_skill_score(existing_skillset)}"
-        upskill_points_assessment(available_upskills)
 
       elsif (input.to_i < 1) || (input.to_i > score_template.length) # chose this option rather than "8" in case of future adjustment
-        system 'clear'
-        puts "*** Please only choose a number between 1 and #{score_template.length} ***\n\n"
+        system("clear") || system("cls")
+        puts "\n\n*** Please only choose a number between 1 and #{score_template.length} ***\n\n"
 
       elsif options_chosen.include?(input.to_i)
-        system 'clear'
-        puts "*** You have already chosen this option !! Pick another option or enter X to exit ***\n\n"
+        system("clear") || system("cls")
+        puts "\n\n*** You have already chosen this option !! Pick another option or enter X to exit ***\n\n"
 
       else
+        system("clear") || system("cls")
         score_template[(input.to_i - 1)][:selected] = '[x]' # checkmarks the score_template for display
         options_chosen.append(input.to_i) # keeps a list of options chosen, so duplicates are not an issue
         existing_skillset.append(score_template[(input.to_i - 1)]) # existing skillset list is appended by choices
@@ -108,13 +108,15 @@ until adequate_answer
 
   elsif initial_answer == 'n'
     adequate_answer = true
-    system 'clear'
-    puts "\nThank you for your input. Under ACME Corporation guidelines your languages skill score is #{calc_existing_skill_score(existing_skillset)}"
-    upskill_points_assessment(score_template)
+   
 
   else
-    nope_msg
+    nope_msg()
     puts 'Please enter only Y or N'
 
   end
 end
+
+system("clear") || system("cls")
+puts "\nThank you for your input. Under ACME Corporation guidelines your languages skill score is #{calc_existing_skill_score(existing_skillset)}"
+upskill_points_assessment(available_upskills)

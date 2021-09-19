@@ -1,7 +1,10 @@
 # This problem provides two variables, raining and temperature
 raining = true
 temperature = 0
+
 # Any other variables in this code are not REQUIRED for the code to function, but rather improve flow control
+
+#There are additional newline characters utilised to grand additional readability in terminal
 
 adequate_answer = false
 while adequate_answer == false

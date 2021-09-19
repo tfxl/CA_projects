@@ -1,3 +1,2 @@
-x = 7
-y = 4
-puts x + y 
+y = gets
+p y*3
