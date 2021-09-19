@@ -1,42 +1,58 @@
 # T1A1 WORKBOOK (Timothy Long CAB022105)
+
 ---
 
 ## Q1 Five Key events in the development of the internet
 
-There are plenty of major events in the history of the internet, which guided the development of today's internet. This is an important point, as the development is not exactly linear, with a start to finish trajectory; it is hugely organic, and developments can alter the development of the internet into directions that were upredictable. These are some of the main events from 1980.
+There are plenty of major events in the history of the internet, which guided the development of what we have today. This is an important point, as the development is not exactly linear, with a start to finish trajectory; it is widely expansive and developments can push the internet into directions that are exciting and often unpredictable. This discussion focuses on are some of the main events from 1980 that had enduring affects on the system we have now.
+
+&nbsp;
 
 ### 1) 1989/1990 Tim Berners-Lee creates World Wide Web
 
-It would be somewhat remiss not to include the creation of the World Wide Web in this answer, given its primary significance in the development of the internet. Credit for this invention is given to Sir Tim Berners-Lee, a scientist working at CERN, who invented the the World Wide Web to share information between universities and other global institutes (1). His first proposal was written in 1989 and by the end of 1990 the first server and browswer was running at CERN (2). This was a massive step in utilising the internet to share information between colleagues, and with assistance in its development, including from Nicola Pellow during her student placement, the software became more widely available to those using CERN computers.  
-By this stage, with the ball rolling, and additional contributions that Berners-Lee himself pled for (1), the software was able to scale in development and access, promoting access by the public in 1993 (1).
-This development is not only instrumental in the creation of resources to share information via the web, but illustrative of the philosophy of the internet; to promote wide-ranging and free access to information. Today, Sir Tim Berners-Lee remains Director of W3C (World Wide Web Consortium) which develops standards and guidelines to lead the web to its full potential and remain accessible across multiple technologies (2)
+It would be somewhat remiss not to include the creation of the World Wide Web in this answer, given its primary significance in the development of the internet. Credit for this invention is given to Sir Tim Berners-Lee, a scientist working at CERN, who invented the the World Wide Web to share information between universities and other global institutes (1). His first proposal was written in 1989 and by the end of 1990 the first server and browser was running at CERN (2). This was a massive step in utilising the internet to share information between colleagues, and with assistance in its development, including from Nicola Pellow during her student placement, the software became more widely available to those using CERN computers.
+
+By this stage, with the ball rolling, and additional contributions that Berners-Lee himself pled for (1), the software was able to scale in development and access, promoting use by the public in 1993 (1).
+
+This development is not only instrumental in the creation of resources to share information via the web, but illustrative of the philosophy of the internet; to promote wide-ranging and free access to information. Today, Sir Tim Berners-Lee remains Director of W3C (World Wide Web Consortium) which develops standards and guidelines to lead the web to its full potential and remain accessible across multiple technologies (2).
 
 1. CERN, _Where the Web was born_, viewed 18/09/2021, <https://home.cern/science/computing/birth-web/short-history-web>
 2. W3, Tim Berners-Lee, _Biography_, viewed 18/09/2021, <https://www.w3.org/People/Berners-Lee/>
 
+&nbsp;
+
 ### 2) 1993 Creation of Mosaic (first web browser combining graphics)
 
-Shortly after the World Wide Web was created, a web browser was launched that is credited to popularising access to the web; Mosaic (1). It was not the first browser, but it had an accessible and reliable interface, with simple installation, and user friendliness suited to the general public (1). Given that existing browsers tended to be difficult to use, and ran on expensive Unix machines, the inventors Marc Andreesen and Eric Bina worked to create a change (1). Indeed, Moscaic is considered to be the first easy-to-use broswer (2); their browser was graphically superior, supported additional formatting options for HTML (such as center) and included the image tag (1). Instantly, this allowed intergration of images within the webpage, whereas previously images were only accessible as separate files (1). Additional features included the ability to easily scroll through text, and supported clickable hyperlinks, as opposed to the old system of users typing hyperlink reference numbers for re-direction (1).
+Shortly after the World Wide Web was created, a web browser was launched that is credited to popularising access to the web; Mosaic (1). It was not the first browser, but it had an accessible and reliable interface, with simple installation, and user friendliness suited to the general public (1). Given that existing browsers tended to be difficult to use, and ran on expensive Unix machines, the inventors Marc Andreesen and Eric Bina worked to create a change (1).
+
+Indeed, Moscaic is considered to be the first easy-to-use browser (2), and comparatively their browser was graphically superior, supported additional formatting options for HTML (such as center) and included the image tag (1). Instantly, this allowed integration of images within the webpage, whereas previously images were only accessible as separate files (1). Additional features included the ability to easily scroll through text, and supported clickable hyperlinks, as opposed to the old system of users typing hyperlink reference numbers for re-direction (1).
 
 These features improved user experience significantly, which can be opined to have contributed to the successful uptake of internet browsing by the public. Indeed, Mosaic is considered as the browser that spearheaded the way into the 90's internet boom (3); a reminder that the success of technology can be highly dependant not just on its potential, but also on its accessibility.
 
-> ![Mosaic Web Browser](https://www.nsf.gov/news/mmg/media/images/mosaic6beta_f.jpg)  
-> Source (4)
+> ![Mosaic Web Browser](https://www.nsf.gov/news/mmg/media/images/mosaic6beta_f.jpg)
 
-With free downloads, the browser experienced high levels of growth, and support for PC and Mac versions was developed; advancing out of the scope of Unix only machines (1). By mid-1994 it was noted that downloads were aournd 50,0000 per month, which is very impressive at that time of internet development (2). As the number of web users increased, the popularity of information sharing across the internet was able to gain significant momentum. Within 18 months post-inception, Mosaic had over a million users and facilitated the exponential growth of web servers and surfers (4).
+_Source (4)_
 
-Following this succes, the creators of Mosaic went on to later pursue a commercial project, the Netscape Navigator browser (2).
+With free downloads, the browser experienced high levels of growth, and support for PC and Mac versions was developed; advancing out of the scope of Unix only machines (1). By mid-1994 it was noted that downloads were around 50,0000 per month, which is very impressive at that time of internet development (2). As the number of web users increased, the popularity of information sharing across the internet was able to gain significant momentum. Within 18 months post-inception, Mosaic had over a million users and facilitated the exponential growth of web servers and surfers (4).
+
+Following this success, the creators of Mosaic went on to later pursue a commercial project; the Netscape Navigator browser (2).
 
 1. 2021, History Computer, _Mosaic Browser_, viewed 18/09/2021, <https://history-computer.com/software/mosaic-browser-history-of-the-ncsa-mosaic-internet-web-browser/>
 2. Vaughan-Nichols, S., 2018, ZDNet, _Mosaid turns 25: The beginning of the modern web_, viewed 18/09/2021, <https://www.zdnet.com/article/mosaics-birthday-25-years-of-the-modern-web/>
 3. Sack, H., 2018, SchiHi Blog, _How Mosaic has Changed the World_, viewed 18/09/2021, <http://scihi.org/ncsa-mosaic-web/>
 4. Hart, D., 2004, National Science Foundation, _Mosaic Launches an Internet Revolution_, viewed 18/09/2021, <https://www.nsf.gov/discoveries/disc_summ.jsp?cntn_id=100274>
 
-### 3) 1998 ? Google... or something else ?
+&nbsp;
 
-So, yes, admittedly the official birth of Google Inc. in this year (1) is an absolutely substantial part of the development of the internet. However, this answer will actually focus on another significant event in this year; the Antitrust Lawsuit by the Department of Justice, and the Attorney Generals of twenty states (2). Microsoft was the world's most dominant software company, and was protecting a monopoly on not only its operating system but also its broswer, the (infamous?) Internet Explorer (2). The case questioned the legality of its anti-competitive techniques, such as against competitor Netscape Navigator, and also revealed that Microsoft considered the internet to be a threat to its market postion, and would need to control it (2).
+### 3) 1998... Google Inc... or something else ?
 
-After losing the case, Microsoft were then somewhat incentivised to allow an opening in the market for the growth of other companies (2), even after overturning the decision following an appeal (3). It allowed a foot in the door for other companies, even those that would go on to create alternative browsers, and also created an agreement for Microsoft to share computing interfaces with competitors (3). While overturned, the success of the case is measured in that it created an opportunity for greater innovation in the tech industry without being competitively crushed, and it is opined that this ironically benefitted such groups as Google, Amazon and Facebook, which have themselves become titans of the industry (2). Indeed, Microsoft's browsers Edge and Internet Explorer have an approximate combined market share of less than 10% today while Google Chrome has an approximate market share of 65% (4).
+So, yes, admittedly the official birth of Google Inc. in this year (1) is an absolutely substantial part of the development of the internet. However, this answer will actually focus on another significant event in this year; the Antitrust Lawsuit against Microsoft by the Department of Justice, and the Attorney Generals of twenty states (2).
+
+At the time, Microsoft was the world's most dominant software company, and was protecting a monopoly on not only its operating system but also its browser, Internet Explorer (2). The case questioned the legality of its anti-competitive techniques, such as against competitor Netscape Navigator, and also revealed that Microsoft considered the internet to be a threat to its market position, and sought to control it (2).
+
+After losing the case, Microsoft were then somewhat incentivised to allow an opening in the market for the growth of other companies (2), even after overturning the decision following an appeal (3). It allowed a foot in the door for other companies, even those that would go on to create alternative browsers, and also created an agreement for Microsoft to share computing interfaces with competitors (3).
+
+While overturned, the success of the case is measured in that it created an opportunity for greater innovation in the tech industry without being competitively crushed, and it is opined that this ironically benefitted such groups as Google, Amazon and Facebook, which have themselves become titans of the industry (2). Indeed, Microsoft's browsers Edge and Internet Explorer have measured at an approximate combined market share of less than 10% today while Google Chrome has been measured at an approximate market share of 65% (4).
 
 Today, the case may be reflected upon when considering if the same principle of tech monopolies shouldn't also apply to some of the current tech giants. For instance, one might consider the instance that when questioned by American Senator Lindsey Graham, the founder of Facebook, Mark Zuckerberg, struggled to adequately or specifically answer the question "Who's your biggest competitor?" (5)
 
@@ -46,26 +62,34 @@ Today, the case may be reflected upon when considering if the same principle of 
 4. Stat Counter Global Stats, _Broswer Market Share Worldwide_, viewed 18/09/2021, <https://gs.statcounter.com/browser-market-share>
 5. Jeong, S., 2018, The Verge, _Zuckerberg struggles to name a single Facebook competitor_, viewed 18/09/2021, <https://www.theverge.com/2018/4/10/17220934/facebook-monopoly-competitor-mark-zuckerberg-senate-hearing-lindsey-graham>
 
+&nbsp;
+
 ### 4) 1999 Napster
 
-At around this time, an incredibly important event in both music and internet arose, which challenged not only the traditional music industry, but gave users a platform to directly share files, and forecast the future 'cloud' internet (1) This was Napster. It was a file sharing platofrm created by two teenagers, Sean Parker and Shawn Fanning (2) which in itself spoke of the nature of the internet, with its ability to give growth to strong ideas, regardless of the age of the creators. Napster created the ability for music to be downloaded, for free, in a more reliable, consistent way with the concept of users sharing their MP3 music files (2). By the following year, there were 20 million in the Napster community, and it gained the unfavourable attention of the music industry, which had, for the first time, noted a dip global sales (1).
+At around this time, an incredibly important event in both music innovation and the internet arose, which challenged not only the traditional music industry, but gave users a platform to directly share files, and forecast the future 'cloud' internet (1). This was Napster. It was a file sharing platform created by two teenagers, Sean Parker and Shawn Fanning (2) which in itself spoke of the nature of the internet, with its ability to give growth to strong ideas, regardless of the age of the creators.
 
-This success raises an important ethical consideration, whether companies could claim that the music they produced was owned in broad terms. In other words, while their property becomes more obvious when it is recorded on a physical CD, and ownership changes with purchase of said CD, could the company claim that the sounds experienced from a digital copy be owned ? Indeed, could they claim owernship of a digital copy of the music, and could they claim loss if that copy was shared ? This same thought experiment can also extend to other areas of the internet ? Can digital copies of movies, books, or articles, be shared ? Certainly, the music companies considered that their rights were being abused, and focussed their attentions on Napster (1).
+Napster created the ability for music to be downloaded, for free, in a more reliable, consistent way with the concept of users sharing their MP3 music files (2) across the internet. By the following year, there were 20 million in the Napster community, and it gained the unfavourable attention of the music industry, which had, for the first time, noted a dip global sales (1).
 
-After lengthly legal challenges were lost, the creators eventually left, and the company sunk to a shadow of its former self, however its concept was tremendously influential, and companies such as iTunes were ready to embrace the digital music market (1), albeit in more legally cautious way.
+This success raises an important ethical consideration, whether companies could claim that the music they produced was owned in broad terms. In other words, while their property becomes more obvious when it is recorded on a physical CD, and ownership changes with purchase of said CD, could the company claim that the sounds experienced from a digital copy be owned ?
+
+Indeed, could producers claim ownership of a digital _copy_ of the music, and could they claim loss if that copy was shared on the basis of a lost sale _potential_ ? This same thought experiment can also extend to other areas of the internet; can digital copies of movies, books, or articles be shared without compensation ? Certainly, the music companies considered that their rights were being abused, and focussed their attentions on Napster (1).
+
+After lengthly legal challenges were lost by Napster, and the creators eventually left the ship, the company sunk to a shadow of its former self. However its concept was tremendously influential, and companies such as iTunes were ready to embrace the digital music market (1), albeit in more legally cautious way.
 
 1. Delbert, C., 2020, Internet Severice Providers, _Major milestones from internet history_, viewed 18/09/2021, <https://www.isp.com/blog/major-milestones-from-internet-history/>
 2. Lamont, T., 2013, The Guardian, _Napster: the day the music was set free_, viewed 18/09/2021, <https://www.theguardian.com/music/2013/feb/24/napster-music-free-file-sharing>
 
+&nbsp;
+
 ### 5) 2005 YouTube
 
-Former Paypal employees Chad Hurley, Steve Chen and Jawed Karim are responsible for creating a platform that had over 1.5 billion active users a month in 2020 (1), named YouTube. This has increased to over 2 billion in 2021 (2), yet the startup was implemented with initial focus as a private platform, to primarily share video only with acquaintances (1), and it was only after about two months that the 20th video to the site was uploaded (1). In a great example of consumer driven growth, this 20th video, an lipsynced Backstreet Boys' song, reportedly attracted the attention of Susan Wojcicki, then Senior Vice President in marketing at Google, who later advocated for the purchase of Youtube (3). And in 2005 the marketing Nike Ad featuring the soccer player Ronaldinho reached 1 million views (4); an enormous amount for a fledgling startup, and one that demonstrated the growth potential of YouTube.
+Former Paypal employees Chad Hurley, Steve Chen and Jawed Karim are responsible for creating a platform that had over 1.5 billion active users a month in 2020 (1), named YouTube. This has increased to over 2 billion in 2021 (2), yet the startup was implemented with initial focus as a private platform, to primarily share video only between acquaintances (1), and there was a slow uptake on users utilising the platform (1). However, in a great example of consumer driven growth, the 20th video, an lipsynced Backstreet Boys' song, reportedly attracted the attention of Susan Wojcicki, then Senior Vice President in marketing at Google, who later advocated for the purchase of Youtube (3). And in 2005 the marketing Nike Ad featuring the soccer player Ronaldinho reached 1 million views (4); an enormous amount for a fledgling startup, and one that truly demonstrated the growth potential of YouTube.
 
-By the following year, YouTube was experiencing rapid growth, with over 19 million users by the first semester of the year (1) and it held over 65% market share of the internet's viewed audiovisual content (1). Even so, it remained free, and like other media sharing endeavours in the past, it was facing copyright lawsuits, which meant that it was financially untenable (1). Even so, its potential for business and marketing was recognised by Google, and it was aquired for $US1.65 billion dollars in October 2006 (1).
+By the following year, YouTube was experiencing rapid growth, with over 19 million users by the first semester of the year (1) and it held over 65% market share of the internet's viewed audiovisual content (1). Even so, it remained free, and like other media sharing endeavours in the past, it was facing copyright lawsuits, which meant that it was financially untenable (1). Yet its potential for business and marketing was recognised by Google, and it was acquired for $US1.65 billion dollars in October 2006 (1).
 
 With Google's clout, YouTube was propelled to greater and greater levels. Today, 99% of users who access online videos, will use YouTube (1), and containing that level of market share created an unmatched money making opportunity, for users who can monetise their content, and for YouTube who can sell to advertisers or subscribers (5). The company is now worth over $US100 billion (1) and is invested heavily in its revenue-earning techniques, with a business strategy to keep users watching video on their platform for as long as possible (2).
 
-In effect, YouTube are competing in what is known as the "Attention Economy" (6) where social media companies design their platforms to encapture as much of the available time of its users, in order to advertise to them, and increase their revenue. As such, YouTube introduced a "deep learning" algorithm in 2016 which tracks user usage and promotes additional, personalised content (2) that it believes will most encaptulate the user, in order to keep them engaged with the platform for longer, enabling them to increase subscriptions of paid users, or increase revenue from personalised advertisement to free users. As a reviewer of the recent Netflix documentary "The Social Dilemma" points out, "If you're not paying for the product, you are the product! (7) which is an interesting and important ethical consideration in the internet today, particularly in the realm of social media.
+In effect, YouTube is competing in what is known as the "Attention Economy" (6) where social media companies design their platforms to capture as much of the available time of its users, in order to advertise to them, and increase their revenue. As such, YouTube introduced a "deep learning" algorithm in 2016 which tracks user usage and promotes additional, personalised content (2) that it believes will most attract the user. The aim is to keep users engaged with the platform for longer, enabling them to increase subscriptions of paid users, or increase revenue from personalised advertisement to its free users. As a reviewer of the recent Netflix documentary "The Social Dilemma" points out, "If you're not paying for the product, you are the product!" (7) which is an interesting and important ethical consideration in the internet today, particularly in the realm of social media competition.
 
 Even so, these ethical consideration should be balanced against the fact that YouTube does embrace the philosophy of information sharing, and holds an enormous amount of educative, informative and entertaining content for ready access.
 
@@ -83,11 +107,13 @@ Even so, these ethical consideration should be balanced against the fact that Yo
 
 ### 1) Packets
 
-Data travels across the intenet in units called packets, which are routed from the origin address to the destination address (1) Fundamentally, as packets form the units of data being transferred, it is a significant part of the technology where information sharing occurs.
+Data travels across the internet in units called packets, which are routed from the origin address to the destination address (1) Fundamentally, as packets form the units of data being transferred, it is a significant part of the technology where information sharing occurs.
 
-Packets are thus the smaller parts of a larger set of information that allow this to happen. While IP packets can potentially be much larger (relatively speaking) a typical packet size is up to around 1,500 bytes (1)(2). This is comprised of a packet header (critical information about the packet, such as source and destination addresses) and the actual data (4), also known as the payload (3).
+Packets are thus the smaller parts of a larger set of information being transferred. While IP packets can potentially be much larger (relatively speaking) a typical packet size is up to around 1,500 bytes (1)(2). This is comprised of a packet header (critical information about the packet, such as source and destination addresses) and the actual data (4), also known as the payload (3).
 
-While theoretically a computer could send a large file directly to another computer in a single long line of unbroken bits, it is not practical to complete this same process to additional computers simultaneously (3) - these would have to wait until the transfer was completed to all other computers in this theoretical que. Instead, the internet can utilise the technology of packets in a "packet-switching" fashion, where the packets of data are able to be transfered across various networks, allowing a much more efficient transfer of data (5). In this fashion, the use of packets and packet-switching technology has contributed to more efficient data flow across the internet.
+While theoretically a computer could send a large file directly to another computer in a single long line of unbroken bits, it is not practical to complete this same process to multiple computers simultaneously (3) - these would have to wait until the transfer was completed to all other computers in this theoretical que. Instead, the internet can utilise the technology of packets in a "packet-switching" fashion, where the packets of data are able to be transferred across various networks, allowing a much more efficient transfer of data (5).
+
+In this fashion, the use of packets and packet-switching technology has contributed to more efficient data flow across the internet.
 
 1. Zola, A., Gillis, A., 2021, Tech Target, _Network Packet_, viewed 12/09/2021, <https://www.techtarget.com/searchnetworking/definition/packet>
 2. 2021, Live Action, _What is a Network Packet?_, viewed 12/09/2021, <https://www.liveaction.com/resources/blog/network-packet/>
@@ -95,47 +121,52 @@ While theoretically a computer could send a large file directly to another compu
 4. Fox, P., Khan Academy, _IP Packets_, viewed 12/09/2021, <https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:the-internet/xcae6f4a7ff015e7d:routing-with-redundancy/a/ip-packets>
 5. AVI Networks, _Packet Switching_, viewed 12/09/2021, <https://avinetworks.com/glossary/packet-switching/>
 
+&nbsp;
+
 ### 2) IP Addresses (IPv4 and IPv6)
 
-IP addresses are essentially unique identitiers for a device on local networks or the internet (1). The IP represents "Internet Protocol" and lays out the rules, regulations and standards for connecting to the internet, and for routing data, which can allow for bi-directionaly data flow (2). Given this ability is an essential technology in the web.
+IP addresses are essentially unique numbered identifiers for a device on local networks or on the internet (1). The IP represents "Internet Protocol" and lays out the rules, regulations and standards for connecting to the internet, and for routing data, which can allow for bi-directional data flow (2). Given this ability it is an essential technology for the web.
 
 Version 4 (IPv4) addresses are divided into four groups of numbers, separated by a full stop. Each group of numbers ranges from 0-255 because each group of numbers is underlaid by an 8-bit number. Thus, the whole address is a a unique 32-bit number (3) which allows unique numbers from 0.0.0.0 to 255.255.255.255. As the number of connected devices in the world reach ever higher numbers, the 4.2 Billion + addresses was an essential foresight in the design.
 
-Version 6 (IPv6) was created in 1998 with the most significant difference to IPv4 in that it is created from 128 bits, instead of 32 (3). This creates an enormous amount more unique addresses to potentially be used, however as the two IP address versions do not cummunicate with each other directly (2) this creates a difficulty with moving to this next technology en masse. Still, the potential for the increased number of unique IP addresses is one solution to the ever-expanding number of connected devices.
+Version 6 (IPv6) was created in 1998 with the most significant difference to IPv4 in that it is created from 128 bits, instead of 32 (3). This creates an enormous amount more unique addresses to potentially be used, however as the two IP address versions do not communicate with each other directly (2) this creates a difficulty with moving to this technology en masse. Still, the potential for the increased number of unique IP addresses is one solution to the ever-expanding number of connected devices.
 
 1. Kaspersky, 2021, _What is an IP Address - Definition and Explanation_, viewed 12/09/2021, <https://www.kaspersky.com/resource-center/definitions/what-is-an-ip-address>
 2. Mozilla, Mozilla VPN, _What is an IP address?_, viewed 12/09/2021, <https://www.mozilla.org/en-US/products/vpn/more/what-is-an-ip-address/>
 3. Sebesta,R. (2013) Programming the World Wide Web, 7th ed. Boston, Person Education, Inc, p4
 
+&nbsp;
+
 ### 3) Routers & Routing
 
 As information moves across the internet in a packet-switching fashion (1), each packet makes a stop at its nearest router, which is a device used in networks that assists packet transfers (2). This device can be physical or virtual (3).
 
-Once a packet is received at a router, the router examines the packet header for its critical information, primarily the destination address (2). Here, the router needs to send the package to the next closest router to the packet's final destination. That router, in turn, does the same, until finally one of the routers in the network is able to forward the packet to its desintation IP address. The message travels, or is routed along, a network of routers to reach its final IP address.
+Once a packet is received at a router, the router examines the packet header for its critical information, primarily the destination address (2). Here, the router needs to send the package to the next closest router to the packet's final destination. That router, in turn, does the same, until finally one of the routers in the network is able to forward the packet to its destination IP address. The message travels, or is routed along, a network of routers to reach its final IP address.
 
 ![Example of router network may from source (2)](https://cdn.kastatic.org/ka-perseus-images/0d415093c4d2160530541f0170204200c89111d3.svg)
 
 _Image source (2)_
 
-In this way, routers (and routing) is a critical part of the infrastructure of the internet, creating a network of transfers through a map of routers, for packets of information to arrive at their destination. Routers are able to guide and direct data through the network, choosing the optimal routes for transferring the packets (4).
+In this way, routers (and routing) is a critical part of the infrastructure of the internet, creating a network of transfers through a map of routers, so that packets of information can arrive at their destination. Routers are able to guide and direct data through the network, choosing the optimal routes for transferring the packets (4).
 
-One might compare the analogy of a boat carring cargo (data payload) from the home port (source IP address) to the destination port (destination IP address), noting that it will require stops along the journey from port-to-port, closer and closer to the final address, until it arrives.  
-The importance
+One might compare the analogy of a boat carrying cargo (data payload) from the home port (source IP address) to the destination port (destination IP address), noting that it will require stops along the journey from port-to-port (routers), closer and closer to the final address, until it finally drops the cargo off.
 
-This infrastructure's importance cannot be under-stated; without routers and routing, there would not be the self-same ability to communicate or collaborate over the internet (4)
+This infrastructure's importance cannot be under-stated. Without routers and routing, there would not be the self-same ability to communicate or collaborate over the internet (4) as we have had in the past, and do today.
 
 1. AVI Networks, _Packet Switching_, viewed 12/09/2021, <https://avinetworks.com/glossary/packet-switching/>
 2. Fox, P., Khan Academy, _Internet routing protocol_, viewed 12/09/2021, <https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:the-internet/xcae6f4a7ff015e7d:routing-with-redundancy/a/internet-routing>
 3. Irei, A., 2019, Tech Target, _router_, viewed 12/09/2021, <https://www.techtarget.com/searchnetworking/definition/router>
 4. Cisco, What is a router? _Key Q&A_, viewed 12/09/2021, <https://www.cisco.com/c/en_au/solutions/small-business/resource-center/networking/what-is-a-router.html>
 
+&nbsp;
+
 ### 4) Domains & DNS
 
-The Domain Name System (DNS) if a fundamental part of the internet that connects a directory of names with numbers; these numbers primarily being the IP addresses (1). As it is acknowledged that people have difficulty rememembering numbers, internet addresses were given textual names (2) that allowed users to access the addresses with words instead of difficult-to-remember IP addresses. For instance, one could use the IP address 35.246.6.109 or simply use icecream.com.au
+The Domain Name System (DNS) if a fundamental part of the internet that connects a directory of names with numbers; these numbers primarily being the IP addresses (1). As it is acknowledged that people have difficulty remembering numbers, internet addresses were given textual names (2) that allowed users to access the addresses with words instead of difficult-to-remember IP addresses. For instance, one could use the IP address 35.246.6.109 or simply use icecream.com.au
 
-As for this example, the DNS icecream.com.au can hold multiple IP records for the same domain name, allowing browsers to to try the multiple IP addresses one-by-one until it receives an appropriate response (3) DNS has thus enabled a single website address (icecream.com.au) to be accessed via mutliple IP addresses, which may be more closely routed in various countries of interest.
+As for this example, the DNS icecream.com.au can hold multiple IP records for the same domain name, allowing browsers to attempt connection with multiple IP addresses one-by-one until it receives an appropriate response (3). DNS has thus enabled a single website address (icecream.com.au) to be accessed via multiple IP addresses, which may be more closely routed in various countries of interest.
 
-To delve further into this, domains allow addresses to carry certain characteristics of identity, where fully qualified domain name comprises the hostname and all domain names; the latter of which related to a larger enclosing collection of machines that share the same group identity (2). For instance, using the DNS the educational institutions can belong to the same domain name .edu or .gov which allows ready identity and recognition to users or to groups that might allocate special priviledges to those institutions.
+To delve further into this, domains allow addresses to carry certain characteristics of identity, where fully qualified domain name comprises the hostname and all domain names; the latter of which related to a larger enclosing collection of machines that share the same group identity (2). For instance, using the DNS the educational institutions can belong to the same domain name .edu or .gov which allows ready identity and recognition to users or to groups that might allocate special privileges to those institutions.
 
 For interest purposes, in the 1970's and early 80's, the assignment of names to addresses was completed by one person! Her name was Elizabeth Feinler, who kept a master-list of every connected computer (1), until such time as it became too unwieldy!
 
@@ -149,28 +180,41 @@ For interest purposes, in the 1970's and early 80's, the assignment of names to 
 
 ### 1) TCP
 
-With multiple computer manufacturers and configuratations, a standard was required to allow this range of technology to communicate. This standard was TCP/IP (Transmission Control Protocol / Internet Protocol) (1) and remains one of the most frequently used protocols for end-to-end data transfers (2). More specifically, the TCP handles packet ordering and checks for errors in the transfer (3); that is, it maintains a connection with the sender to monitor the transfer of data packets, assembling the data on the receiver side, and requesting any missing pieces of data (3), until the transfer of that data is completed. In this way, it can ensure the integrity of data from source to destination (2) which is essential in the information sharing internet where reliable data transfer is required. It acknowledges the unpredictable nature of network behavious, where packets of data can be disorganised or lost, and TCP is thus able to reorder data or issue requests for re-delivery (4) to the receiver.
-While some alternative protocols exist, these may make sacrafices to certain TCP characteristics, such as the User Datagram Protocol (UDP). While UDP is a faster protocol, it lacks certain controls that the TCP handles, such as acknoweldgements and connection startups which, while slower, ensure more reliable data transmission (2). So alternative protocols such as UDP may be suited for transmisions such as video streaming, where speed is prioritized over accuracy.  
+With multiple computer manufacturers and configurations, a standard was required to allow this range of technology to communicate. This standard was TCP/IP (Transmission Control Protocol / Internet Protocol) (1) and remains one of the most frequently used protocols for end-to-end data transfers (2).
+
+More specifically, the TCP handles packet ordering and checks for errors in the transfer (3); that is, it maintains a connection with the sender to monitor the transfer of data packets, assembling the data on the receiver side, and requesting any missing pieces of data (3), until the transfer of that data is completed. In this way, it can ensure the integrity of data from source to destination (2) which is essential in the information sharing internet where reliable data transfer is required. It acknowledges the unpredictable nature of network behaviors, where packets of data can be disorganised or lost, and TCP is thus able to reorder data or issue requests for re-delivery (4) to the receiver.
+
+While some alternative protocols exist, these may make sacrafices to certain TCP characteristics, such as seen in the User Datagram Protocol (UDP). While UDP is a faster protocol, it lacks certain controls that the TCP handles, such as acknowledgements and connection startups which, while slower, ensure more reliable data transmission (2). So alternative protocols such as UDP may be suited for transmissions such as video streaming, where speed is prioritized over accuracy.  
 Conversely, high-level protocols prefer the reliability of TCP, such as :
 
-> File Transfer Protocol (FTP) (peer-to-peer file sharing)
-> Secure Shell (SSH) and
+> File Transfer Protocol (FTP) (peer-to-peer file sharing)  
+> Secure Shell (SSH) and  
 > Telnet
-> (2)
-> TCP is also used for email transfers through Intenet Message Access Protocol (IMAP) and for accessing the web via HTTP (2) demonstrating the importance in a variety of internet data transfers relying on TCP reliability characteristics.
+
+_Source (2)_
+
+TCP is also used for email transfers through Internet Message Access Protocol (IMAP) and for accessing the web via HTTP (2) demonstrating the importance in a variety of internet data transfers relying on TCP reliability characteristics.
 
 1. Sebesta, R. (2013) Programming the World Wide Web, 7th ed. Boston, Person Education, Inc, p3
 2. Fortinet, _What is TCP?_, viewed 17/09/2021, <https://www.fortinet.com/resources/cyberglossary/tcp-ip?>
 3. Cloudflare, _What are IP & TCP?_, viewed 17/09/2021 <https://www.cloudflare.com/en-au/learning/ddos/glossary/tcp-ip/>
 4. ExtraHop, _Transmission Control Protocol (TCP)_, viewed 17/09/2021, <https://www.extrahop.com/resources/protocols/tcp/>
 
+&nbsp;
+
 ### 2) HTTP and HTTPS
 
-Hypertext Transfer Protocol (HTTP) is a protocol that allows data to be communicated through the World Wide Web (1) by encoding and transporting data between a client and web server (2). Having been invented along with HTML to create the interactive web browser (1), HTTP thus belongs not only in the foundation of data exchanges on the web (3) but remains the primary protocol for data sharing over the internet (2). Users accessing the web will rely on HTTP or HTTPS (explained later) to access website data through their browsers, or send information to servers, as explained below.  
-Importantly, HTTP itself relies on an underlying protocol such as TCP (2) to form communication connections between clients and servers (1) by managing the reliable transfer of data packets. This allows HTTP to focus not on the transfer of data per se, but rather on how that data is read and processed (4).  
-The communication method that HTTP relies on is through requests and responses between clients and servers (5), with the requests being initiated through the client recipient, often being the web browser (3), and responses being sent by the server (3). Amongst a host of others, the two most common HTTP requests are "POST" and "GET" (4) with the first typically indicating that information is being submitted to the server, such as form information (6). The "GET" request seeks information to be returned from the server, such as the details of a website (6) through the HTML document, the scripts and the CSS file (3).  
+Hypertext Transfer Protocol (HTTP) is a protocol that allows data to be communicated through the World Wide Web (1) by encoding and transporting data between a client and web server (2). Having been invented along with HTML to create the interactive web browser (1), HTTP thus belongs not only in the foundation of data exchanges on the web (3) but remains the primary protocol for data sharing over the internet (2). Users accessing the web will rely on HTTP or HTTPS (explained later) to access website data through their browsers, or send information to servers, as explained below.
+
+Importantly, HTTP itself relies on an underlying protocol such as TCP (2) to form communication connections between clients and servers (1) by managing the reliable transfer of data packets. This allows HTTP to focus not on the transfer of data per se, but rather on how that data is read and processed (4).
+
+The communication method that HTTP relies on is through requests and responses between clients and servers (5), with the requests being initiated through the client recipient, often being the web browser (3), and responses being sent by the server (3). Amongst a host of others, the two most common HTTP requests are "POST" and "GET" (4) with the first typically indicating that information is being submitted to the server, such as form information (6). The "GET" request seeks information to be returned from the server, such as the details of a website (6) through the HTML document, the scripts and the CSS file (3).
+
 In further detail, the HTTP request is sent with a header section which contains core information such as as the method (eg "GET"), the browser being used and the type of data being requested (6). It also contains a body, which carries additional information, including any data being submitted (eg via the method "POST") (6). Responses are typically sent with an HTTP Status code (that indicates whether the HTTP request is successful or not through the use of three-digit codes) (6), their own Response Header and possibly a HTTP Response Body, particularly the case in a successful "GET" method request (6).
-It should be noted that HTTP does have security concerns, and can be exploited by malicious actors, who may utilise techniques such as cross-site scripting (XSS) or HTTP request smuggling (1). While not addressing all of the security vulnerabilities of HTTP (1), the use of HTTPS (Hypertext Transfer Protocol Secure) is encrypted to improve the protection of sensitive data being transferred (7) which can become particularly relevant when using the "POST" method to send information such as passwords or credit card information. This encryption security is know as Transport Layer Security (TLS) and was formally known as Secure Sockets Layer (SSL) (7)(a) and makes use of a private key (held by the server) and a public key (available to users) with the former used to decrypt the latter (7). HTTPS has a further advantage of preventing third parties from injecting unapproved content into their webpages, which can protect against not only malacious actors, but also agains Internet Service Providers from injecting their own advertisement content into pages (7)
+
+It should be noted that HTTP does have security concerns, and can be exploited by malicious actors, who may utilise techniques such as cross-site scripting (XSS) or HTTP request smuggling (1). While not addressing all of the security vulnerabilities of HTTP (1), the use of HTTPS (Hypertext Transfer Protocol Secure) is encrypted to improve the protection of sensitive data being transferred (7) which can become particularly relevant when using the "POST" method to send information such as passwords or credit card information. This encryption security is know as Transport Layer Security (TLS) and was formally known as Secure Sockets Layer (SSL) (7)(a) and makes use of a private key (held by the server) and a public key (available to users) with the former used to decrypt the latter (7).
+
+HTTPS has a further advantage of preventing third parties from injecting unapproved content into their webpages, which can protect against not only malicious actors, but also against Internet Service Providers from injecting their own advertisement content into pages (7)
 
 (a) TLS has been colloquially referred to as SSL, yet SSL is actually deprecated (or supposed to be) due to exploitable vulnerabilities (8)
 
@@ -184,39 +228,55 @@ It should be noted that HTTP does have security concerns, and can be exploited b
 7. Cloudfalre, #What is HTTPS?\*, viewed 17/09/2021, <https://www.cloudflare.com/en-gb/learning/ssl/what-is-https/>
 8. Olenski, J., 2020, GlobalSign _SSL vs TLS - What's the Difference?_, viewed 17/09/2021, <https://www.globalsign.com/en/blog/ssl-vs-tls-difference>
 
+&nbsp;
+
 ### 3) Web Browsers (Requests, Rendering & Developer Tools)
 
-This question specifically focuses on components of Web Browswers under specific categories, which can be addressed as follows:
+This question specifically focuses on components of Web Browsers under specific categories, which can be addressed as follows:
 
-1. Web Requests through browsers communicate messages to the server, perhaps with a "GET" or "POST" method, as explained in Q3.2. As the browswer is the user platform for experiencing the web, it is suitable that requests come directly from the browser, rather than the user having to utilise an additional resource to complete requests. The browser is also able to provide feedback in the format of errors, such as the HTTP 404 "Page Not Found" message (1).
-   While broadly covered in Q3.2 it is worth examining some of the other web requests that browsers can implement :
-   > GET and POST have been explained (Q3.2), where GET has a client expectation of a response from the webserver, while POST can send information from the client to the Web Server, such as form information.
-   > PUT allows the target URL to be replaced or overwritten with a new resource from the client (1)
-   > PATCH modifies a specific part of the resource, so is useful for updating or modifying the resource (1)
-   > DELETE is a request to delete a resource from the server (1)
-   > HEAD request seeks a resource without the body content (2)
-   > TRACE request is to display changes to a resource (2)
-   > OPTIONS request displays the HTTP methods available for a particular URL (2)
-   > CONNECT request converts the connection to a transparent TCP/IP tunnel (2). This is relevant when two-way communications are desired to access websites that use HTTPS (3)
-   > As before, the browser having the capacity to send these requests when required allows an ease-of-use for the typical web user.
+i)  
+Web Requests through browsers communicate messages to the server, perhaps with a "GET" or "POST" method, as explained in Q3.2. As the browser is the user platform for experiencing the web, it is suitable that requests come directly from the browser, rather than the user having to utilise an additional resource to complete requests. The browser is also able to provide feedback in the format of errors, such as the HTTP 404 "Page Not Found" message (1).
 
-ii) Web Browser rendering is the process where a browser is able to convert website code into interactive pages when a user visits a particular website (4). This relates to the previously discussed topics, where the browser requests the resource from the server and is able to display, in this case, in appropriate rendered format.
+While broadly covered in Q3.2 it is worth examining some of the other web requests that browsers can implement :
+
+> `GET` and `POST` have been explained (Q3.2), where GET has a client expectation of a response from the webserver, while POST can send information from the client to the Web Server, such as form information.  
+> `PUT` allows the target URL to be replaced or overwritten with a new resource from the client (1)  
+> `PATCH` modifies a specific part of the resource, so is useful for updating or modifying the resource (1)  
+> `DELETE` is a request to delete a resource from the server (1)  
+> `HEAD` request seeks a resource without the body content (2)  
+> `TRACE` request is to display changes to a resource (2)  
+> `OPTIONS` request displays the HTTP methods available for a particular URL (2)  
+> `CONNECT` request converts the connection to a transparent TCP/IP tunnel (2).
+
+This is relevant when two-way communications are desired to access websites that use HTTPS (3) As before, the browser having the capacity to send these requests when required allows an ease-of-use for the typical web user.
+
+&nbsp;  
+ii)  
+Web Browser rendering is the process where a browser is able to convert website code into interactive pages when a user visits a particular website (4). This relates to the previously discussed topics, where the browser requests the resource from the server and is able to display, in this case, in appropriate rendered format.  
+&nbsp;
 
 ![Website Code converted to Interactive Page / Document Object Model](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/full-process.png)
-Source (5)
+_Source (5)_
 
-The rendering occurs by capturing the HTML code and constructing a hierachial Document Object Model representation (DOM tree) by parsing through the HTML (6) and then representing it into a visual interpretation of the code, drawing in the CSS attributes to display the styling (6). This allows for the user to experience information in a structure way with visual impact, rather than simply lines of text.
+The rendering occurs by capturing the HTML code and constructing a hierarchical Document Object Model representation (a DOM tree if you like) by parsing through the HTML (6) and then representing it into a visual interpretation of the code, drawing in the CSS attributes to display the styling (6). This allows the user to experience information in a structured way with visual impact, rather than simply seeing lines of text.  
+&nbsp;
 
 ![HTML render and delivery process](https://www.amsivedigital.com/wp-content/uploads/2014/07/How-Web-Browswers-Work-3.png)
 
-For further interest, JavaScript is useful for creating an intuitive user experience, it can be difficult for many search engine bots to process the Javascript, and web crawlers may pass by websites with a heavy reliance on JavaScript for page rendering (4). A process called Dynamic Rendering helps avoid this issue by rending two types of pages; a static one for the search engine or web crawler, and a more intuitive one for human users (4) to interact with via their browswers.
+_Source (6)_
+&nbsp;
+
+For further interest, JavaScript is useful for creating an intuitive user experience, but it can be difficult for many search engine bots to process the Javascript, and web crawlers may pass by websites with a heavy reliance on JavaScript for page rendering (4). A process called Dynamic Rendering helps avoid this issue by rending two types of pages; a static one for the search engine or web crawler, and a more intuitive one for human users (4) to interact with via their browsers.
 
 It can be noted that points (i) and (ii) are stages that occur when a user requires access to a webpage through their browser's ability to request and render it.
 
 iii)  
-Modern web browsers have access to powerful developer tools, allowing access to a range of assessments, including inspecting HTML, CSS and JavaScript in currently-loaded webpages (7). These allow developers and other users with an interest to view the code and structure of webpages, and how they relate from code to display. It can also be a useful feature to assist with debugging (8) and check the responsiveness of websites to different device specs, such as smaller screen sizes.  
-There are additional features such as monitors for incoming and outgoing HTTP requests, as well as information about enabled AJAX (9) which is the Asynchronous JavaScript and XML, typically allowing asynchronous data transfers (such as XML or JSON text) behind the scenes (10).  
+Modern web browsers have access to powerful developer tools, allowing access to a range of assessments, including inspecting HTML, CSS and JavaScript in currently-loaded webpages (7). These allow developers and other users with an interest to view the code and structure of webpages, and how they relate from code to display. It can also be a useful feature to assist with debugging (8) and check the responsiveness of websites to different device specs, such as smaller screen sizes.
+
+There are additional features such as monitors for incoming and outgoing HTTP requests, as well as information about enabled AJAX (9) which is the Asynchronous JavaScript and XML, typically allowing asynchronous data transfers (such as XML or JSON text) behind the scenes (10).
+
 The Developer Tools also allow viewing of resource storing (such as the local storage and session storage) (9) and gives access to a console, which may work as a log or playground for code outputs (9).
+
 While the depth of features in the developer tools is much more extensive, the features already listed illustrate that the developer tools have a lot of scope, and can thus be a ready-made resource for examining code and making short term changes, such as in the process of debugging, or for locking in long-term modifications, such as utilising the developer tools as a Workspace (9).
 
 1. Source Defence, _Web Request_, viewed 17/09/2021, <https://sourcedefense.com/glossary/web-request/>
@@ -244,11 +304,13 @@ These collections of data can hold multiple types of data, such as strings, inte
 my_example_array = ["apple", "Ronald McDonald", 123, {key1: value1}, [7, 8, 9]]
 ```
 
-Some of the uses of arrays include the collection of data outputted from a loop, providing a base for increasingly advanced data structures (1), to be iterated or selected for application to a variety of other processes, algorithms or loops. As arrays are understood to be a set data structure, they follow certain rules, such as obedience to indexing, where the first element is at position 0, the second element is at position 1, etc. If a third item is added to the array, it defaults to the end of the array, and would then fall into element position 2. This somewhat demonstrates that arrays are ordered, and allows the programmer to base their code around this expectation, such as when the extraction or replacement of data is targeted at specific index positions.
+Some of the uses of arrays include the collection of data outputted from a loop, providing a base for increasingly advanced data structures (1), to be iterated or selected for application to a variety of other processes, algorithms or loops. As arrays are understood to be a set data structure, they follow certain rules, such as obedience to indexing, where the first element is at position 0, the second element is at position 1, etc. If a third item is added to the array, it defaults to the end of the array, and would then fall into element position 2.
+
+This somewhat demonstrates that arrays are ordered, and allows the programmer to base their code around this expectation, such as when the extraction or replacement of data is targeted at specific index positions.
 
 ### 2) Hash :
 
-Here, data is grouped in category pairs, namely a "key" that maps to a "value" (1). The syntax is enclosure with curly brackets, with different syntax options for the key/value pairs, although a typical application would be key:value pairs separated by a colon.
+Here, data is grouped into category pairs, namely a "key" that maps to a "value" (1). The syntax is enclosure with curly brackets, with different syntax options for the key/value pairs, although a typical application would be key:value pairs separated by a colon.
 
 ```Ruby
 my_example_hash1 = {key1: value1, key2: value2, key3: value3}
@@ -257,7 +319,7 @@ my_example_hash2 = {"key1"=>"string_value", "key2"=>"string_value"}
 
 In this way, hashes are indexed by the key, and thus every key/value pair must have a unique key, which could be a string, integer or, preferably, a symbol (1).
 
-The symbols are preferable as keys due to their memory advantage; as immutable objects that act as identifiers, symbols hold only one space in memory per symbol. So a thousand symbols of identity `:key1` hold only one place in memory (3). While hashes have only one unique key, there are instances where multiple different hashes have the same key, which is unique to the individaul hash, but multiplied through the collection of hashes.
+The symbols are preferable as keys due to their memory advantage. As immutable objects that act as identifiers, symbols hold only one space in memory per symbol. So a thousand symbols of identity `:key1` hold only one place in memory (3). While hashes have only one unique key, there are instances where multiple _different_ hashes will have the same key, which is thus only unique to the individual hash, but multiplied in frequency through the collection of hashes.
 
 For example:
 
@@ -271,7 +333,9 @@ So hashes are advantageous when it is useful for values to be mapped to an ident
 
 ### 3) Stack:
 
-The stack follows a linear structure which is Last In First Out (LIFO), also known as First In Last Out (FILO) (5). These data structures can be arranged like a Ruby array, being enclosed in square brackets `[1, 2, 3, 4, 5]` (2) but is utilised when order and constant time is important (6). Some memorable examples of where stacks can be used include the "undo" feature in word processeor (last change, first one undone) or the back button in browsers (last page visitied, first page returned to) (6). Stacks can be used to replace recursive methods with a standard loop, and as seen in the examples prior, maintain an order of items to complete, with the most recent on top (1).
+The stack follows a linear structure which is Last In First Out (LIFO), also known as First In Last Out (FILO) (5). These data structures can be arranged like a Ruby array, being enclosed in square brackets `[1, 2, 3, 4, 5]` (2) but is utilised when order and constant time is important (6).
+
+Some memorable examples of where stacks can be used include the "undo" feature in word processors (last change, first one undone) or the back button in browsers (last page visited is first one returned to) (6). Stacks can be used to replace recursive methods with a standard loop, and as seen in the examples prior, maintain an order of items to complete, with the most recent on top (1).
 
 ![Diagram of a Stack operations](https://cdn.programiz.com/sites/tutorial2program/files/stack.png)
 Source (7)
@@ -297,7 +361,8 @@ While both types of programs will complete the conversion, there are some fundam
 
 Interpreters will translate code "on-the-fly" which means that it translates code line-by-line as the program is running (3). While the interpreter takes very little time to analyze a single line-of-code each time, overall interpreted code runs slower than Compiled code (3). Errors are also revealed one-by-one per line, as this is the method that the Interpreter translates (3)
 
-Compiled code conversely convertss all the source code, including pre-compiled code and scripts, into machine code _before_ the program is run. While taking time to analyze the entire code beforehand, the compiled code runs faster than interpreted code (2). Compiles will display all errors when going through its process, as it has analyzed the entire program, and might not even complete compilation if the code has signficant enough mistakes (3)
+Compiled code conversely converts all the source code, including pre-compiled code and scripts, into machine code _before_ the program is run. While taking time to analyze the entire code beforehand, the compiled code runs faster than interpreted code (2). Compiles will display all errors when going through its process, as it has analyzed the entire program, and might not even complete compilation if the code has significant enough mistakes (3)  
+&nbsp;
 
 ![Example of compiler vs interpreter from source (2)](https://cdn.guru99.com/images/1/053018_0616_CompilervsI1.png)
 
@@ -322,21 +387,21 @@ While a little outside the scope of this discussion, it worth mentioning that Hy
 
 ## Q6 Describe two commonly used programming languages and explain the benefits and drawbacks of each
 
-Two commonly used languages are Python and JavaScript. They actually have a lot of in common, and so can be used for similar designs, however specific differences will create advantages for one over the other, which by default creates a possible drawback of sticking with the other. Where possible, flexibility in choosing a language to suit a task is a signficant advantage, even with languages sharing similarities.
+Two commonly used languages are Python and JavaScript. They actually have a lot of in common, and so can be used for similar designs, however specific differences will create advantages for one over the other, which by default creates a possible drawback of sticking with the other. Where possible, flexibility in choosing a language to suit a task is a significant advantage, even with programming languages sharing similarities.
 
-For instance, both languages are object oriented (1), and both can be used for scripting purposes (2), however JavaScript is considered the industry standard Scripting Language which allows automated website and app processes (2). Both languages are interpetive languages, although Python additionally offers hybrid capacity, where it can be compiled into a state close to machine code, but still retain cross-platform capabilities, before undergoing final compilation on user machines (3) (see, Q5).
+For instance, both Python and Javascript are object oriented (1), and both can be used for scripting purposes (2), however JavaScript is considered the industry standard Scripting Language which allows automated website and app processes (2). Both languages are interpretive languages, although Python additionally offers hybrid capacity, where it can be compiled into a state close to machine code, but still retain cross-platform capabilities, before undergoing final compilation on user machines (3) (see, Q5).
 
 Javascript is much better for mobile development than Python (4) and has significant implementation in over 80% of websites (5) where it provides dynamic functionality on browsers, and runs comfortably on servers (1). JavaScript has the ability to develop both back-end and front-end of applications (6), while Python is generally more geared towards server-side or backend programming (1). JavaScript is considered the better choice for most websites (7)
 
-The built-ins are different between the two languages, with Python having a significant standard library for data analytics, machine learning and scientific computing (1) wheareas JavaScript lacks these specific category of libary support (1) although the libraries and extensions can be expanded (4). Furthermore, Python has built dictionary capability, as opposed to JavaScript (1), hinting at the fact that Python is useful for large data structure interaction. It can also define data more broadly with mutable and immutable characteristics, and has integer recognition (1) which again hints at its design geared towards data.
+The built-ins are different between the two languages, with Python having a significant standard library for data analytics, machine learning and scientific computing (1) whereas JavaScript lacks these specific categories of default library support (1) although the libraries and extensions can be expanded (4). Furthermore, Python has built dictionary capability, as opposed to JavaScript (1), hinting at the fact that Python is useful for large data structure interaction. It can also define data more broadly with mutable and immutable characteristics, and has integer recognition (1) which again hints at its design geared towards data.
 
-Python is considered an earier-to-learn language due to its human-readable syntax, relying on indentation (1) to form blocks of code, and generally requiring fewer lines of code to achieve the same goal (5), adding to the attractiveness of the language. However, JavaScript is considered flexible and scalable enough to be utilised by beginners through to experienced developers (2) which is a feature of both languages.
+Python is considered an easier-to-learn language due to its human-readable syntax, relying on indentation (1) to form blocks of code, and generally requiring fewer lines of code to achieve the same goal (5), adding to the attractiveness of the language. However, JavaScript is considered flexible and scalable enough to be utilised by beginners through to experienced developers (2), so it beginner access is a feature of both languages.
 
 Further discussion on the object orientated nature is worth a mention here; where both languages possess this characteristic, and both possess the ability for procedure programming (9). However Python has several aspects for procedural programming (10) whereas JavaScript does not (4).
 
-In more general comparisons, Python is versatile, open source, has a large number of libaries and a supportive community, and can be a very productive code to work with (8). However, it is not native to a mobile environment, and requires more effort to implement, and it has a high memory consumption (8). When used as an interpretive language, it can be slower than some other languages when running (8). It is the principally preferred langauge for Machine Learning, and is able to deal with complex mathematics and large sets of data, and is unlikely to be superseded soon (10)
+In more general comparisons, Python is versatile, open source, has a large number of libraries and a supportive community, and can be a very productive code to work with (8). However, it is not native to a mobile environment, and requires more effort to implement it as such (8). It also has a high memory consumption (8) which may be unfavourable. When used as an interpretive language, it can be slower than some other languages when running (8). It is the principally preferred language for Machine Learning, and is able to deal with complex mathematics and large sets of data, and is unlikely to be superseded in the near future (10).
 
-Again, in general considerations, JavaScript is versatile and fast, as evidenced when run from the client-side, without needing to connect to the server (11). It can be embeded into webpages or inside the scripts of other languages, and allows client-side data validation for faster updates of the browser, given that only selected parts of the page need to be updated, thanks to JavaScript's positioning (11). JavaScript holds a host of advantages over other languages within the web environment (9) however some of the same advantages can be flipped to disadvantages, such as the ease of viewing and implementing code, which creates a mechanism for malicious attacks (11). Also, while browsers can be quite forgiving, JavaScript relies on their compatability (11) so the need for integration with browsers is another advantage potentially flipped for JavaScript.
+Again, in general considerations, JavaScript is versatile and fast, as evidenced when run from the client-side, without needing to connect to the server (11). It can be embedded into webpages or inside the scripts of other languages, and allows client-side data validation for faster updates of the browser, given that only selected parts of the page need to be updated, thanks to JavaScript's positioning (11). JavaScript holds a host of advantages over other languages within the web environment (9) however some of the same advantages can be flipped to disadvantages, such as the ease of viewing and implementing code, which creates a mechanism for malicious attacks (11). Also, while browsers can be quite forgiving, JavaScript still relies on their compatibility (11) so the need for integration with browsers is another advantage potentially flipped for JavaScript.
 
 1. Pedamkar, P., _Python vs JavScript_, viewed 17/09/2021, <https://www.educba.com/python-vs-javascript/>
 2. Morris, S., _Tech 101: Python Vs JavaScript-What's The Difference?_, viewed 17/09/2021, <https://skillcrush.com/blog/python-vs-javascript/>
@@ -350,28 +415,38 @@ Again, in general considerations, JavaScript is versatile and fast, as evidenced
 10. Wilfred, T., 2021, Codersera, _Python Vs Javascript: A Detailed Comparison_, viewed 17/09/2021, <https://codersera.com/blog/python-vs-javascript/>
 11. Data Flair, _Pros and Cons of JavaScript - Weigh them and Choose wisely!_, viewed 17/09/2021, <https://data-flair.training/blogs/advantages-disadvantages-javascript/>
 
+&nbsp;
+
 ## Q7 Describe two ethical issues (from the nominated areas) and discuss the extent to which an IT professional is ethically responsible.
 
-Ethical issues are interesting and important, and this question deserves and exploration of the issues it presents, and a conversational or exploratory response has been chosen to answer this question.
+Ethical issues are interesting and important, and this question deserves and exploration of the issues it presents, and a conversational or exploratory response has been chosen to answer this question. Throughout this discussion, it will be evidenced that when ethics are considered, the guidelines may prove to be incomplete, inconsistent, and thus of limited help to the IT Professional.
 
-i) Privacy laws are of paramount consideration in the tech industry currently, particulary in today's world, where there are competing rights to privacy versus health, crime and profit motivations. Some of the difficulties may exist when an IT professional believes that ethics do not align with the current laws, or where they are compelled to act against the interests of what they consider to be ethically acceptable products, such as encrypted products.
+i) Privacy laws are of paramount consideration in the tech industry currently, particularly in today's world, where there are competing rights to privacy versus health, crime, ease-of-access, and profit motivations. This conversation will focus on the crime potential versus right of privacy, and examine some of the difficulties that may exist when an IT professional believes that ethics do not align with the current laws, or where they are compelled to act against the interests of what they consider to be ethically acceptable products, such as encrypted products.
 
-It is worth delving into this further, utilising the example of The Assistance and Access Act 2018. Here, it is alleged that over 95% of ASIO's (the Australian Security Intelligence Organisation) targeted terrorist individuals use encrypted communications, and 90% of priority cases (1). As such, the Australian Government issued broader powers to the law enforcement and intelligence agencies under this Telecommunications and Other Legislation Amendment (Assistance and Access) Act 2018, towards being able to gain access to encrypted communications (2).
+To delve into this further, the example of The Assistance and Access Act 2018 can be examined. Here, it is alleged that over 95% of ASIO's (the Australian Security Intelligence Organisation) targeted terrorist individuals use encrypted communications, and 90% of priority cases use encryption technology (1). As such, the Australian Government issued broader powers to the law enforcement and intelligence agencies under this Telecommunications and Other Legislation Amendment (Assistance and Access) Act 2018, with the endevour to being able to compel access to encrypted communications (2).
 
 The difficulties with these implementations is multifold, including the communication of such laws.
 
-Firstly, Home Affairs writes that nothing in the laws can required the industry to break encryption (1) and the Government cannot build a decryption, interception or data retention capability, or implement backdoors, or make less secure an innocent person's communication (1). Firstly, set aside that this last statement may in fact contradict the presumption of innocence, when these laws are implemented in an investigation prior any potential conviction. Secondly, further contradictions arise when more closely examined, wherupon the Act is amended to provide a "framework for voluntary and mandatory industry assistance" (2), which entail;
-i) Technical Assistance Requests, which are voluntary, requiring the use of decruption or other data access capacity (2)
+Firstly, Home Affairs writes that nothing in the laws can require the industry to break encryption (1) and the Government cannot build a decryption, interception or data retention capability, or implement backdoors, or make less secure an innocent person's communication (1). Firstly, set aside that this last statement may in fact contradict the presumption of innocence, when these laws are implemented in an investigation prior any potential conviction.
+
+Secondly, further contradictions arise when more closely examined, whereupon the Act is amended to provide a "framework for voluntary and mandatory industry assistance" (2), which entail;
+i) Technical Assistance Requests, which are voluntary, requiring the use of decryption or other data access capacity (2)
 ii) Technical Capability Notices, which are compulsory, and compel access to data that is currently accessible (2)
 iii) Technical Capability Notices, which are compulsory, and compel the provider to build new capabilities for access (2)
 
-So, immediately, confusion may be created as to what these laws actually can compel, and puts at risk a lack of compliance by individuals and companies, particularly when these requests or notices can be directed to anyone who "develops, supplies or updates softwared used" (2). Furthermore, representatives of the Five Eyes alliance (a security alliance between seven countries including Australia) rleased a statement in October 2020 advising that while they "support strong encryption" (3) that tech companies are asked to build backdoors to access content (4) which either shows a misunderstanding of the encryption system, or is a misrepresentation of their stance. As former chief security officer Alex Stamos puts it, backdoors into encryption is like "drilling a hole in the windshield" and compromising the entire structure, or compromising the whole encryption integrity (4). There is no "golden key" concept, allowing access into that company's software, that doesn't also carry the potential to be used by malicious actors (5), and the situation is such that recommendations on the ethical steps asks that other ethical considerations are neglected.
+So, immediately, confusion may be created as to what these laws can actually compel the IT Professional, and puts at risk a lack of compliance by individuals and companies, particularly when these requests or notices can be directed to anyone who "develops, supplies or updates softwared used" (2).
 
-So the Australian laws and surrounding guidance may be considered unhelpful in assisting the developer to act in an ethical way, and indeed, may even be unhelpful in directing the developer to act in a lawful way, when seemingly contradictory statements are given. It is this author's opinion that such laws thus require the assistance of experienced legal professionals to offer guidance, rather than relying on the broad and potentially contradictory definitions provided by Government, or attempting the difficult interpretation of Act Ammendments oneself.
+Furthermore, representatives of the Five Eyes alliance (a security alliance between seven countries including Australia) released a statement in October 2020 advising that while they "support strong encryption" (3) that tech companies are asked to build backdoors to access content (4) which either shows a misunderstanding of the encryption system, or is a misrepresentation of their stance. As former chief security officer Alex Stamos puts it, backdoors into encryption is like "drilling a hole in the windshield" and compromising the entire structure, or compromising the whole encryption integrity (4).
 
-Attention can now be directed towards the ethical balance, where a developer may ethically believe in the presumption of innocence, and thus decline to decrease the encryption security, if able to, of a person under investigation, but not yet convicted of a crime. This law has the potential to challenge that ethic, rather than offering guidance for that developer to act in an ethical way. Indeed, in the USA, the EARN IT Act created a "best practices" checklist for companies to follow to best avoid criminal and civil liabilites, and yet could be determined to include weakened encryption as a requirement (5), indicating a guideline that drifts away from the ethic of privacy that the developer, or his/her company may have.
+It is noted that there is no "golden key" concept, allowing access into that company's software, that doesn't also carry the potential to be used by malicious actors (5), and the situation is such that recommendations on the ethical steps asks that other ethical considerations are set aside or neglected.
 
-It may also be the desire of the developer to provide a product to their customers that guarantee's the safety and privacy of their data, perhaps in the use of zero-knowledge technology, which is where service providers do not know anything about the data that is stored on their servers (6). The ethics of this service relate to a foundational belief in the security and privacy of that service, for that particular user. Thus, a conflict of interest and ethics is created if or when a Government compels access to that information. While appearing less sinsiter when being compelled by the Australian Govenment (with a perceived corruption score of 77/100, with 0 being highly corrupt, and 100 being very clean) (7) versus a Government in Somalia (perceived corruption score of 12/100) (7) it nonetheless should be objectively considered, "Is it ethically ok to guarantee privacy to a person, and then abandon that guarantee, at the behest of any Government?"
+So the Australian laws and surrounding guidance may be considered unhelpful in assisting the developer to act in an ethical way, and indeed, may even be unhelpful in directing the developer to act in a lawful way, when seemingly contradictory statements are given. It is this author's opinion that such laws thus require the assistance of experienced legal professionals to offer guidance, rather than relying on the broad and potentially contradictory definitions provided by Government, or attempting the difficult interpretation of Act Amendments oneself.
+
+The best an IT Professional can do is to work within the legal framework to best act ethically, while considering the balance of other ethical duties that they are committed to. And so attention can now be directed towards the ethical balance, where a developer may ethically believe in the presumption of innocence, and thus decline to decrease the encryption security, if able to, of a person under investigation, but not yet convicted of a crime. This law has the potential to challenge that ethic, rather than offering guidance for that developer to act in an ethical way. Indeed, in the USA, the EARN IT Act created a "best practices" checklist for companies to follow to best avoid criminal and civil liability, and yet could be determined to include weakened encryption as a requirement (5), indicating a guideline that drifts away from the ethic of maintaining privacy that the developer, or his/her company may have.
+
+It may also be the desire of the developer to provide a product to their customers that guarantee's the safety and privacy of their data, perhaps in the use of zero-knowledge technology, which is where service providers do not know anything about the data that is stored on their servers (6). The ethics of this service relate to a foundational belief in the security and privacy of that service, for that particular user. Thus, a conflict of interest and ethics is created if or when a Government compels access to that information.
+
+Now, while appearing less sinister when being compelled by the Australian Government (with a perceived corruption score of 77/100, with 0 being highly corrupt, and 100 being very clean) (7) versus a Government in Somalia (perceived corruption score of 12/100) (7) it nonetheless should be objectively considered, "Is it ethically ok to guarantee privacy to any person, and then abandon that guarantee, at the behest of any Government?"
 
 1. 2019, Department of Home Affairs, _The Assistance and Access Act 2018_, viewed 18/09/2021, <https://www.homeaffairs.gov.au/about-us/our-portfolios/national-security/lawful-access-telecommunications/data-encryption>
 2. Stilgherrian, 2021, Carnegi Endowment for International Peace, _The Encryption Debate in Australia: 2021 Update_, viewed 18/09/2021, <https://carnegieendowment.org/2021/03/31/encryption-debate-in-australia-2021-update-pub-84237>
@@ -381,7 +456,7 @@ It may also be the desire of the developer to provide a product to their custome
 6. Lam, I, 2016, Tresorit, _What is Zero-Knowledge Encryption?_, viewed 18/09/2021, <https://tresorit.com/blog/zero-knowledge-encryption/>
 7. Transparency International, _Corruption Perceptions Index_, viewed 18/09/2021, <https://www.transparency.org/en/cpi/2020/index/nzl>
 
-ii) Another difficult area of ethics and appropriate guidance is freedom of thought, conscience, speech and the media, where this discussion will focus on freedom of speech. Importantly, there is no express Contitutional protection of freedom of speech in federal legislation (1) compared with the United States, which hold a First Ammendment right guaranteeing the freedom of speech (2). This may be relevant given the size of the United States technology industry, the access to Australian citizen developers, and the current discussion of social media's selective platforming (3). It may also be worth some discussion from an American position, given the size of their technology industry, and the headquartering of the largest Social Media platforms in the USA (4)
+ii) Another difficult area of ethics and appropriate guidance is freedom of thought, conscience, speech and the media, where this discussion will focus on freedom of speech. Importantly, there is no express Contitutional protection of freedom of speech in federal legislation in Australia (1) compared with the United States, which hold a First Ammendment right guaranteeing that freedom of speech (2). This may be relevant given the size of the influences of the United States technology industry, the access of that industry to Australian citizen developers, and the current discussion of social media's selective platforming (3). It may also be worth some discussion from an American position, given the sheer size of their industry, and the headquartering of the largest Social Media platforms in the USA (4).
 
 So this question can be approached in a few ways, with consideration towards the ethical rights that a developer has to their own expression, and the responsibilities towards upholding other persons freedom of speech. The first is largely the same as persons of any occupation, so the focus will be directed to the latter.
 
@@ -389,23 +464,31 @@ Assume that a developer created a platform for discussion, where users could sig
 
 These questions, and many more, fall to the IT professional who is either moderating the platform, or working for a company whose policies make that direction. While Australia does not have a Consitutionally endorsed right to freedom of speech (1) it does have some laws that give guidance to whether certain speech is legally appropriate or not.
 
-For instance, Section 18C of the Racial Discrimination Act applies to speech on ethnic origin, race and skin colour, where it is unlawful to "offend, insult, humiliate or intimidate" a person on the basis of their race (5). This was brought under the spotlight in 2011 when articles written by Andrew Bolt were published and found to contravene Section 18C in the Eatock v. Bolt (2011) (6) which demonstrated that even seasoned writers could be held accountable. While the notions of "offend" and "insult" may vary widely in the nature of subjective interpretation, courts have found that conduct must cause "profound and serious" consequences, and not "mere slights" (7), which, while still subjective, give some balance back to the freedom of speech. Section 18D provides an exemption to Section 18C where it is an "expression of genuine belief held by the person making the comment" or "done reasonably and in good faith" (6).
+For instance, Section 18C of the Racial Discrimination Act applies to speech on ethnic origin, race and skin colour, where it is unlawful to "offend, insult, humiliate or intimidate" a person on the basis of their race (5). This was brought under the spotlight in 2011 when articles written by Andrew Bolt were published and found to contravene Section 18C in the Eatock v. Bolt (2011) case (6) which demonstrated that even seasoned writers could be held accountable. While the notions of "offend" and "insult" may vary widely in the nature of subjective interpretation, courts have found that conduct must cause "profound and serious" consequences, and not "mere slights" (7), which, while still subjective, give some balance back to the freedom of speech. Section 18D further provides an exemption to Section 18C where it is an "expression of genuine belief held by the person making the comment" or "done reasonably and in good faith" (6).
 
 On this basis, it would be ethically acceptable to allow comments on race that are done in good faith, held by genuine belief, even if they could cause insult. If the exemptions do not apply, and it is extremely difficult to know in many cases if they would, then speech falling under Section 18C is not only unethical, but also unlawful.
 
-Another principle of law relates to defamatory speech, where such publications are made on Social Media, and are legally liable for civil defamation claims. For instance, in 2013 the payment of over $100,000 was ordered for damages against a music teacher, by another party who posted defamatory tweets and Facebook posts (8). Australian Law allows for claims of defamation without first establishing any minimum level of harm, and a default presumption of reputation damage is supported (8). As such, the IT Professional can understand that certain defamatory posts made on their platform, are not only unethical, but may be the catalyst to a civil suit.
+Another principle of law relates to defamatory speech, where such publications are made on Social Media, and are legally liable for civil defamation claims. For instance, in 2013 the payment of over $100,000 was ordered for damages against a music teacher, by another party who posted defamatory tweets and Facebook posts (8). Australian Law allows for claims of defamation without first establishing any minimum level of harm, and a default presumption of reputation damage is supported (8).
 
-So, ethically it must be considered whether the IT professional is responsible for the comments made by someone else, even if commented on the platform under the purview of the IT professional. A recent decision by the High Court in Australia would suggest so (9) where it ruled that comments or posts from the general public are the legal liability of media companies if those comments are made on the company's Facebook page (9). It is thus considered the ethical responsibility of these companies, or the IT Professionals that work for them, to remove comments that could be liable for defamation.
+As such, the IT Professional can understand that certain defamatory posts made on their platform, are not only unethical, but may be the catalyst to a civil suit.
 
-This may have broader implications for other companies, not just media organisations. Brett Walker, an expert in communications law, described how businesses, sporting clubs and community groups could fall under the same liability (9), giving strong indications on the ethical responsibility of IT Professionals to remove such liable comments. It even suggests that IT Professionals should consider advising companies of this potential liability before establishing comment pages that are linked to the company. That way, the company only gives informed consent to the IT Professional, being fully aware of the risks that this High Court decision reveals. In March 2021, Facebook made an announcement that comments could now be controlled by the user for their page, and Twitter enabled greater control over who could reply to tweets on a user's account (10) perhaps in relation to the original decisions of the NSW Supreme Court in 2019 (10). Indeed, some companies, such as the independent SE Voice newspaper, will err on the side of heavy moderating, limiting the scope of freedom of speech, but protecting their potential liability more cautiously (9)
+So, ethically it now must be considered whether the IT professional is responsible for the comments made by someone else, particularly when commented on the platform under the purview of the IT professional. A recent decision by the High Court in Australia would suggest so (9) where it ruled that comments or posts from the general public are the legal liability of media companies if those comments are made on the company's Facebook page (9). It is thus considered the ethical responsibility of these companies, or the IT Professionals that work for them, to remove comments that could be liable for defamation.
 
-This Australian case draws some parallels to an argument in the United States, where social media companies are protected under Section 230 of the Communications Decency Act (11). This is because they are considered as platforms that are largely considered not responsible for the content that the general public post (11) similar to the way that a Telecommunications company is not held liable for the content of a phone conversation that their users have. In contrast, editorial publishers exhibit active moderating, and decide on the content being published, and so can be held responsible for slanderous or defamatory articles (11).
+This may have broader implications for other companies, not just media organisations. Brett Walker, an expert in communications law, described how businesses, sporting clubs and community groups could fall under the same liability (9), giving strong indications on the ethical responsibility of IT Professionals to remove such liable comments.
 
-The conflict in this definition arises when it is noted that social media sites such as Facebook and Twitter do censor content, and remove user access, they are exhibiting editorial power (12), and not merely acting as an open platform. For instance, in the lead up to the United States presidential elections, Twitter and Facebook both took steps to limit access to a New York Post story that was disparaging towards the son of a presidential candidate (13), which exhibited a tilt towards the domain of a publisher.
+It is even suggestive that IT Professionals should be ethically compelled to advise companies of this potential liability before establishing comment pages that are linked to that company. That way, the company only gives informed consent to the IT Professional, now being fully aware of the risks that this High Court decision reveals.
 
-So the ethics do change, as do the ethical responsibilites of the IT Professional. If the social media company is a publisher, then the IT Professional remains ethically responsible to protect against litigation by not publishing liable content. They also remain ethically responsible to ensure that content aligns with their company ethos, unless within a capacity reserved for open discussion. If they are a platform, then the ethical responsibility lies in promoting open discussion at all times, even if comments are oppositional to their own viewpoint, or the viewpoint of their company. Just like the telephone company should keep the lines open, even if they theoretically might disagree with the content of the conversations. In this latter case, the IT Professional is only ethically motivated to censor on the basis of speech that falls outside of the first ammendment.
+In March 2021, Facebook made an announcement that comments could now be controlled by the user for their page, and Twitter enabled greater control over who could reply to tweets on a user's account (10) perhaps in relation to the original decisions of the NSW Supreme Court in 2019 (10). Indeed, some companies, such as the independent SE Voice newspaper, will choose to err on the side of heavy moderating, limiting the scope of freedom of speech, but protecting their potential liability more cautiously (9).
 
-As Australia's technology sector grows, it will important to understand that the guidance given to IT professionals to act ethically will need to be weighed up against a range of other measures, including potentially contradictory ethical alignments, such as freedoms to privacy and speech. The ethical responsibilites will also be better clarified if the structures of the companies the IT Professionals are working in are more clearly defined, so that the roles are equally well understood, and their associated ethical bearings.
+This Australian case draws some parallels to an argument in the United States, where social media companies are protected under Section 230 of the Communications Decency Act (11). This is because they are considered as platforms that are largely considered not responsible for the content that the general public post (11) similar to the way that a Telecommunications company is not held liable for the content of a phone conversation that their users have. In contrast, editorial publishers exhibit active moderating, and thus decide on the content being published, and so can be held responsible for slanderous or defamatory articles (11).
+
+The conflict in this definition arises when it is noted that when social media sites such as Facebook and Twitter do censor content, and remove user access, they are exhibiting editorial power (12), and not merely acting as an open platform. For instance, in the lead up to the United States presidential elections, Twitter and Facebook both took steps to limit access to a New York Post story that was disparaging towards the son of a presidential candidate (13). Rightly or wrongly, this exhibited a tilt towards the domain of a publisher.
+
+So the ethics do change, as do the ethical responsibilites of the IT Professional, in relationship to the role they hold.
+
+If the social media company is a publisher, then the IT Professional remains ethically responsible to protect against litigation by not publishing liable content. They also remain ethically responsible to ensure that content aligns with their company ethos, unless within a capacity reserved for open discussion. If they are a platform, then the ethical responsibility lies in promoting open discussion at all times, even if comments are oppositional to their own viewpoint, or the viewpoint of their company. Just like the telephone company should keep the lines open, even if they theoretically might disagree with the content of the conversations. In this latter case, the IT Professional is only ethically motivated to censor on the basis of speech that falls outside of the First Ammendment, or outside of Australian laws, such as Section 18C/18D of the Racial Discrimination Act or falls into the parameters of defamation.
+
+As Australia's technology sector grows, it will important to understand that the guidance given to IT professionals to act ethically will need to be weighed up against a range of other measures, including potentially contradictory ethical alignments, such as freedoms to privacy and speech. The ethical responsibilites will also be better clarified if the structures of the companies the IT Professionals are working in are more clearly defined, so that the roles are equally well understood, and their associated ethical bearings revealed.
 
 1. Australian Human Rights Commission, _Freedom of expression and the Internet_, viewed 18/09/2021, <https://humanrights.gov.au/our-work/3-freedom-expression-and-internet#fn19>
 2. Corenell Law School, _First Amendment_, viewed 18/09/2021, <https://www.law.cornell.edu/constitution/first_amendment#:~:text=The%20First%20Amendment%20guarantees%20freedoms,and%20the%20right%20to%20petition.&text=It%20guarantees%20freedom%20of%20expression,of%20individuals%20to%20speak%20freely.>
@@ -440,7 +523,7 @@ In this case, the statments are executed line by line.
 The result of variable x (7) + y (not defined) is requested.
 This returns an error ("undefined local variable or method...")
 
-A human may be able to glance ahead, and understand that y should represent 4, and establish that x + y is thus equal to 11. However, the computer obeys control flow guidance, and will not "glance" ahead (at least, not without specific instructions to do so, which is the critical point).
+A human may be able to glance ahead, and understand that y should represent 4, and establish that x + y is thus equal to 11. However, the computer obeys control flow guidance, and will not "glance" ahead (at least, not without specific instructions to do so, which is the critical point here).
 
 ```Ruby
 x = 7
@@ -552,9 +635,7 @@ The scenario advises that all staff have quit. This could then be assumed to be 
 
 Classes allow the blueprints of the models With this in mind, classes that could help to built the application might include:
 
-class Customer
-
----
+## class Customer
 
 with class attributes including @@number of customers
 instance attributes including
@@ -572,6 +653,8 @@ This could be utilised for ongoing customers, where the details could be pre-fil
 ```
 
 _Without knowing the precise mechanisms, it would also be worth exploring whether a separate payment object is beneficial, rather than storing as a single attribute in the class Customer_
+
+Classes allow the blueprints of the models With this in mind, classes that could help to built the application might include:
 
 ## class Payment
 
@@ -621,7 +704,7 @@ instance attributes could include
 @perhaps_draw in a resource to establish the distance travelled for data use
 ```
 
-_This allows for application to provide live updates, and feedback for the company_
+_This allows for application to provide live updates, and feedback for the company, which may assist targeting customers in certain areas_
 
 ## class Feedback
 
@@ -703,13 +786,15 @@ will inherit the attributes of its parent class Consumables
 
 These consumables burrow down to the objects that are constructed by the user, and are the product of the company, rather than the business model components. As such, there is some additional customisation, with separate attributes to identify not only indredient types, but also amounts used.
 
+This set of classes can be quite expandable, and would be useful in the context of a business plan, where the ins-ano-outs of the business model are intimately known. Even with initial considerations, it can be seen that the list of main classes being considered is filling out considerably. It must also be designed in such a way that additional modifications can be made, and so classes should be designed in such a way as to allow for changed circumstances, such as decreasing or increasing menu items, or updated financials.
+
 &nbsp;
 
 ## Q12 Identify and Explain the Error in the Code (below) that is preventing correct execution of the program
 
 &nbsp;
 
-![Workbook Q12 Code](./q12_image.png)
+![Workbook Q12 Code](https://raw.githubusercontent.com/tfxl/shared_files/main/image_collection/q12_image.png)
 
 The issue is related to an understanding of types
 
@@ -755,7 +840,7 @@ puts "The result is: #{fahrenheit}."
 
 &nbsp;
 
-![Workbook Q13 Code](./q13_image.png)
+![Workbook Q13 Code](https://raw.githubusercontent.com/tfxl/shared_files/main/image_collection/q13_image.png)
 
 This question is requesting that only the first two elements that are out of order are to be swapped, which leaves the assumption that the remaining elements, even if out of order, do not need to be re-arranged.
 
@@ -803,7 +888,7 @@ While helpul for debugging, the "puts" statement can be removed if not desired.
 &nbsp;  
 Firstly, a general outline of planning will assist prior creation of our pseudocode and flowchart. Please be aware that this first image is not the standardised flowchart, but rather an additional outline of initial steps in our consideration of the problem.
 
-![Planning Outline Prime Numbers](planning_outline_image.png)
+![Planning Outline Prime Numbers](https://raw.githubusercontent.com/tfxl/shared_files/main/image_collection/planning_outline_image.png)
 
 &nbsp;
 
@@ -815,7 +900,7 @@ Nishadha, 2021, Creately - Flowcharting Basics: How to Create a Simple Flowchart
 
 &nbsp;
 
-![Flowchart Prime Numbers](prime_numbers_flowchart_image.png)
+![Flowchart Prime Numbers](https://raw.githubusercontent.com/tfxl/shared_files/main/image_collection/prime_numbers_flowchart_image.png)
 
 &nbsp;
 
@@ -830,7 +915,7 @@ Nishadha, 2021, Creately - Flowcharting Basics: How to Create a Simple Flowchart
 
 4. It is a special case of prime number. All other even numbers are not prime numbers.
 
-5. A collection of prime numbers can be kept.
+5. A collection of prime numbers will need to be kept.
 
 6. The first prime number “2” can begin this collection.
 
@@ -936,8 +1021,11 @@ while adequate_answer == false
 
   input_temperature = gets.chomp
   input_temperature_dance = input_temperature.to_i.to_s
+
   # this sets up variables to compare with each other to see if they are numbers or not
+
   # gets brings in a string, .to_i method convers to integer, but also converts words to 0.0
+
   # which will be recognised as an integer. "Word" => 0.0 => "0.0"   BUT   "15" => 15 => "15"
 
   if !(input_temperature == input_temperature_dance)
@@ -965,15 +1053,19 @@ end
 puts "\nThank you for using this weather program"
 ```
 
-T
+&nbsp;
 
 ## Q16 ACME Corporation are hiring a new junior developer, as part of their hiring criteria they've created a "coding skill score"
+
+&nbsp;
 
 Here, there are scores attributed to various language competencies. The question outline requests user input, to nominate their various skillset, and provides them with an overall score, as well as indicating the skills they did not select, how much each skill is valued, and how much they would improve their score.
 
 The following code creates some additional interaction, as well as catering for incorrect input selections.
 
 ```Ruby
+#initial template of languages and scores
+
 score_template = [
   { name: 'Python', score: 1, selected: '[ ]' },
   { name: 'Ruby', score: 2, selected: '[ ]' },
@@ -984,6 +1076,8 @@ score_template = [
   { name: 'CSS', score: 64, selected: '[ ]' },
   { name: 'JavaScript', score: 128, selected: '[ ]' }
 ]
+
+# calculation methods and display methods, held in separate functions to increase encapsulation
 
 def display_score_template(score_template)
   puts "\n"
@@ -1000,7 +1094,7 @@ def calc_existing_skill_score(existing_skillset)
   existing_skill_score
 end
 
-def nope_msg
+def nope_msg # this is just a bit of fun :)
   system("clear") || system("cls")
 
   puts "\n"
@@ -1018,6 +1112,8 @@ def calc_upskill_scores(available_upskills)
   available_skill_points
 end
 
+# this summary method allows for other calculations to be drawn in, and then the dispaly is formatted for easy user readability
+
 def upskill_points_assessment(available_upskills)
   puts "If you wanted to upskill, you could consider studying these languages :\n\n"
   puts '=== LANGUAGES'.ljust(23) + 'SKILL SCORE POINTS', '-' * 42
@@ -1032,7 +1128,7 @@ def upskill_points_assessment(available_upskills)
   puts "\n\n"
 end
 
-############################# CODE CODE CODE ############################
+################## CODE CODE CODE ###################
 
 existing_skillset = []
 options_chosen = []
@@ -1061,12 +1157,17 @@ while !adequate_answer
 
       if input.downcase == 'x'
         all_done = true
+
         # iterate through existing skills. If part of the available upskill list, remove these items (as already has them)
+
         existing_skillset.each do |iteration|
           available_upskills.delete(iteration) if available_upskills.include?(iteration)
         end
 
-      elsif (input.to_i < 1) || (input.to_i > score_template.length) # chose this option rather than "8" in case of future adjustment
+      elsif (input.to_i < 1) || (input.to_i > score_template.length)
+
+      # chose this option rather than "8" in case of future adjustment with additional number of languages
+
         system("clear") || system("cls")
         puts "\n\n*** Please only choose a number between 1 and #{score_template.length} ***\n\n"
 
@@ -1093,9 +1194,15 @@ while !adequate_answer
   end
 end
 
+#as the two directions (zero skills or 1 || or skills) will end in the same position, with the finalising of loops and scores being displayed, the singe finish works well at the end of our code, and draws in our final methods to complete.
+
 system("clear") || system("cls")
 puts "\nThank you for your input. Under ACME Corporation guidelines your languages skill score is #{calc_existing_skill_score(existing_skillset)}"
 upskill_points_assessment(available_upskills)
 ```
 
-_While this code format suits the purpose of the assignment question, and fulfils the requirements, if there were additional needs to scale, or save the results per entry, then the use of a class structure could be implemented, with each instance saved to file. This would take advantage of the Object Oriented Programming nature of Ruby._
+_While this code format suits the purpose of the assignment question, and fulfils the requirements, if there were additional needs to scale, or save the results per entry, then the use of a class structure could be implemented, with each instance saved to file. This would further take advantage of the Object Oriented Programming nature of Ruby._
+
+&nbsp;
+
+### Thank you for reading. T
