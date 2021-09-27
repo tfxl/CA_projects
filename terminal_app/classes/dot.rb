@@ -24,7 +24,9 @@ class Dot
         # @progress_string = "#{puts @progress} #{@length.progress * 10}% completed"
         @percentage = 0
 
-        @presentation = "o"
+        @presentation = "o" # this should be an iteration of the map sections. So... design the map and areas first,
+        # then allocate the relevant string (1 or 2 or 3 lines) to the cause. Then, if ranbow applied, it will not appear
+        # like the whole section is being picked, just the cause area. 
         
 
         # @presentation = [Rainbow("o").red, Rainbow("o").orange, Rainbow("o").green]   # options for new images ?
