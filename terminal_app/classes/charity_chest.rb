@@ -7,7 +7,7 @@ class CharityChest
     end
 
     def increase_coins(amount)
-        @coins = @coints + amount
+        @coins = @coins + amount
     end
 
     def decrease_coins(amount)

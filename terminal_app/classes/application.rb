@@ -42,6 +42,7 @@ class Application
 
         @main_menu = "placeholder"
         @menu_selection = "placeholder"
+        @direct_debits = 0
 
        
 
@@ -75,15 +76,38 @@ class Application
         if menu_selection == @main_menu.menu_options[0]
             puts "You chose the first option"
 
+            # now is the set of functions for map printing and selection
+
+
+
+
+
+
         elsif menu_selection == @main_menu.menu_options[1]
-            puts "You chose the second option"
+            puts "How much would you like to spend ?" #
+
+            @direct_debits += 1
+            if @direct_debits > 3 #maybe change this to an actual value, with question? and then increase from there
+                puts "unfortunately you have no remaining balance on card"
+            else
+                puts "You just spent $10 and gained another 100 Charity Coins"
+                # @user_charity_chest_APP.increase_coins(100)
+                @user_charity_chest_APP.increase_coins(100)
+                @user_charity_chest_APP.display_chest
+            end
+            
+
 
         elsif menu_selection == @main_menu.menu_options[2]
-            puts "You chose the third option"
+            puts "Sorry, no groups available at this time... Perhaps complete some causes, and a groupe will be available later"
+
+            # add a conditional argument to check total causes that have been comleted, and allow to continue from there.
+
+
         else 
             puts "What happened ?"
             sleep (3)
-            # run menu again ??
+            # run menu again ?? 
         end
 
 
