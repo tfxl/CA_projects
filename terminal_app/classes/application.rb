@@ -6,9 +6,9 @@ require 'tty-prompt'
 
 class Application
 
-    # firstly has to create a charity_chest
+    # firstly has to create a charity_chest, unless this is made elsewhere ?
 
-    @user_charity_chest = CharityChest.new
+    @user_charity_chest_APP = CharityChest.new
 
     # then has to load up all the causes which will carry the map info with them
     # in due course, these will need to be created and kept in appropriate lists
@@ -22,13 +22,24 @@ class Application
     
     # then runs the title (shortly followed by introduction)
 
-    bob = Title.new
-    bob.display_title()
+    title = Title.new
+    title.display_title()
+    title.request_details()
 
     # then runs the introduction
 
     introduction = TTY::Markdown.parse_file('../introduction.md')
     puts introduction
+
+    # then offer the first menu, which is probably going to be an object ? First menu will have display of chest and then
+    # perhaps a view map and select a cause.
+
+
+    main_menu = MainMenu.new(@user_charity_chest_APP)
+    main_menu.
+
+
+
 
 
 

@@ -18,10 +18,13 @@ class CharityChest
     def display_chest
         # ascii art
 
-        puts "     ^^^^^^^^"
-        puts "   /__________\\"
-        puts "   |   #{@coins}   | "
-        puts "   |___COINS__|"
+        spacing = " "*32 #can use formatting in due course
+        
+
+        puts "#{spacing}  ^^^^^^^^"
+        puts "#{spacing}/__________\\"
+        puts "#{spacing}|   #{@coins}   | "
+        puts "#{spacing}|___COINS__|"
 
     end
 
