@@ -26,8 +26,8 @@ end
 
 
 
-bob = Introduction.new
-bob.display_intro
+# bob = Introduction.new
+# bob.display_intro
 
 
 

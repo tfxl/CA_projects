@@ -3,10 +3,14 @@ require './charity_chest'
 
 class MainMenu
 
+    attr_reader :menu_options
+
     def initialize(charity_chest)
 
         @user_name = self.request_details
         @user_charity_chest_MENU = charity_chest
+
+        @menu_options = ["1. View All Causes", "2. Add Some Coins to Your Charity Chest", "3. Join A Group"]
 
     end
 
@@ -41,16 +45,16 @@ class MainMenu
         ENJOY THIS PLACEHOLDER LABEL FOR SOMETHING ELSE IN DUE COURSE. UNSURE WHAT :)
         "
 
-        choices = ["1. View All Causes", "2. Add Coins to Your Charity Chest", "3. Join A Group"]
+        # choices = ["1. View All Causes", "2. Add Coins to Your Charity Chest", "3. Join A Group"]
 
         prompt = TTY::Prompt.new
-        user_choice = prompt.select('Please select one of the options', choices)
+        user_choice = prompt.select('Please select one of the options', @menu_options)
 
     end
 
 end
 
-moneys = CharityChest.new
+# moneys = CharityChest.new
 
-bob = MainMenu.new(moneys)
-bob.display_menu
+# bob = MainMenu.new(moneys)
+# bob.display_menu
