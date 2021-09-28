@@ -19,3 +19,6 @@ Need Rainbow and TTY Prompt - DONE
 Will need to use bundler, or create a GEM etc. 
 
 **** CONSIDER NEED FOR ANY INVISIBLE UNICODE CHARACTERS ?? ****
+
+
+

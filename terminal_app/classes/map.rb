@@ -1,4 +1,7 @@
 require 'rainbow'
+require 'tty'
+cursor = TTY::Cursor
+
 # https://dorkbyte.wordpress.com/2012/08/05/trick-out-your-terminal-with-ascii-art/
 # think about lolize and gradient coloring
 
@@ -109,3 +112,4 @@ end
 bob = Map.new
 x = bob.create_map()
 bob.draw_map(x)
+
