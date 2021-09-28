@@ -72,6 +72,9 @@ class Dot
     end
 
 
+    
+
+
     def selected
         if self.completed true
             puts "This village had DESCRIPTION"

@@ -9,7 +9,7 @@ edpr = Rainbow(edp).red
 edpo = Rainbow(edp).orange
 edpg = Rainbow(edp).green
 
-puts edpr, edpo, edpg
+# puts edpr, edpo, edpg
 
 prompt = TTY::Prompt.new
 
@@ -25,13 +25,27 @@ my_dot3 = Dot.new('West', 'Uganda', 'Cause', 'Buy a kangaroo', 400, '    ▒▒�
 dot_array = [my_dot, my_dot2, my_dot3]
 dot_array_presentations = [my_dot.presentation, my_dot2.presentation, my_dot3.presentation]
 
-choices = dot_array_presentations
 
-user_choice = prompt.select('Choose the place', choices)
+def find_my_object(dot_array, dot_array_presentations)
 
-dot_array.each_with_index do |value, index|
-   
-    if value.presentation == user_choice
-        puts value.description
-    end
+    prompt = TTY::Prompt.new
+    choices = dot_array_presentations
+    user_choice = prompt.select('Choose the place', choices)
+
+    # choices = dot_array_presentations
+    # user_choice = prompt.select('Choose the place', choices)
+
+    dot_array.each do |dot_object|
+            if dot_object.presentation == user_choice
+                return dot_object
+            end
+        end
 end
+
+x = find_my_object(dot_array, dot_array_presentations)
+
+puts x
+puts x.description
+
+
+# now that we're locked onto the object it makes sense to
