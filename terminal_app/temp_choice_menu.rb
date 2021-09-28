@@ -17,7 +17,7 @@ my_dot = Dot.new('West', 'Uganda', 'Cause', 'Buy a sheep', 400, "A")
 my_dot2 = Dot.new('West', 'Uganda', 'Cause', 'Buy a goat', 400, "B")
 my_dot3 = Dot.new('West', 'Uganda', 'Cause', 'Buy a sheep', 400, "C")
 
-my_dot = Dot.new('West', 'Uganda', 'Cause', 'Buy a sheep', 400, "    #{Rainbow('▓▓▒▒▒▒▒').gray}▒▒▒▓▓░░▒▒▒▒▒▒░░▒▒░░▒▒▒#{edpg}▒#{Rainbow('▒▒▒▒▒▒░░▒▒░░░░▒▒░░▒▒░░▒▒▒▒░░  ░░▒▒░░').gray}")
+my_dot = Dot.new('West', 'Uganda', 'Cause', 'Buy a sheep', 400, "    ▓▓▒▒▒▒▒▒▒▒▓▓░░▒▒▒▒▒▒░░▒▒░░▒▒▒#{edpg}▒▒▒▒▒▒▒░░▒▒░░░░▒▒░░▒▒░░▒▒▒▒░░  ░░▒▒░░")
 my_dot2 = Dot.new('West', 'Uganda', 'Cause', 'Buy a goat', 200, '    ░░▒▒░░▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░▒▒░░▓▓▓▓▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒')
 my_dot3 = Dot.new('West', 'Uganda', 'Cause', 'Buy a kangaroo', 100, '    ▒▒░░░░▒▒░░▒▒▒▒▒▒▓▓▒▒▒▒▒▒░░▒▒▒▒░░░░▒▒▒▒░░░░▒▒  ░░▒▒▓▓▒▒░░▒▒░░▒▒▒▒░░  ▒▒▓▓')
 

@@ -16,19 +16,23 @@ class Application
 
 
         # a Charity Chest can be created now, and will be referenced by other functions throughout program
-        @user_charity_chest_APP = CharityChest.new
+        @user_charity_chest_APP = CharityChest.new(1000, 300) # starting and budget parameters 
+        # This may get loaded too though!
 
-        @edpg = "placeholder"
+        rede = Rainbow("\u2b24").red
+
+        @edpg = rede
 
         # then has to load up all the causes which will carry the map info with them
         # in due course, these will need to be created and kept in appropriate lists
 
-        @my_dot = Dot.new('West', 'Uganda', 'farming', 'buy a sheep', 800, "    #{Rainbow('▓▓▒▒▒▒▒').gray}▒▒▒▓▓░░▒▒▒▒▒▒░░▒▒░░▒▒▒#{@edpg}▒#{Rainbow('▒▒▒▒▒▒░░▒▒░░░░▒▒░░▒▒░░▒▒▒▒░░  ░░▒▒░░').gray}")
-        @my_dot2 = Dot.new('West', 'South Africa', 'feeding a family', 'buy a goat', 200, '    ░░▒▒░░▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░▒▒░░▓▓▓▓▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒')
-        @my_dot3 = Dot.new('West', 'Somalia', 'exploration', 'buy a kangaroo', 100, '    ▒▒░░░░▒▒░░▒▒▒▒▒▒▓▓▒▒▒▒▒▒░░▒▒▒▒░░░░▒▒▒▒░░░░▒▒  ░░▒▒▓▓▒▒░░▒▒░░▒▒▒▒░░  ▒▒▓▓')
+        # @my_dot = Dot.new('West', 'Uganda', 'farming', 'buy a sheep', 800, "    ▓▓▒▒▒▒▒▒▒▒▓▓░░▒▒▒▒▒▒░░▒▒░░▒▒▒#{@edpg}▒▒▒▒▒▒▒░░▒▒░░░░▒▒░░▒▒░░▒▒▒▒░░  ░░▒▒░░")
+        # @my_dot2 = Dot.new('West', 'South Africa', 'feeding a family', 'buy a goat', 200, "    ░░▒▒░░▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒\n▒▒▒▒░░░░░░░░░░▒▒░░▓▓▓▓▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒")
+        # @my_dot3 = Dot.new('West', 'Somalia', 'exploration', 'buy a kangaroo', 100, "    ▒▒░░░░▒▒░░▒▒▒▒▒▒▓▓▒▒▒▒▒▒░░▒▒▒▒░░░░
+        #     ▒▒▒▒░░░░▒▒  ░░▒▒▓▓▒▒░░▒▒░░▒▒▒▒░░  ▒▒▓▓")
         
-        @dot_array = [@my_dot, @my_dot2, @my_dot3] # this could be from the ACTUAL CLASS Dot @@array_all
-        @dot_array_presentations = [@my_dot.presentation, @my_dot2.presentation, @my_dot3.presentation] # ACTUAL CLASS Dot @@array_pres
+        # @dot_array = [@my_dot, @my_dot2, @my_dot3] # this could be from the ACTUAL CLASS Dot @@array_all
+        # @dot_array_presentations = [@my_dot.presentation, @my_dot2.presentation, @my_dot3.presentation] # ACTUAL CLASS Dot @@array_pres
         
         
         #create a new title and introduction
@@ -42,11 +46,19 @@ class Application
         # @menu_selection = "placeholder"
 
         #This could be put into the Charity Chest perhaps ? It will limit the top-ups
-        @direct_debits = 0
+
 
        
 
     end
+
+    def form_causes
+
+
+
+    end
+
+
 
     def run_setup_to_main_menu
 
@@ -81,13 +93,12 @@ class Application
 
         if menu_selection == @main_menu.menu_options[0]
             
-
             # now is the set of functions for map printing and selection
 
             selected_cause = find_my_object()
 
             puts "You have chosen an area in #{selected_cause.country}, #{selected_cause.area} Africa.
-            This cause supports #{selected_cause.cause_name} and you can #{selected_cause.description} for #{selected_cause.cost} Charity Coins\n\n"
+            This cause supports #{selected_cause.category} and you can #{selected_cause.description} for #{selected_cause.cost} Charity Coins\n\n"
 
             sleep 1
 
@@ -102,7 +113,7 @@ class Application
             if user_choice == choices[0]
                 if selected_cause.cost <= @user_charity_chest_APP.coins
 
-                    puts "Thank you for your support. You have just supported #{selected_cause.cause_name} in #{selected_cause.country}"
+                    puts "Thank you for your support. You have just supported #{selected_cause.category} in #{selected_cause.country}"
                     @user_charity_chest_APP.decrease_coins(selected_cause.cost)
                     puts "Your Charity Chest now contains:"
                     @user_charity_chest_APP.display_chest

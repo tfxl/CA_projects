@@ -6,13 +6,13 @@ class CharityChest
 
     attr_accessor :coins, :budget
 
-    def initialize()
-        @budget = 300
-        @coins = 1000
+    def initialize(starting, budget)
+        @budget = budget
+        @coins = starting
         @ascii_art = AsciiArt.new
         @prompt = TTY::Prompt.new
     end
-    
+
 
     def increase_coins(amount)
         @coins = @coins + amount
@@ -38,6 +38,16 @@ class CharityChest
         print @ascii_art.charity_coins_title
         print @ascii_art.charity_chest_art 
     end
+
+
+    def return_coins_count 
+        return @charity_coins
+    end
+
+    def return_budget_remaining
+        return @budget
+    end
+
 
 
 end

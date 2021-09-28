@@ -14,16 +14,32 @@ class Dot
 
     # SO, ALL VALUES ARE PREDEFINED ANYWAYS !!!! So import them as a list, with default data, and then update accordingly.
 
-    def initialize(area, country, cause_name, description, cost, presentation)   #, use imported data values
+    def initialize(id, area, country, category, description, charity_name, cost, completed, presentation)   #, use imported data values
 
         @area = area
         @country = country
-        @cause_name = cause_name
+        @category = category
         @cost = cost
         @description = description
-        @id = @@id
+
+        @id = id
         @@id += 1
-        @completed = false
+        
+
+        @red_colour = Rainbow("\u2b24").firebrick
+        @orange_colour = Rainbow("\u2b24").orange
+        @green_colour = Rainbow("\u2b24").green
+
+        @current_dot = @red_colour
+
+        # ▓▒▒▒▒▒▒▒▒▓▓░░▒▒▒▒▒▒░░▒▒░░▒▒▒#{@current_dot}▒▒▒▒▒▒▒░░▒▒░░░░▒▒░░▒▒░░▒▒▒▒░░  ░░▒▒░
+
+
+
+
+        @completed = completed
+
+
 
         # if @@id = 0
         # if line does not contain a dot, add until find one that does, THEN
@@ -51,6 +67,9 @@ class Dot
     end
 
 
+
+
+
     def progress_bar()
         @progress.each do |i|
             puts "____________________"
@@ -73,8 +92,6 @@ class Dot
 
 
     
-
-
     def selected
         if self.completed true
             puts "This village had DESCRIPTION"
