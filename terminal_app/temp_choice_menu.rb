@@ -18,12 +18,14 @@ my_dot2 = Dot.new('West', 'Uganda', 'Cause', 'Buy a goat', 400, "B")
 my_dot3 = Dot.new('West', 'Uganda', 'Cause', 'Buy a sheep', 400, "C")
 
 my_dot = Dot.new('West', 'Uganda', 'Cause', 'Buy a sheep', 400, "    #{Rainbow('▓▓▒▒▒▒▒').gray}▒▒▒▓▓░░▒▒▒▒▒▒░░▒▒░░▒▒▒#{edpg}▒#{Rainbow('▒▒▒▒▒▒░░▒▒░░░░▒▒░░▒▒░░▒▒▒▒░░  ░░▒▒░░').gray}")
-my_dot2 = Dot.new('West', 'Uganda', 'Cause', 'Buy a goat', 400, '    ░░▒▒░░▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░▒▒░░▓▓▓▓▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒')
-my_dot3 = Dot.new('West', 'Uganda', 'Cause', 'Buy a kangaroo', 400, '    ▒▒░░░░▒▒░░▒▒▒▒▒▒▓▓▒▒▒▒▒▒░░▒▒▒▒░░░░▒▒▒▒░░░░▒▒  ░░▒▒▓▓▒▒░░▒▒░░▒▒▒▒░░  ▒▒▓▓')
+my_dot2 = Dot.new('West', 'Uganda', 'Cause', 'Buy a goat', 200, '    ░░▒▒░░▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░▒▒░░▓▓▓▓▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒')
+my_dot3 = Dot.new('West', 'Uganda', 'Cause', 'Buy a kangaroo', 100, '    ▒▒░░░░▒▒░░▒▒▒▒▒▒▓▓▒▒▒▒▒▒░░▒▒▒▒░░░░▒▒▒▒░░░░▒▒  ░░▒▒▓▓▒▒░░▒▒░░▒▒▒▒░░  ▒▒▓▓')
 
 
 dot_array = [my_dot, my_dot2, my_dot3]
 dot_array_presentations = [my_dot.presentation, my_dot2.presentation, my_dot3.presentation]
+
+
 
 
 def find_my_object(dot_array, dot_array_presentations)
@@ -31,9 +33,6 @@ def find_my_object(dot_array, dot_array_presentations)
     prompt = TTY::Prompt.new
     choices = dot_array_presentations
     user_choice = prompt.select('Choose the place', choices)
-
-    # choices = dot_array_presentations
-    # user_choice = prompt.select('Choose the place', choices)
 
     dot_array.each do |dot_object|
             if dot_object.presentation == user_choice

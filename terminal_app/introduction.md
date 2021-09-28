@@ -1,13 +1,13 @@
 Welcome to African Charity Challenge
 
-Here is some information
+This is a challenge to complete all causes listed in the African
+continent, supported by charities, and using Charity coins. 
 
-Here is some more info
+The charity coins can be replenished by purchasing more. Also
+groups can be formed in order to utilise more Charity Coins and 
+complete the challenge over time. 
 
+Suggested monthly debits of _____ (consider time clock to simulate ?)
 
-And this happens when that happens
-
-And so does this
-
-And how about that
+Please press the ENTER (**implement this**) to move to next layer
 
