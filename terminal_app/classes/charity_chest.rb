@@ -1,9 +1,13 @@
+require './ascii_art'
+
+
 class CharityChest
 
     attr_accessor :coins
 
     def initialize()
         @coins = 1000
+        @ascii_art = AsciiArt.new
     end
 
     def increase_coins(amount)
@@ -18,14 +22,11 @@ class CharityChest
     def display_chest
         # ascii art
 
-        spacing = " "*32 #can use formatting in due course
-        
 
-        puts "#{spacing}  ^^^^^^^^"
-        puts "#{spacing}/__________\\"
-        puts "#{spacing}|   #{@coins}   | "
-        puts "#{spacing}|___COINS__|"
+        print @ascii_art.charity_coins_title
+        print @ascii_art.charity_chest_art
 
+     
     end
 
 

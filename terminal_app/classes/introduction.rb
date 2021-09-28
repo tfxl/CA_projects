@@ -16,7 +16,9 @@ class Introduction
     def display_intro()
 
         puts @introduction
-        sleep 5 # use a keypress to exit this instead
+
+        prompt = TTY::Prompt.new
+        prompt.keypress("Press space or enter to continue", keys: [:space, :return])
 
     end
 
