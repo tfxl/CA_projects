@@ -14,23 +14,23 @@ class MainMenu
 
         @menu_selection = "placeholder for initiation only"
 
+        @prompt = TTY::Prompt.new
     end
 
    
     def request_details()
 
-        name_prompt = TTY::Prompt.new
-
+        name_prompt = TTY::Prompt.new # this needed to be created again, as .ask method did not work off attribute @prompt
         puts "
         Welcome to AFRICAN CHARITY CALLENGE
         "
      
         name_prompt.ask("What is your name?") do |q|
             q.required(true, 'Please provide a name')
+            q.validate(/[a-zA-Z_]/, "Please only use letters for your name. Underscores are ok")
             # q.validate(/\A[^.]+\.[^.]+\Z/, "Please only enter letter characters")
-            # q.validate(/[\d.]+/, 'Invalid entry')  # using a REGEX to check for character entry ?? *CHANGE REGEX expression as needed
-        end
-            
+
+        end            
     end
 
 
@@ -38,38 +38,22 @@ class MainMenu
         
         spacing = " "*24 #use formatting in due course
 
-        puts "
-        #{spacing}Name : #{@user_name}
-        "
+        puts Rainbow("
+        #{spacing}Name : #{@user_name}  | |  AFRICAN CHARITY CHALLENGE  | |  Thank you for supporting
+        ").orange
 
         @user_charity_chest_MENU.display_chest
-
-        puts "
-        ENJOY THIS PLACEHOLDER LABEL FOR SOMETHING ELSE IN DUE COURSE. UNSURE WHAT :)
+        puts "\n#{"*"*45}
         "
 
-        # choices = ["1. View All Causes", "2. Add Coins to Your Charity Chest", "3. Join A Group"]
-
-        prompt = TTY::Prompt.new
-        user_choice = prompt.select('Please select one of the options', @menu_options)
-
+        user_choice = @prompt.select('Please select one of the options', @menu_options)
         @menu_selection = user_choice
-        puts "Here is the class menu selection #{@menu_selection}"
-
     end
 
 
     def return_to_main()
-
-        prompt = TTY::Prompt.new
-        prompt.keypress("Press space or enter to continue", keys: [:space, :return])
+        @prompt.keypress("#{Rainbow("Please press space or enter to continue").orange}", keys: [:space, :return])
         self.display_menu
-
     end
 
 end
-
-# moneys = CharityChest.new
-
-# bob = MainMenu.new(moneys)
-# bob.display_menu

@@ -124,28 +124,22 @@ class Application
 
             elsif user_choice == choices[2]
                 exit
-
             end
 
 
         elsif menu_selection == @main_menu.menu_options[1]
-            puts "How much would you like to spend ?" #
-            puts @direct_debits
 
-            @direct_debits += 1
+            if @user_charity_chest_APP.budget > 0
+                @user_charity_chest_APP.buy_charity_coins()
+                @main_menu.return_to_main
 
-            if @direct_debits > 3 #maybe change this to an actual value, with question? and then increase from there
-                puts "unfortunately you have no remaining balance on card"
-                # @main_menu.display_menu 
+
+            else @user_charity_chest_APP.budget == 0 #maybe change this to an actual value, with question? and then increase from there
+                puts "Unfortunately you have no remaining budget for this month. #{Rainbow("Thank you for your previous generosity").red}"
                 @main_menu.return_to_main
-            else
-                puts "You just spent $10 and gained another 100 Charity Coins"
-                # @user_charity_chest_APP.increase_coins(100)
-                @user_charity_chest_APP.increase_coins(100)
-                @user_charity_chest_APP.display_chest
-                # @main_menu.display_menu 
-                @main_menu.return_to_main
+
             end
+          
             
 
         elsif menu_selection == @main_menu.menu_options[2]
@@ -167,8 +161,6 @@ class Application
 
 
     end
-
-
 
 
     def form_map()
