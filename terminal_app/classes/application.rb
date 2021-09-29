@@ -6,24 +6,30 @@ require './introduction'
 require './main_menu'
 require './dot'
 require './file_monster'
+require './map'
 
 
 
 class Application
 
-    attr_accessor :menu_selection
+    attr_reader :file
+
+    attr_accessor :menu_selection, :good_causes_array
 
     def initialize
 
         @file = FileMonster.new
+        
+        @application_map = Map.new
 
-        @file.load_file()
+        # @file.load_file()
 
         @array_display = []
 
+        # :charity_coins_from_file, :budget_from_file
 
         # a Charity Chest can be created now, and will be referenced by other functions throughout program
-        @user_charity_chest_APP = CharityChest.new(1000, 300) # starting and budget parameters 
+        @user_charity_chest_APP = CharityChest.new(@file.charity_coins_from_file, @file.budget_from_file) # starting and budget parameters 
         # This may get loaded too though!
 
         rede = Rainbow("\u2b24").red
@@ -41,14 +47,22 @@ class Application
 
         #This could be put into the Charity Chest perhaps ? It will limit the top-ups
 
+        @updated_good_causes = []
+
 
        
 
     end
 
-    def form_causes
+    def initial_update_map_components
 
-        # done in the class Map at the moment
+        @updated_good_causes = @application_map.update_map_for_objects(@file.good_causes_array)
+
+    end
+
+    def subsequent_update_map_components 
+
+        @updated_good_causes = @application_map.update_map_for_objects(@updated_good_causes)
 
     end
 
@@ -66,20 +80,21 @@ class Application
 
     def find_my_object() # (dot_array, dot_array_presentations)
 
+        puts "Here we are"
+
         prompt = TTY::Prompt.new
 
 
         @array_display = [] # needs to be reset otherwise will accumulate the displays
-        @file.good_causes_array.each do |i|  # this will extract just the visual display from the causes
-            @array_display << i.presentation
+        @updated_good_causes.each do |object|  # this will extract just the visual presentations of each cause
+            @array_display << object.presentation # and then put them into an array for prompt.select to work
         end
-
 
         user_choice = prompt.select('Choose the place', @array_display)
     
-        @file.good_causes_array.each do |object_display| #the area represented  the map
-                if object_display.presentation == user_choice
-                    return object_display
+        @updated_good_causes.each do |object| #iterate through objects, and see if their presentation matches the picked one
+                if object.presentation == user_choice
+                    return object # and if it does match, then return the object for further use
                 end
             end
     end
@@ -113,8 +128,16 @@ class Application
             if user_choice == choices[0]
                 if selected_cause.cost <= @user_charity_chest_APP.coins
 
-                    puts "Thank you for your support. You have just supported #{selected_cause.category} in #{selected_cause.country}"
                     @user_charity_chest_APP.decrease_coins(selected_cause.cost)
+                    selected_cause.completed = true
+
+                    puts selected_cause.completed
+
+                    subsequent_update_map_components()
+
+
+                    puts "Thank you for your support. You have just supported #{selected_cause.category} in #{selected_cause.country}"
+                    
                     puts "Your Charity Chest now contains:"
                     @user_charity_chest_APP.display_chest
                     puts "\n"
@@ -174,45 +197,28 @@ class Application
     end
 
 
-    def form_map()
-
-        # so will this require co-ordinates ? or just set the spacing 
-
-
-    end
-
+ 
 
     def view_map()  #view menu ?
 
     end
 
 
-   # classes instantiated in the application as all maps will have all dots and one charity chest
-
-
-
-
-
-
 
 
 end
 
+
+
+
 my_application = Application.new
-my_application.menu_selection = my_application.run_setup_to_main_menu
+my_application.initial_update_map_components()
+
+
+    my_application.run_setup_to_main_menu()
 
 while true
     my_application.menu_selection
-    my_application.run_menu_selections
+    my_application.run_menu_selections()
 end
 
-# puts my_application.menu_selection
-
-
-# # puts my_application.menu_selection
-
-# # at this point, we now have our menu displayed, and choices are available.
-
-# x = my_application.run_menu_selections
-
-# puts x

@@ -1,6 +1,6 @@
 require 'rainbow'
 require 'tty-prompt'
-require './file_monster'
+# require './file_monster'
 
 # https://dorkbyte.wordpress.com/2012/08/05/trick-out-your-terminal-with-ascii-art/
 # think about lolize and gradient coloring
@@ -16,7 +16,7 @@ class Map
 
     attr_reader :map_array
 
-    attr_accessor :insert, :file
+    attr_accessor :insert#, :file
 
 
     def initialize # replace space with underscores and interpolate the rest ?
@@ -25,7 +25,7 @@ class Map
         
         #could always iterate through the array, making a varied entry
 
-        @file = FileMonster.new
+        # @file = FileMonster.new
 
         # @good_causes_array2 = @file.good_causes_array
 
@@ -135,22 +135,10 @@ class Map
 
 
 
-    def map_creator(good_causes_array)
+    def update_map_for_objects(good_causes_array)
 
-        every_new_object_count = 0
-        position = 0
+        position = 0 #this is the starting position in the map array, and it will increment as each object is allocated a portion
         good_causes_array.each do |i|  # this will be for 3 elements at this stage
-
-            every_new_object_count += 1
-
-            # case @reset
-            # when true 
-            #     i[:completed] = false
-            # end
-
-            #function this code:
-            #map.map_array => [ {k, string}    {k, string}  ]
-
 
             found = false
             temp_string = nil
@@ -160,7 +148,7 @@ class Map
                 @map_array[position..].each_with_index do |map_hash, index| #now will only iterate from last postion
 
 
-                    map_hash.each do |key,value|  # have a look at the string in each line (value)
+                    map_hash.each do |key, value|  # have a look at the string in each line (value)
 
                         if value.include?(@insert) && found == false # if it has the placeholder (but no previous find)
                             
@@ -187,7 +175,10 @@ class Map
                             found = true  # first one is found, so look at the next line of the map
 
 
-                        elsif value.include?(@insert) && found == true #finds the next placeholder, so save position and exit loop
+
+
+    # Else if the value includes the insert BUT is the NEXT one in the list, then break and set new position in the map array to add next
+                        elsif value.include?(@insert) && found == true 
 
                             found = false  # reset false for the next search
                             position = position + index # set the new range postion
@@ -207,19 +198,20 @@ class Map
 
             end # end while loop
         end
+        return good_causes_array
     end
 end
 
 
-bob = Map.new
-# # x = bob.create_map()
-# # bob.draw_map(x)
+# bob = Map.new
+# # # x = bob.create_map()
+# # # bob.draw_map(x)
 
-bob.map_creator(bob.file.good_causes_array)
+# bob.update_map_for_objects(bob.file.good_causes_array)
 
-bob.file.good_causes_array.each do |i|
-    puts i
-    puts "space"
-    puts i.presentation
-    puts i.completed
-end
+# bob.file.good_causes_array.each do |i|
+#     puts i
+#     puts "space"
+#     puts i.presentation
+#     puts i.completed
+# end

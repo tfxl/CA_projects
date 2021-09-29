@@ -37,6 +37,7 @@ class CharityChest
     def display_chest
         print @ascii_art.charity_coins_title
         print @ascii_art.charity_chest_art 
+        puts "Here's the financials => Budget #{@budget} and Charity Coins #{@coins}"
     end
 
 
