@@ -5,7 +5,7 @@ class Title
     def display_title() #https://fsymbols.com/generators/carty/
 
         # delay = 0.15
-        delay = 0.15
+        delay = 0
 
         print "
         #{Rainbow("░█████╗░███████╗██████╗░██╗░█████╗░░█████╗░███╗░░██╗").darkorange}"

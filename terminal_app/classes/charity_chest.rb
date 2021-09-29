@@ -11,11 +11,18 @@ class CharityChest
         @coins = starting
         @ascii_art = AsciiArt.new
         @prompt = TTY::Prompt.new
+        @coin_display = nil # does not want to hold a hash
     end
 
 
     def increase_coins(amount)
-        @coins = @coins + amount
+        if @coins + amount >= 10000
+            puts "$9,995 is the current maximum that fits into the chest!!"
+            @coins = 9995
+
+        else
+            @coins = @coins + amount
+        end
     end
 
 
@@ -34,10 +41,66 @@ class CharityChest
     end
 
 
+
+
     def display_chest
+
+
+        ref_array_1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        ref_array_2 = [
+            @ascii_art.zero,
+            @ascii_art.one,
+            @ascii_art.two,
+            @ascii_art.three,
+            @ascii_art.four,
+            @ascii_art.five,
+            @ascii_art.six,
+            @ascii_art.seven,
+            @ascii_art.eight,
+            @ascii_art.nine
+        ]
+
+        temp_array = @coins.to_s.chars.map(&:to_i) # eg [8, 7, 6, 4] in temp array
+
+        temp_array.each_with_index do |element, index|
+            reference_index = ref_array_1.index(element)
+            case index
+                when 0
+                    @ascii_art.y1 = ref_array_2[reference_index]
+                when 1
+                    @ascii_art.y2 = ref_array_2[reference_index]
+                when 2
+                    @ascii_art.y3 =  ref_array_2[reference_index]
+                when 3
+                    @ascii_art.y4 = ref_array_2[reference_index]
+            end
+        end
+
+        length = temp_array.length()
+
+        @ascii_art.multiplier = (length - 1)
+
+        case length
+            when 1
+                @ascii_art.y2 = @ascii_art.nada
+                @ascii_art.y3 = @ascii_art.nada
+                @ascii_art.y4 = @ascii_art.nada
+            when 2
+                @ascii_art.y3 = @ascii_art.nada
+                @ascii_art.y4 = @ascii_art.nada
+            when 3
+                @ascii_art.y4 = @ascii_art.nada
+        end
+
         print @ascii_art.charity_coins_title
-        print @ascii_art.charity_chest_art 
+
+        @ascii_art.draw_charity_chest()
+
+        # print @ascii_art.charity_chest_art
         puts "Here's the financials => Budget #{@budget} and Charity Coins #{@coins}"
+
+
+
     end
 
 

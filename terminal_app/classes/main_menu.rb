@@ -1,4 +1,5 @@
 require 'tty-prompt'
+require 'rainbow'
 require './charity_chest'
 
 class MainMenu
@@ -10,7 +11,7 @@ class MainMenu
         @user_name = self.request_details
         @user_charity_chest_MENU = charity_chest
 
-        @menu_options = ["1. View All Causes", "2. Add Some Coins to Your Charity Chest", "3. Join A Group", "4. Exit"]
+        @menu_options = ["1. #{Rainbow("View All Charity Causes").yellow}", "2. Add Coins to Charity Chest", "3. See the Charity Causes You have Supported", "4. Save Progress", "5. Exit"]
 
         @menu_selection = "placeholder for initiation only"
 
@@ -29,6 +30,16 @@ class MainMenu
             q.required(true, 'Please provide a name')
             q.validate(/[a-zA-Z_]/, "Please only use letters for your name. Underscores are ok")
             # q.validate(/\A[^.]+\.[^.]+\Z/, "Please only enter letter characters")
+
+            # puts "Welcome #{user_name}"
+
+            # spacing = " "*24 #use formatting in due course
+
+            # puts Rainbow("
+            # #{spacing}Name : #{@user_name}  | |  AFRICAN CHARITY CHALLENGE  | |  Thank you for supporting
+            # ").orange
+
+            # prompt.keypress("Press space or enter to continue", keys: [:space, :return])
 
         end            
     end
