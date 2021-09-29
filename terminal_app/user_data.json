@@ -5,6 +5,7 @@
         "country":"Uganda",
         "category":"farming",
         "description":"build a fence",
+        "charity_name":"tbd",
         "cost":"400",
         "completed":"true",
         "presentation":"                    ▒▒    ▒▒░░▒▒▒▒▓▓▒▒▒▒░░\n                    ██▒▒████▒▒▒▒░░▒▒▒▒░░▒▒▒▒"},
@@ -14,18 +15,20 @@
         "country":"Somalia",
         "category":"feeding",
         "description":"buy food",
+        "charity_name":"tbd",
         "cost":"400",
         "completed":"true",    
-        "presentation":"                    ▒▒    ▒▒░░▒▒▒▒▓▓▒▒▒▒░░\n                    ██▒▒████▒▒▒▒░░▒▒▒▒░░▒▒▒▒"},
+        "presentation":"                ██▓▓██▓▓░░▒▒▓▓░░▒▒▒▒▒▒▒▒▒▒\n                ░░░░  ░░░░▒▒░░░░░░░░░░░░░░░░░░    ░░░░▒▒  ░░"},
 
         {"id":"3",
         "area":"West Africa",
         "country":"Kenya",
         "category":"water",
         "description":"build a well",
+        "charity_name":"tbd",
         "cost":"400",
         "completed":"false",
-        "presentation":"                    ▒▒    ▒▒░░▒▒▒▒▓▓▒▒▒▒░░\n                    ██▒▒████▒▒▒▒░░▒▒▒▒░░▒▒▒▒"}
+        "presentation":"                ▒▒▒▒    ▒▒▓▓▓▓▒▒▒▒░░░░▒▒░░░░▒▒    ▒▒▒▒▓▓  ▒▒ \n            ▒▒▒▒▒▒▒▒▒▒▒▒  ▒▒▓▓▒▒░░▒▒░░▒▒▒▒░░▒▒▓▓▒▒▓▓▓▓░░▒▒▒▒▒▒▒▒▒▒ "}
 
     ],
     [

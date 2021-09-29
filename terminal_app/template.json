@@ -5,7 +5,7 @@
         "country":"Uganda",
         "category":"farming",
         "description":"build a fence",
-        "cost":"400",
+        "cost":400,
         "completed":"false",
         "presentation":"                    ▒▒    ▒▒░░▒▒▒▒▓▓▒▒▒▒░░\n                    ██▒▒████▒▒▒▒░░▒▒▒▒░░▒▒▒▒"},
 
@@ -14,7 +14,7 @@
         "country":"Somalia",
         "category":"feeding",
         "description":"buy food",
-        "cost":"400",
+        "cost":400,
         "completed":"true",    
         "presentation":"                    ▒▒    ▒▒░░▒▒▒▒▓▓▒▒▒▒░░\n                    ██▒▒████▒▒▒▒░░▒▒▒▒░░▒▒▒▒"},
 
@@ -23,7 +23,7 @@
         "country":"Kenya",
         "category":"water",
         "description":"build a well",
-        "cost":"400",
+        "cost":400,
         "completed":"false",
         "presentation":"                    ▒▒    ▒▒░░▒▒▒▒▓▓▒▒▒▒░░\n                    ██▒▒████▒▒▒▒░░▒▒▒▒░░▒▒▒▒"}
 

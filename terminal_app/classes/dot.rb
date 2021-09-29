@@ -4,7 +4,7 @@ require 'rainbow'
 
 class Dot
 
-    attr_reader :area, :country, :cause_name, :description, :id, :completed, :presentation
+    attr_reader :area, :country, :cause_name, :description, :id, :completed, :presentation, :category, :charity_name
 
     attr_accessor :cost, :completed, :progress, :percentage
 

@@ -15,7 +15,7 @@ cursor = TTY::Cursor
 class Map
 
 
-    def initialize
+    def initialize # replace space with underscores and interpolate the rest ?
 
         @map_array = [
             {y48:"                    ▒▒    ▒▒░░▒▒▒▒▓▓▒▒▒▒░░"},                                                  

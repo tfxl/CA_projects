@@ -18,21 +18,5 @@ require 'tty-prompt'
 # cursor.pos = x          # restore position
 
 
-x = 500
-if x/1000 >= 1
-    y = "case1"
-elsif x/100 >= 1
-    y = "case2"
-elsif x/10 >= 1
-    y = "case3"
-elsif x/1 >= 1
-    y = "case4"
-end
 
-puts y
-
-z = x/1000
-puts z
-
-x = 500
-case x
+    

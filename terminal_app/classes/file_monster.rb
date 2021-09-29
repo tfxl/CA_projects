@@ -9,10 +9,10 @@ class FileMonster
 
     attr_reader :charity_coins_from_file, :budget_from_file, :good_causes_array
 
-    def initialize(boolean_reset)
+    def initialize()
 
         @good_causes_array = []
-        @reset = boolean_reset
+        @reset = "placeholder for boolean_reset ?"
 
         @budget_from_file = "placeholder"
         @charity_coins_from_file = "placeholder"
@@ -43,12 +43,12 @@ class FileMonster
                 i[:completed] = false
             end
 
-            @good_causes_array << Dot.new(i[:id], i[:area], i[:country], i[:category], i[:description], i[:charity_name], i[:cost], i[:completed], i[:presentation])
+            @good_causes_array << Dot.new(i[:id], i[:area], i[:country], i[:category], i[:description], i[:charity_name], i[:cost].to_i, i[:completed], i[:presentation])
         end
 
         parsed_data[1].each do |i|
-            @charity_coins_from_file = i[:charity_coins]
-            @charity_coins_from_file = i[:budget] 
+            @charity_coins_from_file = (i[:charity_coins]).to_i
+            @budget_from_file = (i[:budget]).to_i 
 
         end
     
@@ -88,7 +88,7 @@ class FileMonster
 end
 
 
-filetest = FileMonster.new(true)
+# filetest = FileMonster.new
 
-filetest.load_file
-filetest.iterate
+# filetest.load_file
+# filetest.iterate

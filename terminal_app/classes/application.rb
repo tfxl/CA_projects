@@ -5,6 +5,7 @@ require './title'
 require './introduction'
 require './main_menu'
 require './dot'
+require './file_monster'
 
 
 
@@ -14,27 +15,20 @@ class Application
 
     def initialize
 
+        @file = FileMonster.new
+
+        @file.load_file()
+
+        @array_display = []
+
 
         # a Charity Chest can be created now, and will be referenced by other functions throughout program
         @user_charity_chest_APP = CharityChest.new(1000, 300) # starting and budget parameters 
         # This may get loaded too though!
 
         rede = Rainbow("\u2b24").red
-
         @edpg = rede
 
-        # then has to load up all the causes which will carry the map info with them
-        # in due course, these will need to be created and kept in appropriate lists
-
-        # @my_dot = Dot.new('West', 'Uganda', 'farming', 'buy a sheep', 800, "    ▓▓▒▒▒▒▒▒▒▒▓▓░░▒▒▒▒▒▒░░▒▒░░▒▒▒#{@edpg}▒▒▒▒▒▒▒░░▒▒░░░░▒▒░░▒▒░░▒▒▒▒░░  ░░▒▒░░")
-        # @my_dot2 = Dot.new('West', 'South Africa', 'feeding a family', 'buy a goat', 200, "    ░░▒▒░░▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒\n▒▒▒▒░░░░░░░░░░▒▒░░▓▓▓▓▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒")
-        # @my_dot3 = Dot.new('West', 'Somalia', 'exploration', 'buy a kangaroo', 100, "    ▒▒░░░░▒▒░░▒▒▒▒▒▒▓▓▒▒▒▒▒▒░░▒▒▒▒░░░░
-        #     ▒▒▒▒░░░░▒▒  ░░▒▒▓▓▒▒░░▒▒░░▒▒▒▒░░  ▒▒▓▓")
-        
-        # @dot_array = [@my_dot, @my_dot2, @my_dot3] # this could be from the ACTUAL CLASS Dot @@array_all
-        # @dot_array_presentations = [@my_dot.presentation, @my_dot2.presentation, @my_dot3.presentation] # ACTUAL CLASS Dot @@array_pres
-        
-        
         #create a new title and introduction
         @title = Title.new
         @intro = Introduction.new
@@ -74,12 +68,19 @@ class Application
     def find_my_object() # (dot_array, dot_array_presentations)
 
         prompt = TTY::Prompt.new
-        choices = @dot_array_presentations
-        user_choice = prompt.select('Choose the place', choices)
+
+
+        @array_display = [] # needs to be reset otherwise will accumulate the displays
+        @file.good_causes_array.each do |i|  # this will extract just the visual display from the causes
+            @array_display << i.presentation
+        end
+
+
+        user_choice = prompt.select('Choose the place', @array_display)
     
-        @dot_array.each do |dot_object|
-                if dot_object.presentation == user_choice
-                    return dot_object
+        @file.good_causes_array.each do |object_display| #the area represented  the map
+                if object_display.presentation == user_choice
+                    return object_display
                 end
             end
     end
