@@ -33,5 +33,8 @@
     ],
     [
         {"charity_coins":1000, "budget":"300"}
+    ],
+    [ 
+        {"username":"default_name"}
     ]
 ]

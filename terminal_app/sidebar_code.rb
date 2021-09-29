@@ -19,3 +19,20 @@ require 'tty-prompt'
 
 
 
+
+value = "RRRABCDEFG"
+
+temp_array = value.chars()
+
+x = temp_array.index("A")
+
+temp_array[x] = Rainbow("CHANGE!!").orange
+
+
+newby = temp_array.join("")
+# temp_array = temp_array.join("")
+
+puts temp_array
+
+puts newby
+

@@ -4,9 +4,9 @@ require 'rainbow'
 
 class Dot
 
-    attr_reader :area, :country, :cause_name, :description, :id, :completed, :presentation, :category, :charity_name
+    attr_reader :area, :country, :cause_name, :description, :id, :completed, :category, :charity_name
 
-    attr_accessor :cost, :completed, :progress, :percentage
+    attr_accessor :cost, :completed, :progress, :percentage, :presentation
 
     @@id = 0
     @@dot_array = []

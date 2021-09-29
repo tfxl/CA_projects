@@ -48,10 +48,9 @@ class Application
 
     def form_causes
 
-
+        # done in the class Map at the moment
 
     end
-
 
 
     def run_setup_to_main_menu
