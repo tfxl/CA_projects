@@ -1,8 +1,10 @@
 require 'json'
 require 'tty-prompt'
+require 'rainbow'
 
 require './dot'
 require './charity_chest'
+
 # require './map'
 
 
@@ -22,7 +24,72 @@ class FileMonster
 
         # @map = Map.new
 
+        @prompt = TTY::Prompt.new
+
         load_file()
+    end
+
+
+    def error_message_and_leave(e)
+
+        # consider a loading bar or spinner here
+        
+        sleep 1
+        puts "\nOk so in technical terms, this is the issue :\n\n" 
+
+        error_msg = e.to_s.chars()
+        
+        error_msg.each do |i|
+            print Rainbow(i).red 
+            sleep 0.1
+        end
+        
+        sleep 5
+        puts Rainbow("\n\n.....Ah well.....\n").yellow
+        sleep 3
+
+        final_message = "So...... Anyways....... Well, best leave you to it !! ".chars()
+        final_message.each_with_index do |character, index|
+            if (index == 8) || (index == 23) || (index == final_message.length() - 1)
+                sleep 4
+            end
+            sleep 0.1
+            print Rainbow(character).yellow
+        end
+
+        exit
+    end
+
+
+    def parse_json_file(file_path_as_string)
+
+        
+
+        begin
+            
+            parsed_data = JSON.load_file(file_path_as_string, symbolize_names: true)
+
+        rescue Errno::ENOENT => e
+            puts Rainbow("\n\nWell now.... file appears to be missing..... I wonder where it went ?").yellow
+            file_option_chosen = true
+            sleep 3
+            error_message_and_leave(e)
+
+        rescue Errno::EACCES => e
+            puts Rainbow("\n\nSo you haven't got permission for this file.... Dunno why.... Guess you're not at Level 8 Clearance..").yellow
+            file_option_chosen = true
+            sleep 3
+            error_message_and_leave(e)
+
+        # rescue StandardError => err
+        rescue => e
+            puts Rainbow("\n\nAwkies.... the file is not loading.... probably a user error :) ").yellow
+            file_option_chosen = true
+            sleep 3
+            error_message_and_leave(e)
+
+        end
+
     end
 
 
@@ -30,38 +97,115 @@ class FileMonster
 
         # @map.insert = "blue"
 
-        load_prompt = TTY::Prompt.new
-
-        user_choice = load_prompt.select('Please select one of the options', ["Start New", "Load Previous", "Reset Old"])
-        case user_choice
-            when "Reset Old"
-                @reset = true
-            when "Start New"
-                @reset = true
-            when "Load Previous"
-                puts "okie dokie"
-                @reset = false
-            end
+        # elephant ascii ?
 
 
-        parsed_data = JSON.load_file('../user_data.json', symbolize_names: true)
+        file_option_chosen = false
+        while !file_option_chosen
+
+    
+            load_options = ["Create New", "Load Last Save"]
+            user_choice = @prompt.select('Please select one of the options', load_options)
+
+            parsed_data = parse_json_file("../user_data.json")
+
+            case user_choice
+
+                when load_options[0]
+                    @reset = true
+                    
+                    if parsed_data[2][:username] != "default_name_unique_string" # which is default for all new files
+
+                        confirm = ["That's fine, start a new profile", "Actually, let me choose again"]                        
+                        puts "Are you sure ? It appears there is an existing file saved under name #{parsed_data[2][:username]}"
+                        confirmation = @prompt.select('Choosing New will overwrite previously saved file!', confirm)
+
+                        case confirmation
+                        when confirm[0]
+                            @reset = true
+                            file_option_chosen = true
+                            
+                        else 
+                            # will loop back to first menu as while loop is still activated by file_chosen = false, @reset = false
+                        end
+                    
+                    else 
+                        @reset = true
+                        file_option_chosen = true # if default username, very unlikely any user changes exist. Username quickest to confirm.
+                    
+                    end
+
+
+
+                when load_options[1]
+
+                    if parsed_data[2][:username] == "default_name_unique_string" # this is default for all new files
+                        
+                        puts "It appears that no previous file exists. Sorry... it just doesn't...."
+
+                        @prompt.keypress("#{Rainbow("Please press space or enter to create New File !").orange}", keys: [:space, :return])
+                        @reset = true
+                        file_option_chosen = true
+                        break
+
+
+                    else                         
+                        puts "Great to have you back #{parsed_data[2][:username]}!"
+                        @reset = false
+
+                        # optional loading box ?
+
+                        @prompt.keypress("#{Rainbow("Please press space or enter to continue!").orange}", keys: [:space, :return])
+                        file_option_chosen = true
+
+                        print Rainbow("\nLOADING").orange
+                        8.times do |i|
+                            sleep 1
+                            print Rainbow(".").orange
+                        end
+                
+                    end
+
+                else
+                    puts "Appears that the file choices are out of order currently ! Soz :)"
+                    sleep 5
+                    exit
+
+
+
+                end
+        end
+
+
+        # parsed_data = JSON.load_file('../user_data.json', symbolize_names: true)
 
 
         parsed_data[0].each do |i|  # this will be for 3 elements at this stage
 
             case @reset
+
             when true 
                 i[:completed] = false
+
+            when false
+                if i[:completed] == "true" || true
+                    i[:completed] = true
+
+                elsif i[:completed] == "false" || false
+                    i[:completed] = false
+
+                else 
+                    puts "It appears that the JSON has neither a boolean true / false or a string 'true' / 'false' "
+                end
             end
 
             @good_causes_array << Dot.new(i[:id], i[:area], i[:country], i[:category], i[:description], i[:charity_name], i[:cost].to_i, i[:completed], i[:presentation])
         end
 
-        parsed_data[1].each do |i|
-            @charity_coins_from_file = (i[:charity_coins]).to_i
-            @budget_from_file = (i[:budget]).to_i 
 
-        end
+        @charity_coins_from_file = (parsed_data[1][:charity_coins]).to_i
+        @budget_from_file = (parsed_data[1][:budget]).to_i
+
     
     end
 

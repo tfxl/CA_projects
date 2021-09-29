@@ -31,10 +31,8 @@
         "presentation":"                ▒▒▒▒    ▒▒▓▓▓▓▒▒▒▒░░░░▒▒░░░░▒▒    ▒▒▒▒▓▓  ▒▒ \n            ▒▒▒▒▒▒▒▒▒▒▒▒  ▒▒▓▓▒▒░░▒▒░░▒▒▒▒░░▒▒▓▓▒▒▓▓▓▓░░▒▒▒▒▒▒▒▒▒▒ "}
 
     ],
-    [
-        {"charity_coins":1000, "budget":"300"}
-    ],
-    [ 
-        {"username":"default_name"}
-    ]
+    
+    {"charity_coins":1000, "budget":"300"},    
+
+    {"username":"default_name_unique_string"}
 ]

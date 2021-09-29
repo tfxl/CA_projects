@@ -112,8 +112,6 @@ class Map
     #     temp_array = value.chars()
     #     circle_index = temp_array.index("\u2b24")
 
-    #     puts "WWWOOWOWOWOOW"
-
     #     puts i.completed
 
     #     if i.completed == true
@@ -141,15 +139,14 @@ class Map
 
         every_new_object_count = 0
         position = 0
-        @file.good_causes_array.each do |i|  # this will be for 3 elements at this stage
+        good_causes_array.each do |i|  # this will be for 3 elements at this stage
 
             every_new_object_count += 1
 
-            case @reset
-            when true 
-                i[:completed] = false
-                #maybe change the colour here ??
-            end
+            # case @reset
+            # when true 
+            #     i[:completed] = false
+            # end
 
             #function this code:
             #map.map_array => [ {k, string}    {k, string}  ]
@@ -218,10 +215,11 @@ bob = Map.new
 # # x = bob.create_map()
 # # bob.draw_map(x)
 
-bob.map_creator
+bob.map_creator(bob.file.good_causes_array)
 
 bob.file.good_causes_array.each do |i|
     puts i
     puts "space"
     puts i.presentation
+    puts i.completed
 end
