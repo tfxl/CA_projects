@@ -2,13 +2,13 @@ require 'json'
 require 'tty-prompt'
 require 'rainbow'
 
-require_relative './dot'
-require_relative './charity_chest'
+require_relative './charity_cause'
+# require_relative './charity_chest'
 
 
 class FileHandler
 
-  attr_reader :username
+  attr_reader :username, :prompt
   attr_accessor :good_causes_array, :charity_coins, :budget
 
   def initialize
@@ -41,14 +41,14 @@ class FileHandler
       sleep 0.05
     end
 
-    sleep 2
-    puts Rainbow("\n\n.....Ah well.....\n").yellow
     sleep 1
+    puts Rainbow("\n\n.....Ah well.....\n").yellow
+    sleep 0.5
 
     final_message = 'So...... Anyways....... Well, best leave you to it !! '.chars
     final_message.each_with_index do |character, index|
-      sleep 2 if (index == 8) || (index == 23) || (index == final_message.length - 1)
-      sleep 0.05
+      sleep 0.8 if (index == 8) || (index == 23) || (index == final_message.length - 1)
+      sleep 0.04
       print Rainbow(character).yellow
     end
 
@@ -67,18 +67,18 @@ class FileHandler
 
     rescue Errno::ENOENT => e
       puts Rainbow("\n\nWell now.... file appears to be missing..... I wonder where it went ?").yellow
-      sleep 2
+      sleep 1
       error_message_and_leave(e)
 
     rescue Errno::EACCES => e
       puts Rainbow("\n\nSo you haven't got permission for this file.... Dunno why.... Guess you're not at Level 8 Clearance..").yellow
-      sleep 3
+      sleep 1
       error_message_and_leave(e)
 
     # rescue StandardError => err
     rescue StandardError => e
       puts Rainbow("\n\nAwkies.... the file is not loading.... probably a user error :) ").yellow
-      sleep 2
+      sleep 1
       error_message_and_leave(e)
 
     end
@@ -188,18 +188,18 @@ class FileHandler
     @charity_coins = (@parsed_data[:userdata][:charity_coins]).to_i
     @budget = (@parsed_data[:userdata][:budget]).to_i
 
-    #this create and push all the dots into the good_causes_array
-    @parsed_data[:dots].each do |dot_hash| 
-      @good_causes_array << Dot.new(
-        dot_hash[:id], 
-        dot_hash[:area], 
-        dot_hash[:country], 
-        dot_hash[:category], 
-        dot_hash[:description],
-        dot_hash[:charity_name], 
-        dot_hash[:cost].to_i, 
-        dot_hash[:completed], 
-        dot_hash[:presentation])
+    #this create and push all the charity_causes into the good_causes_array
+    @parsed_data[:charity_causes].each do |charity_causes_hash| 
+      @good_causes_array << CharityCause.new(
+        charity_causes_hash[:id], 
+        charity_causes_hash[:area], 
+        charity_causes_hash[:country], 
+        charity_causes_hash[:category], 
+        charity_causes_hash[:description],
+        charity_causes_hash[:charity_name], 
+        charity_causes_hash[:cost].to_i, 
+        charity_causes_hash[:completed], 
+        charity_causes_hash[:presentation])
     end
 
   end
@@ -212,7 +212,7 @@ class FileHandler
 
     all_data_hash = 
     {
-      dots: updated_good_causes.map { |cause| cause.to_json_format }, # this will iterate and add to hash as value to key dots:
+      charity_causes: updated_good_causes.map { |cause| cause.to_json_format }, # this will iterate and add to hash as value to key charity_causes:
       userdata: {
         username: @username,
         budget: budget_dollars.to_i,
@@ -262,9 +262,9 @@ end
 
 ########## QUICK TESTING AREA ############# (to be formalised)
 
-test_file = FileHandler.new
-test_file.upload_data_from_file
+# test_file = FileHandler.new
+# test_file.upload_data_from_file
 
-test_file.iterate_my_data
+# test_file.iterate_my_data
 
 

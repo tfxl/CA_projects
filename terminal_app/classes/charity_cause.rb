@@ -2,7 +2,7 @@ require 'rainbow'
 # require './classes/map'
 
 
-class Dot
+class CharityCause
 
     attr_reader :id, :area, :country, :category, :description, :charity_name, :cost
     attr_accessor :completed, :presentation

@@ -3,6 +3,8 @@
 # require_relative './classes/application'
 # require_relative './classes/application'
 require_relative './classes/file_handler'
+require_relative './classes/title'
+require_relative './classes/introduction'
 
 
 # my_application = Application
@@ -15,9 +17,36 @@ require_relative './classes/file_handler'
 #   my_application.run_menu_selections
 # end
 
+############################# OPEN NEW AND UPLOAD DATA ##################################
+
+# test_file = FileHandler.new
+# test_file.upload_data_from_file
+
+# test_file.iterate_my_data
+
+############################# RUN TITLE ##################################
+
+# title = Title.new
+# title.display_title
+
+############################### DISPLAY INTRODUCTION #################################
+
+introduction = Introduction.new 
+introduction.provide_introduction('./introduction.md')
+
+################################# MAIN MENU ##########################################
 
 
-test_file = FileHandler.new
-test_file.upload_data_from_file
 
-test_file.iterate_my_data
+
+
+
+################# RUN THE APPLICATION NOW, WHICH WILL RUN WITHIN ITSELF ##################
+
+
+
+
+
+
+
+

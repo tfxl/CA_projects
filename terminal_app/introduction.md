@@ -1,13 +1,33 @@
-Welcome to African Charity Challenge
+&nbsp;  
+&nbsp;  
+&nbsp;  
 
-This is a challenge to complete all causes listed in the African
-continent, supported by charities, and using Charity coins. 
 
-The charity coins can be replenished by purchasing more. Also
-groups can be formed in order to utilise more Charity Coins and 
-complete the challenge over time. 
+***
 
-Suggested monthly debits of _____ (consider time clock to simulate ?)
+&nbsp;        **WELCOME TO THE AFRICAN CHARITY CHALLENGE & THANK YOU FOR YOUR SUPPORT** 
 
-Please press the ENTER (**implement this**) to move to next layer
+***
+&nbsp;   
 
+**Here's how it works :**
+=============
+&nbsp;  
+
+> | & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & &  | 
+> |----------|:
+| This is a challenge to support charities in Africa by supporting individual causes      You can sponsor a charity cause by selecting from the map and using Charity Coins       The eventual goal is to be able to sponsor all charity causes on the African map     |
+| & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & &  | 
+>
+> **Charity Coins can be replenished in the following ways :** 
+>
+> - &nbsp;using your bank account budget
+>       
+> - &nbsp;requesting group sponsors 
+>      
+> - &nbsp;completing "work" to earn more
+> 
+> _ _ _ _ 
+> &nbsp;   **PROGRESS CAN BE SAVED FROM THE MAIN MENU AND LOADED AT A FUTURE DATE ON LAUNCH**
+
+&nbsp;        

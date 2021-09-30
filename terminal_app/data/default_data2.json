@@ -1,5 +1,5 @@
 {
-    "dots": 
+    "charity_causes": 
     [
         {"id":"1",
         "area":"West Africa",
@@ -18,7 +18,7 @@
         "description":"buy food",
         "charity_name":"tbd",
         "cost":"400",
-        "completed":"true",    
+        "completed":"false",    
         "presentation":""},
 
         {"id":"3",

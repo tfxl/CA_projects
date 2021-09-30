@@ -62,13 +62,9 @@ class Title
         #{Rainbow("░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚══════╝╚══════╝╚═╝░░╚══╝░╚═════╝░╚══════╝").firebrick}\n\n"
 
 
-# could use a move cursor, and then puts, so the top is done too.
 # could also centre the text, which TTY is able to complete
 
 
     end
 end
-
-# bob = Title.new
-# bob.display_title()
 
