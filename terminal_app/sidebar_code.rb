@@ -1,8 +1,8 @@
-require_relative './classes/dot'
-# require_relative 'classes/charity_chest'
-require 'rainbow'
-require 'tty-prompt'
-require 'json'
+# require_relative './classes/dot'
+# # require_relative 'classes/charity_chest'
+# require 'rainbow'
+# require 'tty-prompt'
+# require 'json'
 
 
 
@@ -17,8 +17,6 @@ require 'json'
 # cursor.pos += {x:5}     # move 5 to the right
 # cursor.pos += {x:-5}    # move 5 to the left
 # cursor.pos = x          # restore position
-
-
 
 
 

@@ -177,8 +177,12 @@ class ApplicationXYZ
       prompt = TTY::Prompt.new
 
       puts "You have $#{@user_charity_chest_APP.budget} left in your bank account"
-      more_coins_options = ['Would you like to spend money from your account ?',
-                            'Would you like to earn some more money ?', 'How about asking for a group contribution?']
+
+      more_coins_options = [
+        'Would you like to spend money from your account ?',
+        'Would you like to earn some more money ?', 
+        'How about asking for a group contribution?']
+        
       more_coins_choice = prompt.select('What would you like to do ?', more_coins_options)
 
       if more_coins_choice = more_coins_options[0]

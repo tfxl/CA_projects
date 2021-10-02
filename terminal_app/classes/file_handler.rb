@@ -198,7 +198,7 @@ class FileHandler
         charity_causes_hash[:description],
         charity_causes_hash[:charity_name], 
         charity_causes_hash[:cost].to_i, 
-        charity_causes_hash[:completed], 
+        charity_causes_hash[:completed],
         charity_causes_hash[:presentation])
     end
 

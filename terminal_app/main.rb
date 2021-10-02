@@ -54,7 +54,10 @@ require_relative './classes/application'
 
 application = Application.new
 application.assign_data
+application.create_charity_chest
+
 application.run_setup_to_main_menu
+
 while true
   application.apply_menu_selection
 end

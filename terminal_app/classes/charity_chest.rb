@@ -2,14 +2,30 @@ require_relative './ascii_art'
 require 'tty-prompt'
 
 class CharityChest
+
+  attr_reader :more_coins_options, :charity_chest_menu_choice
+  attr_writer :group_sponsors_available
   attr_accessor :coins, :budget
 
   def initialize(starting_coins, starting_budget)
     @budget = starting_budget
     @coins = starting_coins
-    @ascii_art = AsciiArt.new
+
     @prompt = TTY::Prompt.new
+
+    @ascii_art = AsciiArt.new
     @coin_display = nil # does not want to hold a hash
+
+    @charity_chest_menu_choice = nil
+    @more_coins_options = [
+      'Would you like to buy more Charity Coins ?',
+      'Would you like to earn some more money ?', 
+      'How about asking for a group contribution?',
+      'Return to Main Menu'
+    ]
+
+    @group_sponsors_available = false
+
   end
 
   def increase_coins(amount)
@@ -89,13 +105,104 @@ class CharityChest
 
     # print @ascii_art.charity_chest_art
     puts "Here's the financials => Budget #{@budget} and Charity Coins #{@coins}"
+
   end
 
-  def return_coins_count
-    @charity_coins
+
+  def charity_chest_menu
+
+  prompt = TTY::Prompt.new
+
+  # puts "You have $#{@budget} left in your bank account"
+
+  # more_coins_options = [
+  #   'Would you like to buy more Charity Coins ?',
+  #   'Would you like to earn some more money ?', 
+  #   'How about asking for a group contribution?',
+  #   'Return to Main Menu'
+  # ]
+    
+  @charity_chest_menu_choice = prompt.select('What would you like to do ?', @more_coins_options)
+
   end
 
-  def return_budget_remaining
-    @budget
+  def use_bank_account
+    if @budget.positive?
+      buy_charity_coins()
+      # charity_chest_menu()
+    
+    elsif @budget == 0
+      puts "Unfortunately you have no remaining budget for this month. #{Rainbow('Thank you for your previous generosity').red}"
+      @prompt.keypress("#{Rainbow('Press space or enter to return to Charity Chest').orange}", keys: %i[space return])
+      # charity_chest_menu()
+    end
   end
+
+  def do_work
+    puts "FEATURE SOON TO EARN COINS"
+
+    #features from a list of activities, each with different time bars and different earnings 
+    # random generation if 0-4 do this, if 5 - 6 do this, if 7 do this, if 8 do this, if 9 do this
+
+    # bar = TTY::ProgressBar.new("Waiting ...[:bar]", total: 30)
+    # 30.times.do
+    #     sleep(0.1)
+    #     bar.advance(1)
+    # end
+
+
+    # lighthouse: {
+    #     interval: 10,
+    #     frames: ["∙∙∙", "●∙∙", "∙●∙", "∙∙●", "∙∙∙"]
+
+    #increase coins(amount)
+
+    @prompt.keypress("#{Rainbow('Press space or enter to return to Charity Chest').orange}", keys: %i[space return])
+    # charity_chest_menu()
+  end
+
+
+  def sponsorship_received
+    @group_sponsors_available = false
+    @prompt.keypress("#{Rainbow('Press space or enter to return to Charity Chest').orange}", keys: %i[space return])
+    # charity_chest_menu()
+  end
+
+
+  def seek_group_contribution(number_completed)
+
+    if @group_sponsors_available # this is updated only whenever milestones 5, 10, 15, 20 reached
+
+      if number_completed.between?(5, 9)
+
+        puts "You have shown strong initial engagement in charitable donations. Your group supports you with 1000 charity coins"
+        increase_coins(1000)
+        sponsorship_received()
+
+      elsif number_completed.between?(10, 14)
+        puts "You have shown strong continued engagement in charitable donations. Your group supports you with 2000 charity coins"
+        increase_coins(2000)
+        sponsorship_received()
+
+      elsif number_completed.between?(15, 19)
+        puts "You have shown strong continued engagement in charitable donations. Your group supports you with 2000 charity coins"
+        increase_coins(3000)
+        sponsorship_received()
+
+      elsif number_completed.between?(20, 24)
+        puts "You have shown strong continued engagement in charitable donations. Your group supports you with 3000 charity coins"
+        increase_coins(4000)
+        sponsorship_received()
+      end
+
+    else 
+      puts Rainbow("Unfortunately you were unable to gain group sponsorship. Keep supporting causes and try again")
+      @prompt.keypress("#{Rainbow('Press space or enter to return to Charity Chest').orange}", keys: %i[space return])
+      # charity_chest_menu()
+
+    end
+
+  end
+
+
 end
