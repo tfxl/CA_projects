@@ -4,9 +4,9 @@ require 'tty-prompt'
 class CharityChest
   attr_accessor :coins, :budget
 
-  def initialize(starting, budget)
-    @budget = budget
-    @coins = starting
+  def initialize(starting_coins, starting_budget)
+    @budget = starting_budget
+    @coins = starting_coins
     @ascii_art = AsciiArt.new
     @prompt = TTY::Prompt.new
     @coin_display = nil # does not want to hold a hash
@@ -28,7 +28,7 @@ class CharityChest
 
   def buy_charity_coins
     puts "How much would you like to spend from your budget ? #{Rainbow('$10 for 100 Charity Coins').blue}"
-    debit = @prompt.slider('$ amount', max: @budget, step: 5, default: 0,
+    debit = @prompt.slider('$ amount', max: @budget, step: 10, default: 0,
                                        format: "|:slider| %d $ will be spent. #{Rainbow("You have $#{@budget} remaining in your budget").red}")
     @budget -= debit
     increase_coins(debit * 10)

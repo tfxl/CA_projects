@@ -23,6 +23,12 @@ class CharityCause
     end
 
 
+
+
+
+
+    
+
     # Returns {}
     def to_json_format
         return {
@@ -37,6 +43,14 @@ class CharityCause
             presentation: @presentation,
         }
     end
+
+
+
+
+
+
+
+
 
 
     def advise_cause

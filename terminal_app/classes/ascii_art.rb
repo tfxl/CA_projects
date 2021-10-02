@@ -33,7 +33,7 @@ class AsciiArt      # https://ascii.co.uk/art/treasure
             "░░░░░░░░"
             ]
     
-            @one = [  
+        @one = [  
             "░░███╗░░",
             "░████║░░",
             "██╔██║░░",
@@ -43,7 +43,7 @@ class AsciiArt      # https://ascii.co.uk/art/treasure
             "░░░░░░░░"
             ]
 
-            @two = [
+        @two = [
             "██████╗░",
             "╚════██╗",
             "░░███╔═╝",
@@ -156,9 +156,8 @@ class AsciiArt      # https://ascii.co.uk/art/treasure
 
     def draw_charity_chest 
         
-        @charity_chest_art = 
+        @charity_chest_art =
         %Q(
-
             #{@spacing}#{Rainbow("#{"*"*5}").orange}#{Rainbow("#{"*"*2}").firebrick}#{Rainbow("#{"*"*5}").darkgreen}#{Rainbow("#{"*"*5}").darkorange}#{Rainbow("#{"*"*2}").darkblue}#{Rainbow("#{"*"*5}").darkorange}#{Rainbow("#{"*"*5}").darkgreen}#{Rainbow("#{"*"*10}").darkorange}#{Rainbow("#{"*"*10}").darkgreen}#{Rainbow("#{"*"*40}#{@stars * @multiplier}").darkorange}
             #{@spacing}         |                   |                  |                     |                #{@high_brick_vertical_odd[@multiplier - 1]}
             #{@spacing}_________|________________.=""_;=.______________|_____________________|________________#{@high_brick_odd[@multiplier - 1]}
@@ -179,7 +178,14 @@ class AsciiArt      # https://ascii.co.uk/art/treasure
             #{@spacing}____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/________/___#{@low_brick_even * @multiplier}
             #{@spacing}/______/______/______/______/______/______/______/______/______/______/[TomekK]_______/#{@low_brick_odd * @multiplier}
             #{@spacing}#{Rainbow("#{"*"*5}").orange}#{Rainbow("#{"*"*2}").firebrick}#{Rainbow("#{"*"*5}").darkgreen}#{Rainbow("#{"*"*5}").darkorange}#{Rainbow("#{"*"*2}").darkblue}#{Rainbow("#{"*"*5}").darkorange}#{Rainbow("#{"*"*5}").darkgreen}#{Rainbow("#{"*"*10}").darkorange}#{Rainbow("#{"*"*10}").darkgreen}#{Rainbow("#{"*"*40}#{@stars * @multiplier}").darkorange}
-            ) 
+            )
+
+
+
+
+
+
+
 
         
         print @charity_chest_art

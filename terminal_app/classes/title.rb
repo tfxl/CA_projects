@@ -19,15 +19,14 @@ class Title
       "#{Rainbow("███████║█████╗░░██████╔╝██║██║░░╚═╝███████║██╔██╗██║").darkgreen}",
       "#{Rainbow("██╔══██║██╔══╝░░██╔══██╗██║██║░░██╗██╔══██║██║╚████║").darkgreen}",
       "#{Rainbow("██║░░██║██║░░░░░██║░░██║██║╚█████╔╝██║░░██║██║░╚███║").orange}",
-      "#{Rainbow("╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝").firebrick}\n",
-      " ",
-      " ",
-      "#{Rainbow("░█████╗░██╗░░██╗░█████╗░██████╗░██╗████████╗██╗░░░██╗").orange}",
-      "#{Rainbow("██╔══██╗██║░░██║██╔══██╗██╔══██╗██║╚══██╔══╝╚██╗░██╔╝").orange}",
+      "#{Rainbow("╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝").firebrick}",
+      "\n",
+      "#{Rainbow(" ░█████╗░██╗░░██╗░█████╗░██████╗░██╗████████╗██╗░░░██╗").orange}",
+      "#{Rainbow(" ██╔══██╗██║░░██║██╔══██╗██╔══██╗██║╚══██╔══╝╚██╗░██╔╝").orange}",
       "#{Rainbow("██║░░╚═╝███████║███████║██████╔╝██║░░░██║░░░░╚████╔╝░").darkgreen}",
       "#{Rainbow("██║░░██╗██╔══██║██╔══██║██╔══██╗██║░░░██║░░░░░╚██╔╝░░").darkgreen}",
-      "#{Rainbow("╚█████╔╝██║░░██║██║░░██║██║░░██║██║░░░██║░░░░░░██║░░░").orange}",
-      "#{Rainbow("░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░╚═╝░░░░░░╚═╝░░░").firebrick}\n",
+      "#{Rainbow(" ╚█████╔╝██║░░██║██║░░██║██║░░██║██║░░░██║░░░░░░██║░░░").orange}",
+      "#{Rainbow(" ░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░╚═╝░░░░░░╚═╝░░░").firebrick}",
       " ",
       " ",
       "#{Rainbow("░█████╗░██╗░░██╗░█████╗░██╗░░░░░██╗░░░░░███████╗███╗░░██╗░██████╗░███████╗").orange}",
@@ -35,7 +34,8 @@ class Title
       "#{Rainbow("██║░░╚═╝███████║███████║██║░░░░░██║░░░░░█████╗░░██╔██╗██║██║░░██╗░█████╗░░").darkgreen}",
       "#{Rainbow("██║░░██╗██╔══██║██╔══██║██║░░░░░██║░░░░░██╔══╝░░██║╚████║██║░░╚██╗██╔══╝░░").darkgreen}",
       "#{Rainbow("╚█████╔╝██║░░██║██║░░██║███████╗███████╗███████╗██║░╚███║╚██████╔╝███████╗").orange}",
-      "#{Rainbow("░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚══════╝╚══════╝╚═╝░░╚══╝░╚═════╝░╚══════╝").firebrick}\n\n"
+      "#{Rainbow("░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚══════╝╚══════╝╚═╝░░╚══╝░╚═════╝░╚══════╝").firebrick}",
+      "\n\n"
     ]
 
   end
@@ -61,6 +61,49 @@ class Title
       sleep(@delay)
     end
   
+  end
+
+  def close_title 
+
+    display_array = @title
+
+    38.times do 
+
+      y_coordinate = 2
+
+        display_array.each do |iteration|
+          y_coordinate += 1
+          position_cursor_for_centering(iteration, y_coordinate)
+          puts iteration
+        end
+
+      sleep 0.025
+      
+      temp_ascii_lines = display_array
+      display_array = []
+
+      system("clear") || system("cls")
+
+      temp_ascii_lines.each do|iteration|
+
+        temp_chars_array = iteration.chars
+
+        if temp_chars_array.length > 15
+
+          temp_chars_array[-6] = ""
+          temp_chars_array[11] = ""
+
+          display_array << temp_chars_array.join()
+
+        else 
+          display_array << temp_chars_array.join()
+
+        end
+
+      end
+
+    end
+    
   end
 
 end

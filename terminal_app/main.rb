@@ -1,11 +1,8 @@
 # require 'json'
 # require_relative './classes/dot'
 # require_relative './classes/application'
-# require_relative './classes/application'
-require_relative './classes/dimension_checker'
-require_relative './classes/file_handler'
-require_relative './classes/title'
-require_relative './classes/introduction'
+require_relative './classes/application'
+
 
 
 # my_application = Application
@@ -16,39 +13,60 @@ require_relative './classes/introduction'
 # while true
 #   my_application.menu_selection
 #   my_application.run_menu_selections
+
+
+
 # end
 
 ############## CHECK IF TERMINAL WINDOW DIMENSIONS ARE ADEQUATE FOR PROGRAM ##################################
 
-dimensions = DimensionChecker.new
-dimensions.ensure_dimensions
+# dimensions = DimensionChecker.new
+# dimensions.ensure_dimensions
 
 
 ############################# OPEN NEW AND UPLOAD DATA ##################################
 
-test_file = FileHandler.new
-test_file.upload_data_from_file
+# main_file = FileHandler.new
+# main_file.upload_data_from_file
 
-test_file.iterate_my_data
 
 ############################# RUN TITLE ##################################
 
-title = Title.new
-title.display_title
+# title = Title.new
+# title.display_title
+# title.close_title
 
 ############################### DISPLAY INTRODUCTION #################################
 
-introduction = Introduction.new 
-introduction.provide_introduction('./introduction.md')
+# introduction = Introduction.new 
+# introduction.provide_introduction('./introduction.md')
 
 ################################# MAIN MENU ##########################################
 
+# main_menu = MainMenu.new("BOBR")
+# main_menu = MainMenu.new(main_file.username)
+# main_menu.username_to_menu_process
+
+
+# ################ RUN THE APPLICATION NOW, WHICH WILL RUN WITHIN ITSELF ##################
+
+
+
+application = Application.new
+application.assign_data
+application.run_setup_to_main_menu
+while true
+  application.apply_menu_selection
+end
+
+
+
+  
 
 
 
 
 
-################# RUN THE APPLICATION NOW, WHICH WILL RUN WITHIN ITSELF ##################
 
 
 

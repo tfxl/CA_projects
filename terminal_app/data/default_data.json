@@ -2,8 +2,8 @@
     "charity_causes": 
     [
         {"id":"1",
-        "area":"West Africa",
-        "country":"Uganda",
+        "area":"South Africa",
+        "country":"Zambia",
         "category":"farming",
         "description":"build a fence",
         "charity_name":"tbd",
@@ -12,22 +12,22 @@
         "presentation":""},
 
         {"id":"2",
-        "area":"West Africa",
+        "area":"East Africa",
         "country":"Somalia",
         "category":"feeding",
         "description":"buy food",
         "charity_name":"tbd",
-        "cost":"400",
+        "cost":"200",
         "completed":"false",    
         "presentation":""},
 
         {"id":"3",
-        "area":"West Africa",
+        "area":"East Africa",
         "country":"Kenya",
         "category":"supplying water",
-        "description":"build a well",
+        "description":"construct a well",
         "charity_name":"tbd",
-        "cost":"400",
+        "cost":"100",
         "completed":"false",
         "presentation":""}
     ],
