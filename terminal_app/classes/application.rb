@@ -21,7 +21,7 @@ class Application
     @updated_charity_coins = nil
     @updated_budget = nil
 
-    @number_causes_completed = 0
+    @supported_causes_array = []
 
   end
 
@@ -54,16 +54,17 @@ end
 
  def update_number_completed
 
+  @supported_causes_array = []
   @file.good_causes_array.each do |good_cause|
     if good_cause.completed == true
-      @number_causes_completed += 1
+      @supported_causes_array << good_cause
     end
   end
 end
 
 
 def check_sponsorship
-  case @number_causes_completed
+  case @supported_causes_array.length
   when 5, 10, 15, 20
     @charity_chest.group_sponsors_available = true
   end
@@ -94,7 +95,7 @@ def charity_chest_navigation
   elsif @charity_chest.more_coins_options[2] == @charity_chest.charity_chest_menu_choice #Group Contribution
     update_number_completed()
     check_sponsorship()
-    @charity_chest.seek_group_contribution(@number_causes_completed)
+    @charity_chest.seek_group_contribution(@supported_causes_array.length)
 
   elsif @charity_chest.more_coins_options[3] #== @charity_chest.charity_chest_menu_choice #Return to Main
     @main_menu.return_to_main()
@@ -117,7 +118,21 @@ def apply_menu_selection
     charity_chest_navigation()
  
   when @main_menu.menu_options[2] # SEE SUPPORTED CAUSES
-    #do this SEE CAUSES
+    update_number_completed()
+    case @supported_causes_array.length
+    when 0 
+      puts "YOU HAVE NOT SPONSORED ANY CHARITY CAUSES YET. YOUR SUPPORT WILL BE MOST WELCOME"
+    when 1
+      puts "THANK YOU FOR YOUR SUPPORT OF THIS GOOD CAUSE :"
+    when 1..50
+      puts "YOU HAVE HELPED A LOT; THANK YOU FOR SUPPORTING THESE CAUSES :"
+    end
+
+    @supported_causes_array.each do |cause|
+      puts "You have supported #{cause.description} in #{cause.country}"
+    end
+
+    @main_menu.return_to_main_after_keypress()
 
   when @main_menu.menu_options[3] # SAVE FILE
     puts "save file from main"

@@ -102,6 +102,11 @@ class MainMenu
 
    ############################# RETURN TO MAIN MENU AND ALLOW MENU CHOICE #################################
   
+   def return_to_main_after_keypress
+    @prompt.keypress(Rainbow('Please press space or enter to continue').orange.to_s, keys: %i[space return])
+    display_menu()
+    menu_choice()
+  end
 
   def return_to_main
     # @prompt.keypress(Rainbow('Please press space or enter to continue').orange.to_s, keys: %i[space return])
