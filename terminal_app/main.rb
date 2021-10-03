@@ -55,6 +55,8 @@ require_relative './classes/application'
 application = Application.new
 application.assign_data
 application.create_charity_chest
+application.update_map_rows
+# puts application.map.
 
 application.run_setup_to_main_menu
 

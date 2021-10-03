@@ -23,12 +23,6 @@ class CharityCause
     end
 
 
-
-
-
-
-    
-
     # Returns {}
     def to_json_format
         return {
@@ -45,21 +39,12 @@ class CharityCause
     end
 
 
-
-
-
-
-
-
-
-
     def advise_cause
         puts "This village in #{@country} is in need. You can #{@description} for {@cost} charity coins"
         puts "Would you like to, 
         1. Purchase this for #{country} ?
         2. Search elsewhere ?" 
     end
-
 
 
     def selected

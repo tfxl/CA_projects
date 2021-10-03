@@ -8,8 +8,8 @@
         "description":"build a fence",
         "charity_name":"tbd",
         "cost":"400",
-        "completed":"true",
-        "presentation":""},
+        "completed": true,
+        "presentation":"AAA"},
 
         {"id":"2",
         "area":"East Africa",
@@ -18,8 +18,8 @@
         "description":"buy food",
         "charity_name":"tbd",
         "cost":"200",
-        "completed":"false",    
-        "presentation":""},
+        "completed": false,    
+        "presentation":"BBB"},
 
         {"id":"3",
         "area":"East Africa",
@@ -28,8 +28,8 @@
         "description":"construct a well",
         "charity_name":"tbd",
         "cost":"100",
-        "completed":"false",
-        "presentation":""}
+        "completed": false,
+        "presentation":"CCC"}
     ],
 
     "userdata" : 

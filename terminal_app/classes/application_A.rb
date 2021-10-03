@@ -71,6 +71,7 @@ class ApplicationXYZ
 
   ###############################################  PICK ITEM IN MAP ############################################
 
+
   def find_my_object # (dot_array, dot_array_presentations)
     prompt = TTY::Prompt.new # (active_color: :orange)
 
@@ -114,7 +115,7 @@ class ApplicationXYZ
 
       # now is the set of functions for map printing and selection
 
-      selected_cause = find_my_object
+      selected_cause = find_my_object()
 
       puts "You have chosen an area in #{selected_cause.country}, #{selected_cause.area} Africa.
             This cause supports #{selected_cause.category} and you can #{selected_cause.description} for #{selected_cause.cost} Charity Coins\n\n"
