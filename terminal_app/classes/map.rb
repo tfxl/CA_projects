@@ -20,12 +20,17 @@ class Map
   
     @map_array_display = []
     @good_causes_array = []
+    @temp_good_causes_array = []
     
     @part_of_map_picked = ""
     @chosen_cause = {}
 
     @map_menu_choices = ""
     @map_menu_selection = ""
+
+    @position = 0 #this is the starting position in the map array, and it will increment as each object is allocated a portion
+    @break = false
+
 
     @insert = "\u2b24"
     @map_array = [
@@ -66,87 +71,80 @@ class Map
       {y14:"                                            ░░▒▒▒▒▒▒▓▓  ▒▒▓▓▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒   "},          
       {y13:"                                            ░░░░  ▓▓▒▒▒▒░░▒▒░░▒▒░░░░░░░░  ▓▓▒▒▒▒   "},          
       {y12:"                                        ░░▒▒▒▒▒▒░░▒▒▓▓▒▒░░▒▒▒▒░░░░░░▒▒░░▒▒  ▒▒   "},            
-      {y11:"                                        ░░▒▒░░░░▒▒▒▒▒▒▒▒░░▒▒▒▒░░░░░░▒▒▓▓▒▒░░▒▒   "},            
+      {y11:"                                        ░░▒▒░░░░▒▒▒▒▒▒▒▒░░#{@insert}▒▒▒▒░░░░░░▒▒▓▓▒▒░░▒▒   "},            
       {y10:"                                        ░░▒▒▒▒░░░░░░▒▒▒▒▒▒░░░░░░░░░░░░▒▒▒▒▒▒   "},              
       {y9:"                                        ░░░░░░░░░░▒▒▒▒░░▒▒▒▒▒▒░░░░░░▒▒ "},                    
       {y8:"                                        ░░▒▒░░▒▒▒▒▒▒▒▒░░░░▒▒░░▒▒▒▒░░▒▒ "},                    
       {y7:"                                            ▒▒░░▒▒░░░░▒▒░░▒▒▒▒░░░░░░▒▒▒▒"},                     
       {y6:"                                            ░░▒▒  ▒▒▒▒░░  ░░▒▒░░░░▒▒▒▒  "},                     
       {y5:"                                            ▒▒▒▒▒▒▓▓▒▒░░▒▒░░░░▒▒░░   "},                      
-      {y4:"                                            ▒▒▒▒▒▒██▒▒▒▒░░▓▓▒▒▒▒░░   "},                      
+      {y4:"                                            ▒▒▒▒▒▒██▒#{@insert}▒▒▒░░▓▓▒▒▒▒░░   "},                      
       {y3:"                                            ░░░░▒▒▒▒▒▒░░░░▒▒░░░░    "},                       
-      {y2:"                                                ░░▒▒▒▒░░#{@insert}░░░░▒▒     "},                          
+      {y2:"                                                ░░▒▒▒▒░░░░░1░▒▒     "},                          
       {y1:"                                                ▒▒  ▒▒░░▓▓2▒▒     "}
     ]                          
 
   end
 
+
+  def colour_the_dots(value, i)
+
+    temp_array = value.chars()                          
+    circle_index = temp_array.index("\u2b24")
+
+    if i.completed == true
+        temp_array[circle_index] = Rainbow("\u2b24").green
+        value = temp_array.join("") #assigns data to the
+        return value
+
+    elsif i.completed == false
+        temp_array[circle_index] = Rainbow("\u2b24").firebrick
+        value = temp_array.join("")
+        return value
+
+    elsif i.completed == "possible upgrade to orange colour as well"
+        value = temp_array.join("")
+        return value
+
+    end
+  end
+
+
   def update_map(good_causes_array)
 
-    position = 0 #this is the starting position in the map array, and it will increment as each object is allocated a portion
+    # @position = 0 #this is the starting position in the map array, and it will increment as each object is allocated a portion
     good_causes_array.each do |i|  # this will be for 3 elements at this stage
+      
+      new_position = @position
+      temp_string = nil
+      @break = false
 
-        found = false
-        temp_string = nil
-        finding_string = true
+      @map_array[new_position..].each_with_index do |map_hash, index| #now will only iterate from last postion
 
-        while finding_string
-            @map_array[position..].each_with_index do |map_hash, index| #now will only iterate from last postion
+        if @break == true
+          break
+        end
 
+        map_hash.each do |key, value|  # have a look at the string in each line (value)
 
-                map_hash.each do |key, value|  # have a look at the string in each line (value)
+          if value.include?(@insert)
+            @position = @position + index + 1
 
-                    if value.include?(@insert) && found == false # if it has the placeholder (but no previous find)
-                        
+            value = colour_the_dots(value, i) # red for not completed, green for completed
+            temp_string = "#{temp_string}|#{value}<<<\n"  # add the value to the temp string
+            i.presentation = temp_string
 
-                        # this section extracts the circle and converts the colour
+            @break = true
 
-                        temp_array = value.chars()                          
-                        circle_index = temp_array.index("\u2b24")
+          else 
+              temp_string = "#{temp_string}>#{value}<<<\n"      #each value is the new line
 
-                        if i.completed == true
-                            temp_array[circle_index] = Rainbow("\u2b24").green
-                            value = temp_array.join("") #assigns data to the
-
-                        elsif i.completed == false
-                            temp_array[circle_index] = Rainbow("\u2b24").firebrick
-                            value = temp_array.join("")
-
-                        elsif i.completed == "possible upgrade to orange colour as well"
-                            value = temp_array.join("")
-
-                        end
-                        # value = colour_my_dots(value,i)
-
-
-                        temp_string = "#{temp_string}|#{value}<<<\n"  # add the value to the temp string (LATER NEED newlines)
-                        found = true  # first one is found, so look at the next line of the map
-
-
-   # Else if the value includes the insert BUT is the NEXT one in the list, then break and set new position in the map array to add next
-                    elsif value.include?(@insert) && found == true 
-
-                        found = false  # reset false for the next search
-                        position = position + index # set the new range postion
-                        finding_string = false # not sure if need this, but it will break while loop (not sure if need THAT)
-
-                        i.presentation = temp_string
-
-                        break
-
-                    else 
-                        temp_string = "#{temp_string}>#{value}<<<\n"      #each value is the new line
-
-                    end
-
-                end
-            end
-
-        end # end while loop
-    end
-    return good_causes_array # returns the array with strings allocated, and coloured dots updated
-
-  end
+          end
+        end
+      end
+    end #end iteration of good causes
+    return good_causes_array #returns array with updated presentation values, including coloured dots
+  end 
 
 
   def update_display_array(good_causes_array)
@@ -157,15 +155,7 @@ class Map
   end
 
   def select_cause_from_map
-
-    prompt = TTY::Prompt.new # (active_color: :orange)
-
-    # update_display_array()
-
-      # available = true
-      # while available
-    @part_of_map_picked = prompt.select('Please select an area to view the charitable cause', @map_array_display)
-
+    @part_of_map_picked = @prompt.select('Please select an area to view the charitable cause', @map_array_display)
   end
 
   def match_map_choice
@@ -191,17 +181,16 @@ class Map
       puts "You have chosen an area in #{@chosen_cause.country}, #{@chosen_cause.area} Africa.
               This cause supports #{@chosen_cause.category} and you can #{@chosen_cause.description} for #{@chosen_cause.cost} Charity Coins\n\n"
 
-        sleep 1
+      sleep 1
 
-        @map_menu_choices = [
-          "1. Support the cause for #{@chosen_cause.cost} Charity Coins",
-          '2. Find another cause to support',
-          '3. Return to Main Menu'
-        ]
+      @map_menu_choices = [
+        "1. Support the cause for #{@chosen_cause.cost} Charity Coins",
+        '2. Find another cause to support',
+        '3. Return to Main Menu'
+      ]
 
-        user_choice = @prompt.select('Please select one of the options', @map_menu_choices)
-        @map_menu_selection = user_choice
-
+      user_choice = @prompt.select('Please select one of the options', @map_menu_choices)
+      @map_menu_selection = user_choice
 
     end
   end
@@ -214,8 +203,5 @@ class Map
   end
 
 
-
-
 end
-
 
