@@ -183,7 +183,7 @@ class Map
 
       @ascii_art.draw_elephant
 
-      puts Rainbow("You have chosen an area in #{@chosen_cause.country}, #{@chosen_cause.area} Africa.").orange
+      puts Rainbow("You have chosen an area in #{@chosen_cause.country}, #{@chosen_cause.area}.").orange
       puts Rainbow("This cause supports #{@chosen_cause.category} and you can #{@chosen_cause.description} for #{@chosen_cause.cost} Charity Coins\n\n").orange
 
       @map_menu_choices = [
