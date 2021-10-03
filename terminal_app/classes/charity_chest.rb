@@ -1,5 +1,6 @@
-require_relative './ascii_art'
 require 'tty-prompt'
+
+require_relative './ascii_art'
 
 class CharityChest
 
@@ -18,10 +19,10 @@ class CharityChest
 
     @charity_chest_menu_choice = nil
     @more_coins_options = [
-      'Would you like to buy more Charity Coins ?',
-      'Would you like to earn some more money ?', 
-      'How about asking for a group contribution?',
-      'Return to Main Menu'
+      Rainbow('Would you like to buy more Charity Coins ?').darkolivegreen,
+      Rainbow('Would you like to earn some more money ?').lightgray, 
+      Rainbow('How about asking for a group contribution?').darkolivegreen,
+      Rainbow('Return to Main Menu').darkolivegreen
     ]
 
     @group_sponsors_available = false
@@ -53,6 +54,8 @@ class CharityChest
   end
 
   def display_chest
+    system("clear") || system("cls")
+
     ref_array_1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     ref_array_2 = [
       @ascii_art.zero,
@@ -105,24 +108,13 @@ class CharityChest
 
     # print @ascii_art.charity_chest_art
     puts "Here's the financials => Budget #{@budget} and Charity Coins #{@coins}"
+    puts "\n\n\n\n\n\n\n"
 
   end
 
 
-  def charity_chest_menu
-
-  prompt = TTY::Prompt.new
-
-  # puts "You have $#{@budget} left in your bank account"
-
-  # more_coins_options = [
-  #   'Would you like to buy more Charity Coins ?',
-  #   'Would you like to earn some more money ?', 
-  #   'How about asking for a group contribution?',
-  #   'Return to Main Menu'
-  # ]
-    
-  @charity_chest_menu_choice = prompt.select('What would you like to do ?', @more_coins_options)
+  def charity_chest_menu  
+  @charity_chest_menu_choice = @prompt.select('What would you like to do ?', @more_coins_options)
 
   end
 
@@ -130,7 +122,7 @@ class CharityChest
     if @budget.positive?
       buy_charity_coins()
       # charity_chest_menu()
-    
+
     elsif @budget == 0
       puts "Unfortunately you have no remaining budget for this month. #{Rainbow('Thank you for your previous generosity').red}"
       @prompt.keypress("#{Rainbow('Press space or enter to return to Charity Chest').orange}", keys: %i[space return])
@@ -139,9 +131,9 @@ class CharityChest
   end
 
   def do_work
-    puts "FEATURE SOON TO EARN COINS"
+    puts Rainbow("\n\nFEATURE SOON TO EARN COINS\n\n").red
 
-    #features from a list of activities, each with different time bars and different earnings 
+    # features from a list of activities, each with different time bars and different earnings 
     # random generation if 0-4 do this, if 5 - 6 do this, if 7 do this, if 8 do this, if 9 do this
 
     # bar = TTY::ProgressBar.new("Waiting ...[:bar]", total: 30)

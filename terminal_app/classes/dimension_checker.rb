@@ -11,7 +11,7 @@ class DimensionChecker
     @height = @terminal_screen_size[0]
     @width = @terminal_screen_size[1]
 
-    @minimum_height = 30
+    @minimum_height = 45
     @minimum_width = 125
 
   end

@@ -41,11 +41,9 @@ class FileHandler
       sleep 0.05
     end
 
-    sleep 1
-    puts Rainbow("\n\n.....Ah well.....\n").yellow
-    sleep 0.5
+    puts "\n\n"
 
-    final_message = 'So...... Anyways....... Well, best leave you to it !! '.chars
+    final_message = 'So...... Anyways....... Please restart program and try creating a new profile '.chars
     final_message.each_with_index do |character, index|
       sleep 0.8 if (index == 8) || (index == 23) || (index == final_message.length - 1)
       sleep 0.04
@@ -92,6 +90,8 @@ class FileHandler
 
     # display elephant ascii ??
 
+    system("clear") || system("cls")
+
     load_options =
       [
         'Create New',
@@ -115,13 +115,12 @@ class FileHandler
 #################################### LOAD NEW FILE FROM JSON DEFAULT ####################
 
   def create_new_file
-
+    puts "CREATE NEW FILE"
     # user has chosen to load a new file, but first it will see if any saved file exists
 
     begin
-      parse_json_file('./data/user_data.json') # will this run the parse_json_file error catches ?
-
-      # puts "Are you sure ? It appears there is an existing file saved under name #{@parsed_data[:userdata][:username]}"
+     # this checks if there is already a profile, and will ask for further options if there is
+      JSON.load_file('./data/user_data.json', symbolize_names: true)
 
       confirm =
         [
@@ -129,7 +128,7 @@ class FileHandler
           'Actually, let me choose again'
         ]
 
-      confirmation = @prompt.select('Choosing New will overwrite previously saved file!', confirm)
+      confirmation = @prompt.select('Choosing New means if you save your file, it will overwrite the old one!', confirm)
 
       case confirmation
         
@@ -206,7 +205,7 @@ class FileHandler
 
   ########################### SAVE PROGRESS / SAVE DATA TO JSON ################################
 
-  def save_file(updated_good_causes, charity_coins, budget_dollars)
+  def save_file(updated_good_causes, charity_coins, budget_dollars, username)
     # updated_good_causes is an array of objects
     # the others are all single values
 
@@ -214,7 +213,7 @@ class FileHandler
     {
       charity_causes: updated_good_causes.map { |cause| cause.to_json_format }, # this will iterate and add to hash as value to key charity_causes:
       userdata: {
-        username: @username,
+        username: username,
         budget: budget_dollars.to_i,
         charity_coins: charity_coins.to_i
       }
@@ -253,6 +252,7 @@ class FileHandler
     puts "\n#{"*"*40}"
 
   end
+
 
 ########################### END OF CLASS ################################
 

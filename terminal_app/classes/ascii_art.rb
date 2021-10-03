@@ -152,7 +152,7 @@ class AsciiArt      # https://ascii.co.uk/art/treasure
         "
 
 
-        end
+    end
 
     def draw_charity_chest 
         
@@ -180,18 +180,53 @@ class AsciiArt      # https://ascii.co.uk/art/treasure
             #{@spacing}#{Rainbow("#{"*"*5}").orange}#{Rainbow("#{"*"*2}").firebrick}#{Rainbow("#{"*"*5}").darkgreen}#{Rainbow("#{"*"*5}").darkorange}#{Rainbow("#{"*"*2}").darkblue}#{Rainbow("#{"*"*5}").darkorange}#{Rainbow("#{"*"*5}").darkgreen}#{Rainbow("#{"*"*10}").darkorange}#{Rainbow("#{"*"*10}").darkgreen}#{Rainbow("#{"*"*40}#{@stars * @multiplier}").darkorange}
             )
 
-
-
-
-
-
-
-
-        
         print @charity_chest_art
             #{@spacing}#{Rainbow("***************************************************************************************").darkgreen}#{@stars * @multiplier}
     
     end
+
+
+    def draw_elephant
+
+        @elephant = 
+        %Q(
+
+        .. ..oooo.....ooo...
+        .odSS4PYYYSSOOXXXXXXXXXOodbgooo.
+       /SSYod$$$$SSOIIPXXXXXXXXXYYP.oo.*b.
+      ($$Yd$$$$SSSOII:XXXXXXXX:IIoSSS$$b.Y,
+       {Yd$$$$SSSOII:XXXXXXXXXX:IIOOSSS$$$b}
+        d$$$$SSSOOI:XP"YXXXXXXXX:IIOOSSSS$$$}
+        Y$$$SSSOOII:XbdXXXXXP"YX:IIOOOSS$$$$)
+        'Y$$$SSSOI:XXXXXXXXXbodX:IIOOSS$$$$$/
+         "Y$$$SSSOI(PoTXXXXXTo)XXIIOOOSS$$$*'
+           ""*Y$S(((PXXXXXXXY))dIIOSSS$$dP'
+              "*'()P;XXXXXXXXY)IIOSSS$P".oS,
+              (S'(P;XXXXXXXP;Y)XXYOP".oSSSSb
+             (S'(P;'XXXXXXX';Y).ooooSSSSSSSS))
+             (S'(P;'XXXXXXP';Y).oSSSSSSSSSSSP
+             (SS'Y);YXXXXX';(Y.oSSSSSSSSSSSSP
+              YSS'Y)'YXXX".(Y.oSSP.SSSSSSSSY
+               YSS'"" XXX""oooSSP.SSSSSSSSY
+               SSSSSS YXXX:SSSSP.SSSSSSSSY
+               SSSSSP  YXb:SSSP.S"SSSSSSP
+               S(OO)S   YXb:SY    )SSSSS
+               SSSSO    )YXb.I    ISSSSP
+               YSSSY    I."YXXb   Y(SS)I
+               {SSS}   dSSo.""*b  YSSSY
+               OooSb   dSSSSP     {SSS}
+                       dSSSY       OooSS
+                       OooSP                 #{Rainbow("Beate Schwichtenberg").darkolivegreen})
+                       
+
+        print Rainbow(@elephant).red
+        puts "\n\n"
+
+
+
+    end
+
+
 
 
 

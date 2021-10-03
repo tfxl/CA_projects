@@ -17,8 +17,6 @@ class Introduction
 
   def load_markdown_file(file_name)
 
-    # file_handler = FileHandler.new
-
     begin
 
     @parsed_markdown = TTY::Markdown.parse_file(file_name, width: 90)
@@ -63,10 +61,6 @@ class Introduction
     display_introduction()
 
   end
-
-  
-        
-
 
 end
 

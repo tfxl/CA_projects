@@ -1,10 +1,10 @@
 require 'rainbow'
 require 'tty-prompt'
 
+require_relative 'ascii_art'
 
 # https://dorkbyte.wordpress.com/2012/08/05/trick-out-your-terminal-with-ascii-art/
 # https://textart.sh/topic/africa
-
 
 class Map
 
@@ -12,10 +12,9 @@ class Map
   attr_accessor :insert, :good_causes_array #, :file
 
 
-
   def initialize # replace space with underscores and interpolate the rest ?
 
-
+    @ascii_art = AsciiArt.new
     @prompt = TTY::Prompt.new
   
     @map_array_display = []
@@ -34,54 +33,54 @@ class Map
 
     @insert = "\u2b24"
     @map_array = [
-      {y48:"                    ▒▒    ▒▒░░▒▒▒▒▓▓▒▒▒▒░░"},                                                  
-      {y47:"                    ██▒▒████▒▒▒▒░░▒▒▒▒░░▒▒▒▒"},                                               
-      {y46:"                ██▓▓██▓▓░░▒▒▓▓░░▒▒▒▒▒▒▒▒▒▒"},                                                 
-      {y45:"                ░░░░  ░░░░▒▒░░░░░░░░░░░░░░░░░░    ░░░░▒▒  ░░"},                              
-      {y44:"                ▒▒▒▒    ▒▒▓▓▓▓▒▒▒▒░░░░▒▒░░░░▒▒    ▒▒▒▒▓▓  ▒▒ "},                               
-      {y43:"            ▒▒▒▒▒▒▒▒▒▒▒▒  ▒▒▓▓▒▒░░▒▒░░▒▒▒▒░░▒▒▓▓▒▒▓▓▓▓░░▒▒▒▒▒▒▒▒▒▒ "},                        
-      {y42:"            ▒▒▓▓░░  ▒▒▒▒▓▓▒▒▒▒▒▒▒▒░░░░░░▒▒░░░░▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒"},                     
-      {y41:"        ▒▒▒▒░░▒▒░░▓▓░░░░░░▓▓  ▒▒░░▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▒▒░░▒▒"},                     
-      {y40:"    ░░▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒  ▒▒▒▒░░▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▓▓░░░░░░▒▒░░▒▒▒▒░░░░"},                       
-      {y39:"    ▒▒▓▓░░▒▒▒▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒░░▒▒▒▒░░░░▒▒░░░░▒▒░░░░░░░░░░░░"},                     
-      {y38:"    ▓▓▒▒▒▒▒▒▒▒▓▓░░▒▒▒▒▒▒░░▒▒░░▒▒▒#{@insert}▒▒▒▒▒▒▒░░▒▒░░░░▒▒░░▒▒░░▒▒▒▒░░  ░░▒▒░░"},                     
-      {y37:"    ░░▒▒░░▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░▒▒░░▓▓▓▓▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒"},                     
-      {y36:"    ▒▒░░░░▒▒░░▒▒▒▒▒▒▓▓▒▒▒▒▒▒░░▒▒▒▒░░░░▒▒▒▒░░░░▒▒  ░░▒▒▓▓▒▒░░▒▒░░▒▒▒▒░░  ▒▒▓▓"},                 
-      {y35:"    ▒▒▓▓▒▒▒▒▓▓▒▒▓▓▒▒▓▓░░▒▒▓▓▒▒▓▓  ░░░░░░░░▒▒░░  ▓▓▓▓▒▒▒▒▓▓▒▒░░░░▒▒░░▒▒▓▓  ▒▒"},                 
-      {y34:"▓▓██▓▓▓▓▒▒██▒▒░░▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒▒░░  ░░▒▒  ▒▒██▓▓▒▒▒▒▒▒▓▓▒▒▒▒▒▒▓▓▒▒▒▒████ "},              
-      {y33:"██▒▒▒▒▒▒░░▓▓▒▒▓▓▒▒▒▒██▓▓▓▓░░▒▒▓▓▒▒▒▒▓▓▒▒▓▓▒▒▒▒░░▓▓▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓ "},                
-      {y32:"▒▒░░▒▒▒▒▓▓▒▒▓▓▒▒▒▒▒▒▒▒▒▒████▓▓  ░░▒▒▒▒░░░░░░▒▒▓▓██  ░░▒▒▒▒▒▒▒▒░░░░▒▒▒▒▒▒▓▓▓▓▒▒░░  "},         
-      {y31:"▒▒▒▒▒▒░░▒▒██▒▒▓▓  ▒▒██▒▒▒▒▓▓▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒██▒▒▓▓▒▒▓▓▒▒▓▓▒▒▓▓  ▒▒▓▓▓▓░░▒▒░░  ▒▒██▒▒ "},
-      {y30:"    ▒▒▓▓░░▒▒▒▒▒▒▓▓▒▒▒▒██▓▓██▒▒░░▓▓▓▓▒▒░░░░░░▒▒▒▒▓▓▓▓▒▒▒▒▒▒#{@insert}░░▓▓▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒██▓▓ "},
-      {y29:"    ██▒▒  ▒▒██▓▓▒▒▒▒██▒▒▒▒▒▒▒▒▒▒  ░░▒▒▒▒▒▒▒▒░░  ██▓▓▒▒▒▒▒▒▒▒▒▒▓▓▓▓░░░░▒▒  ▓▓▒▒▒▒▒▒▒▒██▒▒▓▓ "},
-      {y28:"    ▒▒▒▒▓▓██  ▒▒██▒▒▒▒▒▒▒▒▓▓▓▓▒▒░░▒▒▒▒░░░░░░▒▒▒▒░░▒▒▓▓  ▒▒▓▓░░▒▒▒▒▓▓░░▒▒▒▒▒▒▒▒  ▓▓▓▓██▒▒▒▒ "},
-      {y27:"        ▒▒▓▓  ▓▓▒▒░░██▒▒░░▒▒▒▒  ▒▒▓▓░░░░▒▒▓▓▒▒▒▒▒▒▒▒░░▓▓▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▓▓▒▒▒▒  ▓▓░░██▒▒▒▒"}, 
-      {y26:"        ▒▒▒▒▒▒  ▓▓▒▒▒▒▒▒▒▒▒▒░░▒▒░░░░░░░░░░▒▒▓▓▒▒▓▓░░▓▓▓▓░░▒▒░░▒▒░░░░▒▒  ▒▒▓▓░░░░▒▒▒▒▒▒▓▓  "}, 
-      {y25:"            ░░▒▒    ░░  ▒▒      ▒▒░░░░▒▒▒▒░░░░░░▒▒▒▒▓▓░░▒▒░░▒▒▒▒▒▒▒▒░░▒▒▒▒░░░░░░░░▒▒▒▒▓▓▓▓ "},  
-      {y24:"                                ░░░░▒▒▒▒▒▒▒▒▒▒░░▓▓▓▓▒▒░░▒▒▒▒▒▒▒▒░░░░░░░░▓▓▒▒░░▒▒░░▒▒▒▒  "},   
-      {y23:"                                    ░░░░▒▒░░▒▒▒▒▒▒▒▒▓▓▒▒░░░░▒▒▒▒░░▒▒░░░░▒▒▓▓▒▒░░▒▒▒▒ "},      
-      {y22:"                                    ░░▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒░░▒▒▓▓▒▒▒▒▒▒▒▒▒▒"},       
-      {y21:"                                    ░░░░░░▒▒▒▒▒▒▒▒▓▓▒▒▒▒░░  ▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒░░▒▒▒▒░░ "},        
-      {y20:"                                    ░░▒▒▒▒▒▒░░▓▓▓▓▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒  "},         
-      {y19:"                                    ░░▒▒▒▒░░▒▒▒▒▒▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▓▓▒▒▒▒   "},          
-      {y18:"                                        ░░▒▒▒▒░░▓▓▓▓██▒▒▓▓▒▒▓▓▒▒▒▒▓▓▓▓░░▓▓████▓▓ "},            
-      {y17:"                                        ░░░░▒▒▒▒▓▓▒▒▓▓▓▓▒▒▒▒▒▒▒▒▓▓▓▓▒▒▓▓▒▒██░░░░  "},           
-      {y16:"                                        ░░▒▒▒▒▓▓▒▒▒▒▒▒░░▒▒░░░░░░░░▒▒▒▒▒▒▒▒░░▒▒  "},           
-      {y15:"                                        ▒▒▓▓▒▒▓▓██▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▒▒▓▓▓▓  "},           
-      {y14:"                                            ░░▒▒▒▒▒▒▓▓  ▒▒▓▓▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒   "},          
-      {y13:"                                            ░░░░  ▓▓▒▒▒▒░░▒▒░░▒▒░░░░░░░░  ▓▓▒▒▒▒   "},          
-      {y12:"                                        ░░▒▒▒▒▒▒░░▒▒▓▓▒▒░░▒▒▒▒░░░░░░▒▒░░▒▒  ▒▒   "},            
-      {y11:"                                        ░░▒▒░░░░▒▒▒▒▒▒▒▒░░#{@insert}▒▒▒▒░░░░░░▒▒▓▓▒▒░░▒▒   "},            
-      {y10:"                                        ░░▒▒▒▒░░░░░░▒▒▒▒▒▒░░░░░░░░░░░░▒▒▒▒▒▒   "},              
-      {y9:"                                        ░░░░░░░░░░▒▒▒▒░░▒▒▒▒▒▒░░░░░░▒▒ "},                    
-      {y8:"                                        ░░▒▒░░▒▒▒▒▒▒▒▒░░░░▒▒░░▒▒▒▒░░▒▒ "},                    
-      {y7:"                                            ▒▒░░▒▒░░░░▒▒░░▒▒▒▒░░░░░░▒▒▒▒"},                     
-      {y6:"                                            ░░▒▒  ▒▒▒▒░░  ░░▒▒░░░░▒▒▒▒  "},                     
-      {y5:"                                            ▒▒▒▒▒▒▓▓▒▒░░▒▒░░░░▒▒░░   "},                      
-      {y4:"                                            ▒▒▒▒▒▒██▒#{@insert}▒▒▒░░▓▓▒▒▒▒░░   "},                      
-      {y3:"                                            ░░░░▒▒▒▒▒▒░░░░▒▒░░░░    "},                       
-      {y2:"                                                ░░▒▒▒▒░░░░░1░▒▒     "},                          
-      {y1:"                                                ▒▒  ▒▒░░▓▓2▒▒     "}
+      {y48:"                    #{Rainbow("▒▒    ▒▒░░▒▒▒▒▓▓▒▒▒").darkolivegreen}#{@insert}#{Rainbow(" ▒░░").darkolivegreen}                   "},
+      {y47:"                    #{Rainbow("██").darkolivegreen}#{@insert}#{Rainbow(" ▒▒████▒▒▒▒░░▒▒▒▒░░▒▒▒▒").darkolivegreen}                   "},                                               
+      {y46:"                #{Rainbow("██▓▓██▓▓░░▒▒▓▓░░▒▒▒▒▒▒▒▒▒▒ ").darkolivegreen}                      "},                                                 
+      {y45:"                #{Rainbow("░░░░  ░░░░▒▒░░░░").darkolivegreen}#{@insert}#{Rainbow(" ░░░░░░░░░░░░░░    ░░░░▒▒  ░░").darkolivegreen}          "},                              
+      {y44:"                #{Rainbow("▒▒▒▒    ▒▒▓▓▓▓▒▒▒▒░░░░▒▒░░░░▒▒    ▒▒▒▒▓▓  ").darkolivegreen}#{@insert}#{Rainbow(" ▒▒").darkolivegreen}          "},                               
+      {y43:"            #{Rainbow("▒▒▒▒▒▒▒▒▒▒▒▒  ▒▒▓▓▒▒░░▒▒░░▒▒▒▒░░▒▒▓▓▒").darkolivegreen}#{@insert}#{Rainbow(" ▒▓▓▓▓░░▒▒▒▒▒▒▒▒▒▒ ").darkolivegreen}    "},                        
+      {y42:"            #{@insert}#{Rainbow(" ▒▒▓▓░░  ▒▒▒▒▓▓▒▒▒▒▒▒▒▒░░░░░░▒▒░░░░▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒").darkolivegreen}   "},                     
+      {y41:"        #{Rainbow("▒▒▒▒░░▒▒░░▓▓░░░░░░▓▓  ▒▒░░▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▒▒░░▒▒").darkolivegreen}        "},                     
+      {y40:"    #{Rainbow("░░▒▒▒▒▒▒▒▒▒▒░░").darkolivegreen}#{@insert}#{Rainbow(" ▒▒▒▒  ▒▒▒▒░░▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▓▓░░░░░░▒▒░░▒▒▒▒░░░░").darkolivegreen}           "},                       
+      {y39:"    #{Rainbow("▒▒▓▓░░▒▒▒▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒▒▒░░").darkolivegreen}#{@insert}#{Rainbow(" ▒▒░░▒▒▒▒░░░░▒▒░░░░▒▒░░░░░░░░░░░░").darkolivegreen}   "},                     
+      {y38:"    #{Rainbow("▓▓▒▒▒▒▒▒▒▒▓▓░░▒▒▒▒▒▒░░▒▒░░▒▒▒▒▒▒▒▒▒▒░░▒▒░░░░▒▒░░▒▒░░▒▒▒▒").darkolivegreen}#{@insert}#{Rainbow(" ░░  ░░▒▒░░ ").darkolivegreen}  "},                     
+      {y37:"    #{Rainbow("░░▒▒░░▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░").darkolivegreen}#{@insert}#{Rainbow(" ▒▒░░▓▓▓▓▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒").darkolivegreen}   "},                     
+      {y36:"    #{Rainbow("▒▒░░░░▒▒░░▒▒▒▒▒▒").darkolivegreen}#{@insert}#{Rainbow(" ▓▓▒▒▒▒▒▒░░▒▒▒▒░░░░▒▒▒▒░░░░▒▒  ░░▒▒▓▓▒▒░░▒▒░░▒▒▒▒░░  ▒▒▓▓").darkolivegreen}   "},                 
+      {y35:"    #{Rainbow("▒▒").darkolivegreen}#{@insert}#{Rainbow(" ▓▓▒▒▒▒▓▓▒▒▓▓▒▒▓▓░░▒▒▓▓▒▒▓▓  ░░░░░░░░▒▒░░  ▓▓▓▓▒▒▒▒▓▓▒▒░░░░▒▒░░▒▒▓▓  ▒▒").darkolivegreen}  "},                 
+      {y34:"#{Rainbow("▓▓██▓▓▓▓▒▒██▒▒░░▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒▒░░  ░░▒▒  ▒▒██▓▓▒▒▒▒▒▒▓▓▒▒▒▒▒▒▓▓▒▒▒▒████").darkolivegreen}    "},              
+      {y33:"#{Rainbow("██▒▒▒▒▒▒░░▓▓▒▒▓▓▒▒▒▒██▓▓▓▓░░▒▒▓▓").darkolivegreen}#{@insert}#{Rainbow(" ▒▒▒▒▓▓▒▒▓▓▒▒▒▒░░▓▓▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓").darkolivegreen} "},                
+      {y32:"#{Rainbow("▒▒░░▒▒▒▒▓▓▒▒▓▓▒▒▒▒▒▒▒▒▒▒████▓▓  ░░▒▒▒▒░░░░░░▒▒▓▓██  ░░▒▒▒▒▒▒▒▒░░░░▒").darkolivegreen}#{@insert}#{Rainbow(" ▒▒▒▒▒▓▓▓▓▒▒░░").darkolivegreen}   "},         
+      {y31:"#{Rainbow("▒▒▒▒▒▒░░▒▒██▒▒▓▓  ▒▒██▒▒▒▒▓▓▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒██▒▒▓▓▒▒▓▓▒▒▓▓▒▒▓▓  ▒▒▓▓▓▓░░▒▒░░  ▒▒██").darkolivegreen}#{@insert}#{Rainbow(" ▒▒").darkolivegreen}   "},
+      {y30:"    #{Rainbow("▒▒▓▓░░▒▒▒▒▒▒▓▓▒▒▒▒██▓▓██▒▒░░▓▓▓▓▒▒░░░░░░▒▒▒▒▓▓▓▓▒▒▒▒▒▒░░▓▓▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒██▓▓").darkolivegreen}   "},
+      {y29:"    #{Rainbow("██▒▒  ▒▒██▓▓▒▒▒▒").darkolivegreen}#{@insert}#{Rainbow(" ██▒▒▒▒▒▒▒▒▒▒  ░░▒▒▒▒▒▒▒▒░░  ██▓▓▒▒▒▒▒▒▒▒▒▒▓▓▓▓░░░░▒▒  ▓▓▒▒▒▒▒▒▒▒██▒▒▓▓").darkolivegreen}   "},
+      {y28:"    #{Rainbow("▒▒▒▒▓▓██  ▒▒██▒▒▒▒▒▒▒▒▓▓▓▓▒▒░░▒▒▒▒░░░░░░▒▒▒▒░░▒▒▓▓  ▒▒▓▓░░▒▒▒▒▓▓░░▒▒▒▒▒▒▒▒  ▓▓▓▓██▒▒▒▒").darkolivegreen}     "},
+      {y27:"        #{Rainbow("▒▒▓▓  ▓▓▒▒░░██▒▒░░▒▒▒▒  ▒▒▓▓░░░░▒▒▓▓▒▒▒▒▒▒▒▒░░▓▓▒▒▒▒▒▒▒").darkolivegreen}#{@insert}#{Rainbow(" ▒▒▒▒▒▓▓▒▒▒▒▓▓▒▒▒▒  ▓▓░░██▒▒▒▒").darkolivegreen}   "}, 
+      {y26:"        #{Rainbow("▒▒▒▒▒▒  ▓▓▒▒▒▒▒▒▒▒▒▒░░▒▒░░░░░░░░░░▒▒▓▓▒▒▓▓░░▓▓▓▓░░▒▒░░▒▒░░░░▒▒  ▒▒▓▓░░░░▒▒▒▒▒▒▓▓").darkolivegreen}    "}, 
+      {y25:"            #{Rainbow("░░▒▒    ░░  ▒▒      ▒▒░░░░").darkolivegreen}#{@insert}#{Rainbow(" ▒▒▒▒░░░░░░▒▒▒▒▓▓░░▒▒░░▒▒▒▒▒▒▒▒░░▒▒▒▒░░░░░░░░▒▒▒▒▓▓▓▓").darkolivegreen} "},  
+      {y24:"                                #{Rainbow("░░░░▒▒▒▒▒▒▒▒▒▒░░▓▓▓▓▒▒░░▒▒▒▒▒▒▒▒░░░░░░░░▓▓▒▒░░▒▒░░▒▒▒▒").darkolivegreen}  "},   
+      {y23:"                                    #{Rainbow("░░░░▒▒░░▒▒▒▒▒▒▒▒▓▓▒▒░░░░▒▒▒▒░░▒▒░░░░▒▒▓▓").darkolivegreen}#{@insert}#{Rainbow(" ▒▒░░▒▒▒▒").darkolivegreen} "},      
+      {y22:"                                    #{Rainbow("░░▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒░░▒▒▓▓▒▒▒▒▒▒▒▒▒▒").darkolivegreen}    "},       
+      {y21:"                                    #{Rainbow("░░░░░░▒▒▒▒▒▒▒▒▓▓▒▒▒▒░░").darkolivegreen}#{@insert}#{Rainbow("   ▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒░░▒▒▒▒░░").darkolivegreen} "},        
+      {y20:"                                    #{Rainbow("░░▒▒▒▒▒▒░░▓▓▓▓▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒").darkolivegreen}  "},         
+      {y19:"                                    #{Rainbow("░░▒▒▒▒░░▒▒▒▒▒▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▓▓▒").darkolivegreen}#{@insert}#{Rainbow(" ▒▒▒").darkolivegreen}   "},          
+      {y18:"                                        #{Rainbow("░░▒▒▒▒░░▓▓▓▓██▒▒▓▓▒▒▓▓▒▒▒▒▓▓▓▓░░▓▓████▓▓").darkolivegreen}   "},            
+      {y17:"                                        #{Rainbow("░░░░▒▒▒▒▓▓▒▒▓▓▓▓▒▒▒▒▒▒▒▒▓▓▓▓▒▒▓▓").darkolivegreen}#{@insert}#{Rainbow(" ▒▒██░░░░").darkolivegreen}  "},           
+      {y16:"                                        #{Rainbow("░░▒▒▒▒▓▓▒▒▒▒▒▒░░▒▒░░░░░░░░▒▒▒▒▒▒▒▒░░▒▒").darkolivegreen}  "},           
+      {y15:"                                        #{Rainbow("▒▒▓▓▒▒▓").darkolivegreen}#{@insert}#{Rainbow(" ▓██▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▒▒▓▓▓▓").darkolivegreen}  "},           
+      {y14:"                                            #{Rainbow("░░▒▒▒▒▒▒▓▓  ▒▒▓▓▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒").darkolivegreen}     "},          
+      {y13:"                                            #{Rainbow("░░░░  ▓▓▒▒▒▒░░▒").darkolivegreen}#{@insert}#{Rainbow(" ▒░░▒▒░░░░░░░░  ▓▓▒▒▒▒").darkolivegreen}   "},          
+      {y12:"                                        #{Rainbow("░░▒▒▒▒▒▒░░▒▒▓▓▒▒░░▒▒▒▒░░░░░░▒▒░░▒▒  ▒▒").darkolivegreen}    "},            
+      {y11:"                                        #{Rainbow("░░▒▒░░░░▒▒▒▒▒▒▒▒░░▒▒▒▒░░░░").darkolivegreen}#{@insert}#{Rainbow(" ░░▒▒▓▓▒▒░░▒▒").darkolivegreen}    "},            
+      {y10:"                                        #{Rainbow("░░▒▒▒▒░░░░░░▒▒▒▒▒▒░░░░░░░░░░░░▒▒▒▒▒▒").darkolivegreen}   "},              
+      {y9:"                                        #{Rainbow("░░░░░").darkolivegreen}#{@insert}#{Rainbow(" ░░░░░▒▒▒▒░░▒▒▒▒▒▒░░░░░░▒▒").darkolivegreen}   "},                    
+      {y8:"                                        #{Rainbow("░░▒▒░░▒▒▒▒▒▒▒▒░░░░▒▒░░▒▒▒▒░░▒▒").darkolivegreen}   "},                    
+      {y7:"                                            #{Rainbow("▒▒░░▒▒░░░░▒▒").darkolivegreen}#{@insert}#{Rainbow(" ░░▒▒▒▒░░░░░░▒▒▒▒").darkolivegreen}  "},                     
+      {y6:"                                            #{Rainbow("░░▒▒  ▒▒▒▒░░  ░░▒▒░░░░▒▒▒▒").darkolivegreen}    "},                     
+      {y5:"                                            #{Rainbow("▒▒▒▒▒▒▓▓▒▒░░▒▒░░░░▒▒").darkolivegreen}#{@insert}#{Rainbow(" ░░").darkolivegreen}   "},                      
+      {y4:"                                            #{Rainbow("▒▒▒▒▒▒██▒▒▒▒░░▓▓▒▒▒▒░░").darkolivegreen}   "},                      
+      {y3:"                                            #{Rainbow("░░░░▒▒▒▒▒▒░░░░▒▒░░░").darkolivegreen}#{@insert}#{Rainbow(" ░").darkolivegreen}    "},                       
+      {y2:"                                                #{Rainbow("░░▒▒▒▒░░░░░░▒▒").darkolivegreen}      "},                          
+      {y1:"                                                #{Rainbow("▒▒  ▒▒").darkolivegreen}#{@insert}#{Rainbow(" ░░▓▓▒▒").darkolivegreen}     "}
     ]                          
 
   end
@@ -89,10 +88,10 @@ class Map
 
   def colour_the_dots(value, i)
 
-    temp_array = value.chars()                          
+    temp_array = value.chars()
     circle_index = temp_array.index("\u2b24")
 
-    if i.completed == true
+    if (i.completed == true) || (i.completed == "true")
         temp_array[circle_index] = Rainbow("\u2b24").green
         value = temp_array.join("") #assigns data to the
         return value
@@ -114,30 +113,31 @@ class Map
 
     # @position = 0 #this is the starting position in the map array, and it will increment as each object is allocated a portion
     good_causes_array.each do |i|  # this will be for 3 elements at this stage
-      
+
       new_position = @position
       temp_string = nil
+
       @break = false
 
-      @map_array[new_position..].each_with_index do |map_hash, index| #now will only iterate from last postion
+      @map_array[new_position..].each_with_index do |map_hash, index| # now will only iterate from last postion
 
         if @break == true
           break
         end
 
-        map_hash.each do |key, value|  # have a look at the string in each line (value)
+        map_hash.each do |_, value|  # have a look at the string in each line (value)
 
           if value.include?(@insert)
             @position = @position + index + 1
 
             value = colour_the_dots(value, i) # red for not completed, green for completed
-            temp_string = "#{temp_string}|#{value}<<<\n"  # add the value to the temp string
+            temp_string = "#{temp_string}#{value}<\n"  # add the value to the temp string
             i.presentation = temp_string
 
             @break = true
 
           else 
-              temp_string = "#{temp_string}>#{value}<<<\n"      #each value is the new line
+              temp_string = "#{temp_string}#{value}<\n"      #each value is the new line
 
           end
         end
@@ -157,6 +157,7 @@ class Map
   def select_cause_from_map
     @part_of_map_picked = @prompt.select('Please select an area to view the charitable cause', @map_array_display)
   end
+
 
   def match_map_choice
 
@@ -178,10 +179,12 @@ class Map
 
     elsif @chosen_cause.completed == false
 
-      puts "You have chosen an area in #{@chosen_cause.country}, #{@chosen_cause.area} Africa.
-              This cause supports #{@chosen_cause.category} and you can #{@chosen_cause.description} for #{@chosen_cause.cost} Charity Coins\n\n"
+      system("clear") || system("cls")
 
-      sleep 1
+      @ascii_art.draw_elephant
+
+      puts Rainbow("You have chosen an area in #{@chosen_cause.country}, #{@chosen_cause.area} Africa.").orange
+      puts Rainbow("This cause supports #{@chosen_cause.category} and you can #{@chosen_cause.description} for #{@chosen_cause.cost} Charity Coins\n\n").orange
 
       @map_menu_choices = [
         "1. Support the cause for #{@chosen_cause.cost} Charity Coins",
@@ -201,6 +204,19 @@ class Map
     match_map_choice()
     check_if_already_completed()
   end
+
+
+  def draw_map(good_causes_array)
+    system("clear") || system("cls")
+    puts "\n\n\n"
+    good_causes_array.each do |i|
+        puts i.presentation
+    end
+    puts "\n\n"
+
+    @prompt.keypress(Rainbow('Please press space or enter to select cause').orange.to_s, keys: %i[space return])
+  end
+
 
 
 end

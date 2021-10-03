@@ -1,5 +1,4 @@
-&nbsp;  
-&nbsp;  
+
 &nbsp;  
 
 
@@ -25,7 +24,7 @@
 >       
 > - &nbsp;requesting group sponsors 
 >      
-> - &nbsp;completing "work" to earn more
+> - &nbsp;completing "work" to earn more *feature soon
 > 
 > _ _ _ _ 
 > &nbsp;   **PROGRESS CAN BE SAVED FROM THE MAIN MENU AND LOADED AT A FUTURE DATE ON LAUNCH**
