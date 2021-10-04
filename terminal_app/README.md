@@ -35,7 +35,8 @@ The most straightforward way to run the application,is to please:
 1. download the african_charity_challenge.zip from the github repository <https://github.com/tfxl/CA_projects/tree/main/terminal_app>
 2. unzip the file to a directory of your choice
 3. open your directory to the location of the unzipped contents
-4. run the file 'run_app.sh'
+4. please set terminal window to minium height of 45 rows, and minimum width of 125 columns, to allow the ascii art to run
+5. run the file 'run_app.sh'
 
 This executable file will run the program by completing the following steps
 

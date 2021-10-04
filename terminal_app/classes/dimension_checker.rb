@@ -38,7 +38,7 @@ class DimensionChecker
 
     if @width < @minimum_width
       puts Rainbow("Current width of Terminal Window is #{@width}\n").red
-      puts Rainbow("PLEASE SET MINIMUM WIDTH OF TERMINAL WINDOW TO #{@minimum_height} COLUMNS !! THANK YOU\n\n").red
+      puts Rainbow("PLEASE SET MINIMUM WIDTH OF TERMINAL WINDOW TO #{@minimum_width} COLUMNS !! THANK YOU\n\n").red
       return false
 
     else 
