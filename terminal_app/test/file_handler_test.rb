@@ -35,6 +35,7 @@ class FileHandlerTest < Test::Unit::TestCase
     assert_not_nil(@file_handler.good_causes_array)
   end
 
+  # This test ensures that all 30 of the causes are indeed put into the new array
   def test_all_causes_uploaded
     assert_equal(30, @file_handler.good_causes_array.length)
   end

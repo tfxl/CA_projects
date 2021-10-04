@@ -5,7 +5,6 @@ class AsciiArt      # https://ascii.co.uk/art/treasure
 
     attr_accessor :multiplier, :charity_coins_title, :charity_chest_art,  :y1, :y2, :y3, :y4
 
-
     def initialize
 
         @spacing = " "*1
@@ -181,8 +180,7 @@ class AsciiArt      # https://ascii.co.uk/art/treasure
             )
 
         print @charity_chest_art
-            #{@spacing}#{Rainbow("***************************************************************************************").darkgreen}#{@stars * @multiplier}
-    
+
     end
 
 
@@ -222,14 +220,7 @@ class AsciiArt      # https://ascii.co.uk/art/treasure
         print Rainbow(@elephant).red
         puts "\n\n"
 
-
-
     end
-
-
-
-
-
 
 end
 

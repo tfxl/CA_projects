@@ -1,4 +1,5 @@
 require 'tty-prompt'
+require 'tty-progressbar'
 
 require_relative './ascii_art'
 
@@ -19,9 +20,9 @@ class CharityChest
 
     @charity_chest_menu_choice = nil
     @more_coins_options = [
-      Rainbow('Would you like to buy more Charity Coins ?').darkolivegreen,
-      Rainbow('Would you like to earn some more money ?').lightgray, 
-      Rainbow('How about asking for a group contribution?').darkolivegreen,
+      Rainbow('Would you like to buy more Charity Coins ?').orange,
+      Rainbow('Would you like to earn some more money ?').orange, 
+      Rainbow('How about asking for a group contribution?').orange,
       Rainbow('Return to Main Menu').darkolivegreen
     ]
 
@@ -41,6 +42,10 @@ class CharityChest
 
   def decrease_coins(amount)
     @coins -= amount
+  end
+
+  def increase_budget(amount)
+    @budget += amount
   end
 
   def buy_charity_coins
@@ -107,7 +112,7 @@ class CharityChest
     @ascii_art.draw_charity_chest
 
     # print @ascii_art.charity_chest_art
-    puts "Here's the financials => Budget #{@budget} and Charity Coins #{@coins}"
+    puts "Here's the financials => Budget $#{@budget} and Charity Coins #{@coins}"
     puts "\n\n\n\n\n\n\n"
 
   end
@@ -131,23 +136,20 @@ class CharityChest
   end
 
   def do_work
-    puts Rainbow("\n\nFEATURE SOON TO EARN COINS\n\n").red
+    puts Rainbow("\n\nThis requires an actual contribution of your time. Every 30 seconds increases your budget by $30\n").darkolivegreen
 
-    # features from a list of activities, each with different time bars and different earnings 
+    # future features from a list of activities, each with different time bars and different earnings 
     # random generation if 0-4 do this, if 5 - 6 do this, if 7 do this, if 8 do this, if 9 do this
 
-    # bar = TTY::ProgressBar.new("Waiting ...[:bar]", total: 30)
-    # 30.times.do
-    #     sleep(0.1)
-    #     bar.advance(1)
-    # end
+    progressbar = TTY::ProgressBar.new(Rainbow("[:bar]").orange, bar_format: :track, total: 90)
 
+    30.times do
+      sleep 1
+      progressbar.advance(3)
 
-    # lighthouse: {
-    #     interval: 10,
-    #     frames: ["∙∙∙", "●∙∙", "∙●∙", "∙∙●", "∙∙∙"]
-
-    #increase coins(amount)
+    end
+    increase_budget(30)
+    puts "\n\n"
 
     @prompt.keypress("#{Rainbow('Press space or enter to return to Charity Chest').orange}", keys: %i[space return])
     # charity_chest_menu()

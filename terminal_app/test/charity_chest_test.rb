@@ -6,6 +6,7 @@ require_relative '../classes/charity_chest'
 class CharityChestTest < Test::Unit::TestCase 
 
 # This is the second most important class, and it needs to be able to modify so the program can operate.
+# While it has some simple methods, it is critical that they operate effectively. 
 
   def setup
     @charity_chest = CharityChest.new(1000, 500)

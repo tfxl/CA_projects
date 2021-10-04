@@ -73,7 +73,6 @@ class FileHandler
       sleep 1
       error_message_and_leave(e)
 
-    # rescue StandardError => err
     rescue StandardError => e
       puts Rainbow("\n\nAwkies.... the file is not loading.... probably a user error :) ").yellow
       sleep 1
@@ -161,12 +160,6 @@ class FileHandler
       attribute_data_from_parsed_file()
 
       @prompt.keypress(Rainbow('Please press space or enter to continue!').orange.to_s, keys: %i[space return])
-
-      # print Rainbow("\nLOADING").orange
-      # 8.times do |i|
-      #   sleep 0.2
-      #   print Rainbow('.').orange
-      # end
 
     rescue
       puts "It appears that no previous file exists. Sorry... it just doesn't...."

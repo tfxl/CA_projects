@@ -171,7 +171,7 @@ end
       end
 
       @supported_causes_array.each do |cause|
-        puts "You have supported #{cause.description} in #{cause.country}"
+        puts "Your support has helped to #{cause.description} in #{cause.country}"
       end
 
       @main_menu.return_to_main_after_keypress()
@@ -187,6 +187,13 @@ end
       @main_menu.exit_from_main(@file.good_causes_array, @charity_chest.coins, @charity_chest.budget)
     end
 
+  end
+
+  def all_application_start_ups
+    assign_data()
+    create_charity_chest()
+    update_map_rows()
+    run_setup_to_main_menu()
   end
 
   ############################# END CLASS ##################################

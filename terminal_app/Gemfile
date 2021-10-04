@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+git_source(:github) { |repo_name| "https://github.com/#{tfxl/CA_projects/tree/main/terminal_app}" }
 
 # gem "rails"
 
@@ -12,3 +12,4 @@ gem 'tty-cursor', '~> 0.7.1'
 gem 'tty-markdown', '~> 0.7.0'
 gem 'tty-prompt', '~> 0.23.1'
 gem 'tty-screen', '~> 0.8.1'
+gem "tty-progressbar", "~> 0.18.2"

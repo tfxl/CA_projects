@@ -1,7 +1,5 @@
 
 &nbsp;  
-
-
 ***
 
 &nbsp;        **WELCOME TO THE AFRICAN CHARITY CHALLENGE & THANK YOU FOR YOUR SUPPORT** 

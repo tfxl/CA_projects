@@ -5,6 +5,7 @@ require_relative '../classes/charity_cause'
 class CharityCausesTest < Test::Unit::TestCase 
 
 # This is a smaller Class and a beneficiary of the FileHandler which is probably the most important, however good to still test this one
+# This ensures that the instantiation will taken the appropriate values as attributes.
 
   def setup
     @charity_cause = CharityCause.new("1", "Eastern Africa", "Sudan", "Farming", "Build a Dam", "TBD", 4000, false, "" )
